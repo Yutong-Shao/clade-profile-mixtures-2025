@@ -1,0 +1,98 @@
+IQ-TREE multicore version 2.3.6.5.ml for Linux x86 64-bit built Sep 11 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: ./iqtree2 --alisim tradigrada/2_simulation/LG-C60/lgc60 --seqtype AA -m myC60 -mdef tradigrada/1_infer/myC60.nex -t tradigrada/1_infer/LG-C60.contree --length 70888 --out-format fasta --num-alignments 100 -T 20
+Seed:    703892 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Mar 22 16:46:19 2025
+Kernel:  AVX+FMA - 20 threads (256 CPU cores detected)
+
+[Alignment Simulator] Executing
+Reading model definition file tradigrada/1_infer/myC60.nex ... 87 models and 274 frequency vectors loaded
+Model myC60 is alias for LG+G4{0.4704}+FMIX{C60_pi1:1:0.0169698865,C60_pi2:1:0.0211683374,C60_pi3:1:0.0276589079,C60_pi4:1:0.0065675964,C60_pi5:1:0.0141221416,C60_pi6:1:0.0068774834,C60_pi7:1:0.0146909701,C60_pi8:1:0.0067225777,C60_pi9:1:0.0018396660,C60_pi10:1:0.0102547197,C60_pi11:1:0.0230896163,C60_pi12:1:0.0057941033,C60_pi13:1:0.0125394534,C60_pi14:1:0.0204526478,C60_pi15:1:0.0070629602,C60_pi16:1:0.0117982741,C60_pi17:1:0.0068334668,C60_pi18:1:0.0433775839,C60_pi19:1:0.0318278731,C60_pi20:1:0.0222546108,C60_pi21:1:0.0102264969,C60_pi22:1:0.0150545891,C60_pi23:1:0.0134159878,C60_pi24:1:0.0148552065,C60_pi25:1:0.0239111516,C60_pi26:1:0.0128776278,C60_pi27:1:0.0222318842,C60_pi28:1:0.0247444742,C60_pi29:1:0.0214274810,C60_pi30:1:0.0115001882,C60_pi31:1:0.0076017389,C60_pi32:1:0.0130258568,C60_pi33:1:0.0093701965,C60_pi34:1:0.0467194264,C60_pi35:1:0.0441940314,C60_pi36:1:0.0322263154,C60_pi37:1:0.0402999891,C60_pi38:1:0.0150234227,C60_pi39:1:0.0104589903,C60_pi40:1:0.0214742395,C60_pi41:1:0.0154957836,C60_pi42:1:0.0101789953,C60_pi43:1:0.0227980379,C60_pi44:1:0.0123204539,C60_pi45:1:0.0066777583,C60_pi46:1:0.0004150083,C60_pi47:1:0.0344385130,C60_pi48:1:0.0113663379,C60_pi49:1:0.0127143049,C60_pi50:1:0.0124323741,C60_pi51:1:0.0262124415,C60_pi52:1:0.0064994957,C60_pi53:1:0.0103203293,C60_pi54:1:0.0142463512,C60_pi55:1:0.0215600067,C60_pi56:1:0.0199150700,C60_pi57:1:0.0038964200,C60_pi58:1:0.0113448855,C60_pi59:1:0.0128595846,C60_pi60:1:0.0117656776}
+WARNING: Your input class weight 0.000415008 is very small and may cause numerical issues
+ - Tree filepath: tradigrada/1_infer/LG-C60.contree
+ - Length of output sequences: 70888
+ - Model: myC60
+ - Number of output datasets: 100
+SUBSTITUTION PROCESS
+--------------------
+
+Mixture model of substitution: myC60+G4
+
+  No  Component      Rate    Weight   Parameters
+   1  LG+FC60_pi1   1.000    0.017    LG+FC60_pi1
+   2  LG+FC60_pi2   1.000    0.021    LG+FC60_pi2
+   3  LG+FC60_pi3   1.000    0.028    LG+FC60_pi3
+   4  LG+FC60_pi4   1.000    0.007    LG+FC60_pi4
+   5  LG+FC60_pi5   1.000    0.014    LG+FC60_pi5
+   6  LG+FC60_pi6   1.000    0.007    LG+FC60_pi6
+   7  LG+FC60_pi7   1.000    0.015    LG+FC60_pi7
+   8  LG+FC60_pi8   1.000    0.007    LG+FC60_pi8
+   9  LG+FC60_pi9   1.000    0.002    LG+FC60_pi9
+  10  LG+FC60_pi10  1.000    0.010    LG+FC60_pi10
+  11  LG+FC60_pi11  1.000    0.023    LG+FC60_pi11
+  12  LG+FC60_pi12  1.000    0.006    LG+FC60_pi12
+  13  LG+FC60_pi13  1.000    0.013    LG+FC60_pi13
+  14  LG+FC60_pi14  1.000    0.020    LG+FC60_pi14
+  15  LG+FC60_pi15  1.000    0.007    LG+FC60_pi15
+  16  LG+FC60_pi16  1.000    0.012    LG+FC60_pi16
+  17  LG+FC60_pi17  1.000    0.007    LG+FC60_pi17
+  18  LG+FC60_pi18  1.000    0.043    LG+FC60_pi18
+  19  LG+FC60_pi19  1.000    0.032    LG+FC60_pi19
+  20  LG+FC60_pi20  1.000    0.022    LG+FC60_pi20
+  21  LG+FC60_pi21  1.000    0.010    LG+FC60_pi21
+  22  LG+FC60_pi22  1.000    0.015    LG+FC60_pi22
+  23  LG+FC60_pi23  1.000    0.013    LG+FC60_pi23
+  24  LG+FC60_pi24  1.000    0.015    LG+FC60_pi24
+  25  LG+FC60_pi25  1.000    0.024    LG+FC60_pi25
+  26  LG+FC60_pi26  1.000    0.013    LG+FC60_pi26
+  27  LG+FC60_pi27  1.000    0.022    LG+FC60_pi27
+  28  LG+FC60_pi28  1.000    0.025    LG+FC60_pi28
+  29  LG+FC60_pi29  1.000    0.021    LG+FC60_pi29
+  30  LG+FC60_pi30  1.000    0.012    LG+FC60_pi30
+  31  LG+FC60_pi31  1.000    0.008    LG+FC60_pi31
+  32  LG+FC60_pi32  1.000    0.013    LG+FC60_pi32
+  33  LG+FC60_pi33  1.000    0.009    LG+FC60_pi33
+  34  LG+FC60_pi34  1.000    0.047    LG+FC60_pi34
+  35  LG+FC60_pi35  1.000    0.044    LG+FC60_pi35
+  36  LG+FC60_pi36  1.000    0.032    LG+FC60_pi36
+  37  LG+FC60_pi37  1.000    0.040    LG+FC60_pi37
+  38  LG+FC60_pi38  1.000    0.015    LG+FC60_pi38
+  39  LG+FC60_pi39  1.000    0.010    LG+FC60_pi39
+  40  LG+FC60_pi40  1.000    0.021    LG+FC60_pi40
+  41  LG+FC60_pi41  1.000    0.015    LG+FC60_pi41
+  42  LG+FC60_pi42  1.000    0.010    LG+FC60_pi42
+  43  LG+FC60_pi43  1.000    0.023    LG+FC60_pi43
+  44  LG+FC60_pi44  1.000    0.012    LG+FC60_pi44
+  45  LG+FC60_pi45  1.000    0.007    LG+FC60_pi45
+  46  LG+FC60_pi46  1.000    0.000    LG+FC60_pi46
+  47  LG+FC60_pi47  1.000    0.034    LG+FC60_pi47
+  48  LG+FC60_pi48  1.000    0.011    LG+FC60_pi48
+  49  LG+FC60_pi49  1.000    0.013    LG+FC60_pi49
+  50  LG+FC60_pi50  1.000    0.012    LG+FC60_pi50
+  51  LG+FC60_pi51  1.000    0.026    LG+FC60_pi51
+  52  LG+FC60_pi52  1.000    0.006    LG+FC60_pi52
+  53  LG+FC60_pi53  1.000    0.010    LG+FC60_pi53
+  54  LG+FC60_pi54  1.000    0.014    LG+FC60_pi54
+  55  LG+FC60_pi55  1.000    0.022    LG+FC60_pi55
+  56  LG+FC60_pi56  1.000    0.020    LG+FC60_pi56
+  57  LG+FC60_pi57  1.000    0.004    LG+FC60_pi57
+  58  LG+FC60_pi58  1.000    0.011    LG+FC60_pi58
+  59  LG+FC60_pi59  1.000    0.013    LG+FC60_pi59
+  60  LG+FC60_pi60  1.000    0.012    LG+FC60_pi60
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.470
+
+ Category  Relative_rate  Proportion
+  1         0.028          0.250
+  2         0.232          0.250
+  3         0.797          0.250
+  4         2.942          0.250
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+[Alignment Simulator] Done
+Simulation time: 9.318s
+Date and Time: Sat Mar 22 16:46:29 2025

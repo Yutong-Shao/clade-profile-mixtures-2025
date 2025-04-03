@@ -1,0 +1,110 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: ./iqtree2 -s tardigrada/matrix_40sp.fasta -ft tardigrada/1_infer/LG-C60opt.treefile -m myC60 -mdef tardigrada/1_infer/LGC60.nex -T 35 -safe -pre tardigrada/1_infer/LG-C60opt-PMSF -n 0
+Seed:    134821 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Mar 30 12:31:12 2025
+Kernel:  Safe AVX+FMA - 35 threads (256 CPU cores detected)
+
+Reading alignment file tardigrada/matrix_40sp.fasta ... Fasta format detected
+Reading fasta file: done in 0.0657305 secs using 97.4% CPU
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 70888 columns, 63149 distinct patterns
+48785 parsimony-informative, 7670 singleton sites, 14433 constant sites
+                             Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00698412 secs using 2046% CPU
+   1  Capitella_telata               5.00%    failed      0.00%
+   2  Daphnia_magna                  9.79%    failed      0.06%
+   3  Echiniscoides_sigismundi      49.39%    failed      0.00%
+   4  Echiniscus_bisetosus          82.96%    failed      0.00%
+   5  Echiniscus_testudo            50.24%    failed      0.00%
+   6  Echinoderes_kohni             88.58%    failed      0.00%
+   7  Enoplus_brevis                22.43%    failed      0.00%
+   8  Epiperipatus                  56.34%    failed      0.00%
+   9  Frakliniella_occidentalis      7.36%    failed      0.08%
+  10  Gordius                       70.84%    failed      0.00%
+  11  Halicryptus_spinolosus        13.41%    failed      0.00%
+  12  Hypsibius_dujardini            3.51%    failed      0.00%
+  13  Limulus_polyphemus            16.13%    failed      0.00%
+  14  Manduca_sexta                  9.59%    failed      0.00%
+  15  Meiopriapulus                 26.75%    failed      0.00%
+  16  Mesobiotus_philippinicus      19.72%    failed      0.00%
+  17  Milnesium_tardigradum         59.56%    failed      0.00%
+  18  Neodiprion_lecontei            4.62%    failed      0.01%
+  19  Ooperipatellus                72.91%    failed      0.00%
+  20  Opisthopatus_kwazululandi     26.52%    failed      0.00%
+  21  Paeneus_vanammei              12.28%    failed      0.00%
+  22  Pamacea_canaliculata           5.42%    failed      0.02%
+  23  Paragordius_varius            71.38%    failed      0.00%
+  24  Parasteatoda_tepidariorum      3.65%    failed      0.00%
+  25  Peripatoides                  73.44%    failed      0.00%
+  26  Peripatoides_novaezelandiae   16.34%    failed      0.00%
+  27  Peripatopsis_capensis         37.07%    failed      0.00%
+  28  Pleomothra                    21.78%    failed      0.00%
+  29  Pontonema_vulgare             24.88%    failed      0.00%
+  30  Priapulus_caudatus            13.43%    failed      0.00%
+  31  Prionchulus_punctatus         13.90%    failed      0.00%
+  32  Pycnophyes                    76.53%    failed      0.00%
+  33  Ramazzottius_varieornatus      3.20%    failed      0.00%
+  34  Richtersius_coronifer          6.00%    failed      0.00%
+  35  Romanomermis_culicivorax      36.04%    failed      0.00%
+  36  Stegodyphus_mimosarum         15.16%    failed      0.00%
+  37  Strigamia_maritima            13.05%    failed      0.00%
+  38  Tachypleu                      8.55%    failed      0.00%
+  39  Tobrilus                      23.43%    failed      0.00%
+  40  Xiphinema_index               27.20%    failed      0.00%
+WARNING: 10 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                         29.96%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+
+===> COMPUTING SITE FREQUENCY MODEL BASED ON TREE FILE tardigrada/1_infer/LG-C60opt.treefile
+Reading model definition file tardigrada/1_infer/LGC60.nex ... 87 models and 274 frequency vectors loaded
+Model myC60 is alias for LG+G4{0.5086515898}+FMIX{C60_pi1:1:0.0151669041,C60_pi2:1:0.0038741548,C60_pi3:1:0.0112073685,C60_pi4:1:0.0118603636,C60_pi5:1:0.0215909221,C60_pi6:1:0.0103630822,C60_pi7:1:0.0014583963,C60_pi8:1:0.0062117523,C60_pi9:1:0.0083874262,C60_pi10:1:0.1401764952,C60_pi11:1:0.0220879777,C60_pi12:1:0.0133085111,C60_pi13:1:0.0012853712,C60_pi14:1:0.0065249962,C60_pi15:1:0.0000003675,C60_pi16:1:0.0090470744,C60_pi17:1:0.0520276467,C60_pi18:1:0.0257158869,C60_pi19:1:0.0114482818,C60_pi20:1:0.0045346256,C60_pi21:1:0.0029754434,C60_pi22:1:0.0522828319,C60_pi23:1:0.0072356909,C60_pi24:1:0.0013601495,C60_pi25:1:0.0083387123,C60_pi26:1:0.0175306994,C60_pi27:1:0.0314808325,C60_pi28:1:0.0288920151,C60_pi29:1:0.0204355168,C60_pi30:1:0.0374690520,C60_pi31:1:0.0071036599,C60_pi32:1:0.0111816409,C60_pi33:1:0.0231873506,C60_pi34:1:0.0190026587,C60_pi35:1:0.0201816649,C60_pi36:1:0.0091615286,C60_pi37:1:0.0073536917,C60_pi38:1:0.0304180922,C60_pi39:1:0.0021697053,C60_pi40:1:0.0110504460,C60_pi41:1:0.0036735771,C60_pi42:1:0.0046810413,C60_pi43:1:0.0246807560,C60_pi44:1:0.0107023996,C60_pi45:1:0.0115551556,C60_pi46:1:0.0004852441,C60_pi47:1:0.0067182366,C60_pi48:1:0.0138209003,C60_pi49:1:0.0003711862,C60_pi50:1:0.0255085650,C60_pi51:1:0.0137085593,C60_pi52:1:0.0315000928,C60_pi53:1:0.0038649378,C60_pi54:1:0.0168367967,C60_pi55:1:0.0539274567,C60_pi56:1:0.0062877976,C60_pi57:1:0.0041849214,C60_pi58:1:0.0338239244,C60_pi59:1:0.0082119470,C60_pi60:1:0.0003675175}
+WARNING: Your input class weight 3.675e-07 is very small and may cause numerical issues
+WARNING: Your input class weight 0.000485244 is very small and may cause numerical issues
+WARNING: Your input class weight 0.000371186 is very small and may cause numerical issues
+WARNING: Your input class weight 0.000367517 is very small and may cause numerical issues
+NOTE: 93694 MB RAM is required!
+1. Initial log-likelihood: -2206988.039
+Optimal log-likelihood: -2206988.016
+Mixture weights: 0.015 0.004 0.011 0.012 0.022 0.010 0.001 0.006 0.008 0.140 0.022 0.013 0.001 0.007 0.000 0.009 0.052 0.026 0.011 0.005 0.003 0.052 0.007 0.001 0.008 0.018 0.031 0.029 0.020 0.037 0.007 0.011 0.023 0.019 0.020 0.009 0.007 0.030 0.002 0.011 0.004 0.005 0.025 0.011 0.012 0.000 0.007 0.014 0.000 0.026 0.014 0.032 0.004 0.017 0.054 0.006 0.004 0.034 0.008 0.000
+Gamma shape alpha: 0.509
+Parameters optimization took 1 rounds (146.092 sec)
+Computing posterior mean site frequencies....
+Site state frequency vectors printed to tardigrada/1_infer/LG-C60opt-PMSF.sitefreq
+
+===> CONTINUE ANALYSIS USING THE INFERRED SITE FREQUENCY MODEL
+Reading model definition file tardigrada/1_infer/LGC60.nex ... 87 models and 274 frequency vectors loaded
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.567 seconds
+Model myC60 is alias for LG+G4{0.5086515898}+FMIX{C60_pi1:1:0.0151669041,C60_pi2:1:0.0038741548,C60_pi3:1:0.0112073685,C60_pi4:1:0.0118603636,C60_pi5:1:0.0215909221,C60_pi6:1:0.0103630822,C60_pi7:1:0.0014583963,C60_pi8:1:0.0062117523,C60_pi9:1:0.0083874262,C60_pi10:1:0.1401764952,C60_pi11:1:0.0220879777,C60_pi12:1:0.0133085111,C60_pi13:1:0.0012853712,C60_pi14:1:0.0065249962,C60_pi15:1:0.0000003675,C60_pi16:1:0.0090470744,C60_pi17:1:0.0520276467,C60_pi18:1:0.0257158869,C60_pi19:1:0.0114482818,C60_pi20:1:0.0045346256,C60_pi21:1:0.0029754434,C60_pi22:1:0.0522828319,C60_pi23:1:0.0072356909,C60_pi24:1:0.0013601495,C60_pi25:1:0.0083387123,C60_pi26:1:0.0175306994,C60_pi27:1:0.0314808325,C60_pi28:1:0.0288920151,C60_pi29:1:0.0204355168,C60_pi30:1:0.0374690520,C60_pi31:1:0.0071036599,C60_pi32:1:0.0111816409,C60_pi33:1:0.0231873506,C60_pi34:1:0.0190026587,C60_pi35:1:0.0201816649,C60_pi36:1:0.0091615286,C60_pi37:1:0.0073536917,C60_pi38:1:0.0304180922,C60_pi39:1:0.0021697053,C60_pi40:1:0.0110504460,C60_pi41:1:0.0036735771,C60_pi42:1:0.0046810413,C60_pi43:1:0.0246807560,C60_pi44:1:0.0107023996,C60_pi45:1:0.0115551556,C60_pi46:1:0.0004852441,C60_pi47:1:0.0067182366,C60_pi48:1:0.0138209003,C60_pi49:1:0.0003711862,C60_pi50:1:0.0255085650,C60_pi51:1:0.0137085593,C60_pi52:1:0.0315000928,C60_pi53:1:0.0038649378,C60_pi54:1:0.0168367967,C60_pi55:1:0.0539274567,C60_pi56:1:0.0062877976,C60_pi57:1:0.0041849214,C60_pi58:1:0.0338239244,C60_pi59:1:0.0082119470,C60_pi60:1:0.0003675175}
+
+NOTE: 2149 MB RAM (2 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2091392.027
+2. Current log-likelihood: -2029552.401
+3. Current log-likelihood: -2027870.036
+4. Current log-likelihood: -2027853.759
+5. Current log-likelihood: -2027852.256
+6. Current log-likelihood: -2027852.071
+7. Current log-likelihood: -2027852.051
+Optimal log-likelihood: -2027852.046
+Gamma shape alpha: 0.509
+Parameters optimization took 7 rounds (43.110 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -2027852.046
+Total tree length: 18.103
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 1290.453 sec (0h:21m:30s)
+Total wall-clock time used: 57.496 sec (0h:0m:57s)
+
+Analysis results written to: 
+  IQ-TREE report:                tardigrada/1_infer/LG-C60opt-PMSF.iqtree
+  Maximum-likelihood tree:       tardigrada/1_infer/LG-C60opt-PMSF.treefile
+  Screen log file:               tardigrada/1_infer/LG-C60opt-PMSF.log
+
+Date and Time: Sun Mar 30 12:34:42 2025
