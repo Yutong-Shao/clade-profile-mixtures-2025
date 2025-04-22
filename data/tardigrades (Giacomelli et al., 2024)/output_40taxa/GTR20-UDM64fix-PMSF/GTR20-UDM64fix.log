@@ -1,0 +1,101 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: /data/yutong/iqtree2 -s tardigrada/matrix_40sp.fasta -m GTR20+UDM0064CLR+G4 --link-exchange --init-exchange LG -mdef tardigrada/1_infer/udm_hogenom_0064_clr_iqtree.nex -te tardigrada/1_infer/guide-LG.treefile -me 0.99 -safe -pre tardigrada/1_infer/GTR20-UDM64fix -nt 40
+Seed:    424131 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Apr  9 12:52:13 2025
+Kernel:  Safe AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading alignment file tardigrada/matrix_40sp.fasta ... Fasta format detected
+Reading fasta file: done in 0.0627913 secs using 92.6% CPU
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 70888 columns, 63149 distinct patterns
+48785 parsimony-informative, 7670 singleton sites, 14433 constant sites
+                             Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00836596 secs using 3828% CPU
+   1  Capitella_telata               5.00%    failed      0.00%
+   2  Daphnia_magna                  9.79%    failed      0.06%
+   3  Echiniscoides_sigismundi      49.39%    failed      0.00%
+   4  Echiniscus_bisetosus          82.96%    failed      0.00%
+   5  Echiniscus_testudo            50.24%    failed      0.00%
+   6  Echinoderes_kohni             88.58%    failed      0.00%
+   7  Enoplus_brevis                22.43%    failed      0.00%
+   8  Epiperipatus                  56.34%    failed      0.00%
+   9  Frakliniella_occidentalis      7.36%    failed      0.08%
+  10  Gordius                       70.84%    failed      0.00%
+  11  Halicryptus_spinolosus        13.41%    failed      0.00%
+  12  Hypsibius_dujardini            3.51%    failed      0.00%
+  13  Limulus_polyphemus            16.13%    failed      0.00%
+  14  Manduca_sexta                  9.59%    failed      0.00%
+  15  Meiopriapulus                 26.75%    failed      0.00%
+  16  Mesobiotus_philippinicus      19.72%    failed      0.00%
+  17  Milnesium_tardigradum         59.56%    failed      0.00%
+  18  Neodiprion_lecontei            4.62%    failed      0.01%
+  19  Ooperipatellus                72.91%    failed      0.00%
+  20  Opisthopatus_kwazululandi     26.52%    failed      0.00%
+  21  Paeneus_vanammei              12.28%    failed      0.00%
+  22  Pamacea_canaliculata           5.42%    failed      0.02%
+  23  Paragordius_varius            71.38%    failed      0.00%
+  24  Parasteatoda_tepidariorum      3.65%    failed      0.00%
+  25  Peripatoides                  73.44%    failed      0.00%
+  26  Peripatoides_novaezelandiae   16.34%    failed      0.00%
+  27  Peripatopsis_capensis         37.07%    failed      0.00%
+  28  Pleomothra                    21.78%    failed      0.00%
+  29  Pontonema_vulgare             24.88%    failed      0.00%
+  30  Priapulus_caudatus            13.43%    failed      0.00%
+  31  Prionchulus_punctatus         13.90%    failed      0.00%
+  32  Pycnophyes                    76.53%    failed      0.00%
+  33  Ramazzottius_varieornatus      3.20%    failed      0.00%
+  34  Richtersius_coronifer          6.00%    failed      0.00%
+  35  Romanomermis_culicivorax      36.04%    failed      0.00%
+  36  Stegodyphus_mimosarum         15.16%    failed      0.00%
+  37  Strigamia_maritima            13.05%    failed      0.00%
+  38  Tachypleu                      8.55%    failed      0.00%
+  39  Tobrilus                      23.43%    failed      0.00%
+  40  Xiphinema_index               27.20%    failed      0.00%
+WARNING: 10 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                         29.96%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+Reading model definition file tardigrada/1_infer/udm_hogenom_0064_clr_iqtree.nex ... 88 models and 278 frequency vectors loaded
+Reading input tree file tardigrada/1_infer/guide-LG.treefile ...
+Model GTR20+UDM0064CLR+G4 is alias for GTR20+FMIX{UDM0064CLR_C0000:1.0:0.02727713454628415,UDM0064CLR_C0001:1.0:0.026957736839103404,UDM0064CLR_C0002:1.0:0.023113557291963724,UDM0064CLR_C0003:1.0:0.02249472423430103,UDM0064CLR_C0004:1.0:0.021604973478583242,UDM0064CLR_C0005:1.0:0.02141675697256602,UDM0064CLR_C0006:1.0:0.020934808646552217,UDM0064CLR_C0007:1.0:0.02056407916500314,UDM0064CLR_C0008:1.0:0.020187646152968686,UDM0064CLR_C0009:1.0:0.020002281412194147,UDM0064CLR_C0010:1.0:0.019956653168311186,UDM0064CLR_C0011:1.0:0.01959447898249016,UDM0064CLR_C0012:1.0:0.019454742485598586,UDM0064CLR_C0013:1.0:0.019352078936861916,UDM0064CLR_C0014:1.0:0.018830205897450523,UDM0064CLR_C0015:1.0:0.018738949409684593,UDM0064CLR_C0016:1.0:0.018542177607939313,UDM0064CLR_C0017:1.0:0.018405292876290422,UDM0064CLR_C0018:1.0:0.018148634004448754,UDM0064CLR_C0019:1.0:0.017968972794159585,UDM0064CLR_C0020:1.0:0.01772657274853134,UDM0064CLR_C0021:1.0:0.01708777733416985,UDM0064CLR_C0022:1.0:0.016799749044658644,UDM0064CLR_C0023:1.0:0.01648605486796327,UDM0064CLR_C0024:1.0:0.01589573946272743,UDM0064CLR_C0025:1.0:0.015713226487195572,UDM0064CLR_C0026:1.0:0.015701819426224832,UDM0064CLR_C0027:1.0:0.01565619118234187,UDM0064CLR_C0028:1.0:0.01551930645069298,UDM0064CLR_C0029:1.0:0.015419494667198996,UDM0064CLR_C0030:1.0:0.015399532310500199,UDM0064CLR_C0031:1.0:0.015140021673415844,UDM0064CLR_C0032:1.0:0.015105800490503621,UDM0064CLR_C0033:1.0:0.015057320481377973,UDM0064CLR_C0034:1.0:0.01495750869788399,UDM0064CLR_C0035:1.0:0.014840586322933896,UDM0064CLR_C0036:1.0:0.01477214395710945,UDM0064CLR_C0037:1.0:0.0145696686248788,UDM0064CLR_C0038:1.0:0.01450407802429704,UDM0064CLR_C0039:1.0:0.014392859179832317,UDM0064CLR_C0040:1.0:0.014324416814007871,UDM0064CLR_C0041:1.0:0.014284492100610278,UDM0064CLR_C0042:1.0:0.013962242628186848,UDM0064CLR_C0043:1.0:0.01385387554896481,UDM0064CLR_C0044:1.0:0.01354303313751212,UDM0064CLR_C0045:1.0:0.013255004848000913,UDM0064CLR_C0046:1.0:0.012921348314606741,UDM0064CLR_C0047:1.0:0.012761649461016369,UDM0064CLR_C0048:1.0:0.012507842354417384,UDM0064CLR_C0049:1.0:0.012311070552672105,UDM0064CLR_C0050:1.0:0.012065818741801175,UDM0064CLR_C0051:1.0:0.011700792790737467,UDM0064CLR_C0052:1.0:0.011640905720641076,UDM0064CLR_C0053:1.0:0.011372839787828666,UDM0064CLR_C0054:1.0:0.010742599669195232,UDM0064CLR_C0055:1.0:0.010582900815604859,UDM0064CLR_C0056:1.0:0.01045742314492671,UDM0064CLR_C0057:1.0:0.010349056065704671,UDM0064CLR_C0058:1.0:0.010229281925511893,UDM0064CLR_C0059:1.0:0.0096874465294017,UDM0064CLR_C0060:1.0:0.009328124108823362,UDM0064CLR_C0061:1.0:0.009040095819312154,UDM0064CLR_C0062:1.0:0.0077881708777733415,UDM0064CLR_C0063:1.0:0.006998231905549535}+G4
+
+NOTE: 99940 MB RAM (97 GB) is required!
+Estimate model parameters (epsilon = 0.990)
+1. Initial log-likelihood: -2231639.729
+Restart estimation at the boundary... multiplying all values down
+Restart estimation at the boundary... multiplying all values down
+2. Current log-likelihood: -2199558.858
+3. Current log-likelihood: -2198911.174
+4. Current log-likelihood: -2198814.517
+5. Current log-likelihood: -2198797.404
+6. Current log-likelihood: -2198792.628
+7. Current log-likelihood: -2198787.581
+8. Current log-likelihood: -2198785.259
+9. Current log-likelihood: -2198782.510
+10. Current log-likelihood: -2198780.870
+11. Current log-likelihood: -2198777.245
+12. Current log-likelihood: -2198771.638
+13. Current log-likelihood: -2198770.551
+Optimal log-likelihood: -2198769.934
+Mixture weights: 0.027 0.027 0.023 0.022 0.022 0.021 0.021 0.021 0.020 0.020 0.020 0.020 0.019 0.019 0.019 0.019 0.019 0.018 0.018 0.018 0.018 0.017 0.017 0.016 0.016 0.016 0.016 0.016 0.016 0.015 0.015 0.015 0.015 0.015 0.015 0.015 0.015 0.015 0.015 0.014 0.014 0.014 0.014 0.014 0.014 0.013 0.013 0.013 0.013 0.012 0.012 0.012 0.012 0.011 0.011 0.011 0.010 0.010 0.010 0.010 0.009 0.009 0.008 0.007
+Gamma shape alpha: 0.561
+Parameters optimization took 13 rounds (46360.693 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -2198769.934
+Total tree length: 16.177
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 1788679.281 sec (496h:51m:19s)
+Total wall-clock time used: 46360.806 sec (12h:52m:40s)
+
+Analysis results written to: 
+  IQ-TREE report:                tardigrada/1_infer/GTR20-UDM64fix.iqtree
+  Maximum-likelihood tree:       tardigrada/1_infer/GTR20-UDM64fix.treefile
+  Screen log file:               tardigrada/1_infer/GTR20-UDM64fix.log
+  GTRPMIX nex file:              tardigrada/1_infer/GTR20-UDM64fix.GTRPMIX.nex
+
+Date and Time: Thu Apr 10 01:44:59 2025

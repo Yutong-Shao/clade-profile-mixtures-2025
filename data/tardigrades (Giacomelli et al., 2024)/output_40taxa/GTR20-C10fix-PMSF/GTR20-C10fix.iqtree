@@ -1,0 +1,188 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Input file name: tardigrada/matrix_40sp.fasta
+User tree file name: tardigrada/1_infer/guide-LG.treefile
+Type of analysis: tree reconstruction
+Random seed number: 939178
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 40 sequences with 70888 amino-acid sites
+Number of constant sites: 14433 (= 20.3603% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 14433 (= 20.3603% of all sites)
+Number of parsimony informative sites: 48785
+Number of distinct site patterns: 63149
+
+SUBSTITUTION PROCESS
+--------------------
+
+Mixture model of substitution: MIX{GTR20+FC10pi1,GTR20+FC10pi2,GTR20+FC10pi3,GTR20+FC10pi4,GTR20+FC10pi5,GTR20+FC10pi6,GTR20+FC10pi7,GTR20+FC10pi8,GTR20+FC10pi9,GTR20+FC10pi10}+G4
+
+  No  Component      Rate    Weight   Parameters
+   1  GTR20+FC10pi1  1.0000   0.1191   GTR20+FC10pi1
+   2  GTR20+FC10pi2  1.0000   0.0874   GTR20+FC10pi2
+   3  GTR20+FC10pi3  1.0000   0.1037   GTR20+FC10pi3
+   4  GTR20+FC10pi4  1.0000   0.0923   GTR20+FC10pi4
+   5  GTR20+FC10pi5  1.0000   0.1070   GTR20+FC10pi5
+   6  GTR20+FC10pi6  1.0000   0.1330   GTR20+FC10pi6
+   7  GTR20+FC10pi7  1.0000   0.0538   GTR20+FC10pi7
+   8  GTR20+FC10pi8  1.0000   0.0692   GTR20+FC10pi8
+   9  GTR20+FC10pi9  1.0000   0.1320   GTR20+FC10pi9
+  10  GTR20+FC10pi10  1.0000   0.1024   GTR20+FC10pi10
+
+Linked substitution parameters (lower-diagonal):
+
+ 1.220546
+ 2.645481 2.320846
+ 1.130993 0.642286 9.058636
+ 9.562307 7.968717 10.708535 3.334641
+ 4.001004 4.702454 5.585879 0.907008 2.739900
+ 2.894603 0.675454 1.743474 15.042107 1.046589 8.538120
+ 8.813597 2.483845 4.770012 2.692715 7.182210 2.334643 2.645076
+ 1.711803 6.814773 12.585866 2.909405 4.959501 14.509788 1.665064 1.747607
+ 3.393223 2.696519 6.658684 2.871678 8.218889 2.297758 3.673907 2.457455 3.411710
+ 4.775469 3.235812 2.384832 1.504300 11.193939 8.346723 3.289183 2.827554 3.461592 26.060889
+ 2.346603 16.630204 7.404434 1.117951 1.551818 7.058176 3.085333 3.106168 2.750671 5.386339 3.803076
+ 7.733439 3.305514 4.721808 1.657642 8.478937 10.887684 3.642836 4.481375 1.489542 29.677805 39.787983 5.937657
+ 4.618288 1.837445 3.033906 2.024958 24.173987 1.052931 1.638896 5.918828 4.693601 13.934743 24.179935 1.295257 13.162905
+ 6.339355 2.336299 1.480836 1.811037 2.009387 4.248929 2.034243 2.415633 4.271566 5.087226 7.682541 4.084188 3.559906 6.946550
+ 16.621113 2.805155 15.278923 3.902405 25.970952 4.477845 2.711610 9.387324 4.382373 4.878907 5.816806 3.964998 5.646370 8.761481 8.366499
+ 8.098782 1.930343 10.108594 2.409126 11.176488 4.268238 2.863465 1.824374 2.569311 15.312990 4.764501 5.001274 14.458837 4.896533 3.840790 23.026513
+ 1.577578 4.339840 0.348568 0.846367 12.102634 1.116079 1.029749 3.623169 1.427899 2.760149 8.943142 2.161790 8.400212 13.848949 3.437451 3.475424 1.500892
+ 1.896053 2.848975 4.738030 2.755722 17.465874 1.829269 1.987911 1.696592 17.951174 7.705184 4.617743 2.117103 4.002413 49.062479 2.526850 4.232918 2.643559 9.726472
+ 15.983968 1.388451 3.949873 3.093090 19.968483 3.396198 5.407902 3.308577 2.095954 63.408272 15.063880 3.762324 14.109371 10.505116 7.012972 3.417406 16.017450 2.656953 1.000000
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.5679
+
+ Category  Relative_rate  Proportion
+  1         0.0466         0.2500
+  2         0.2939         0.2500
+  3         0.8640         0.2500
+  4         2.7955         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -2215953.8203 (s.e. 5939.2668)
+Unconstrained log-likelihood (without tree): -776568.6023
+Number of free parameters (#branches + #model parameters): 267
+Akaike information criterion (AIC) score: 4432441.6406
+Corrected Akaike information criterion (AICc) score: 4432443.6671
+Bayesian information criterion (BIC) score: 4434889.7253
+
+Total tree length (sum of branch lengths): 15.6576
+Sum of internal branch lengths: 4.9045 (31.3237% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Capitella_telata' is drawn at root
+
++--------------------Capitella_telata
+|
+|                     +--------------------Daphnia_magna
+|                  +--|
+|                  |  +---------------------Paeneus_vanammei
+|               +--|
+|               |  |       +---------------Frakliniella_occidentalis
+|               |  |  +----|
+|               |  |  |    |  +-------------------Manduca_sexta
+|               |  |  |    +--|
+|               |  |  |       +-------------Neodiprion_lecontei
+|               |  +--|
+|               |     +-------------Pleomothra
+|            +--|
+|            |  +-------------------Strigamia_maritima
+|         +--|
+|         |  |             +--Limulus_polyphemus
+|         |  |   +---------|
+|         |  |   |         +--Tachypleu
+|         |  +---|
+|         |      |          +-------Parasteatoda_tepidariorum
+|         |      +----------|
+|         |                 +----Stegodyphus_mimosarum
+|      +--|
+|      |  |          +-------Epiperipatus
+|      |  +----------|
+|      |             |     +--Ooperipatellus
+|      |             |  +--|
+|      |             |  |  |  +--Peripatoides
+|      |             |  |  +--|
+|      |             |  |     +--Peripatoides_novaezelandiae
+|      |             +--|
+|      |                |  +--Opisthopatus_kwazululandi
+|      |                +--|
+|      |                   +--Peripatopsis_capensis
+|   +--|
+|   |  |                                +---------------------Echiniscoides_sigismundi
+|   |  |              +-----------------|
+|   |  |              |                 |              +--Echiniscus_bisetosus
+|   |  |              |                 +--------------|
+|   |  |              |                                +--Echiniscus_testudo
+|   |  |     +--------|
+|   |  |     |        |                  +---------Hypsibius_dujardini
+|   |  |     |        |               +--|
+|   |  |     |        |               |  +----------Ramazzottius_varieornatus
+|   |  |     |        |          +----|
+|   |  |     |        |          |    |  +----------Mesobiotus_philippinicus
+|   |  |     |        |          |    +--|
+|   |  |     |        |          |       +-------Richtersius_coronifer
+|   |  |     |        +----------|
+|   |  |     |                   +----------------Milnesium_tardigradum
+|   |  |  +--|
+|   |  |  |  |                  +------------------Enoplus_brevis
+|   |  |  |  |             +----|
+|   |  |  |  |             |    +----------------------Pontonema_vulgare
+|   |  |  |  |          +--|
+|   |  |  |  |          |  +-------------------Tobrilus
+|   |  |  |  +----------|
+|   |  |  |             |         +-----------Prionchulus_punctatus
+|   |  |  |             |    +----|
+|   |  |  |             |    |    +-------------------Romanomermis_culicivorax
+|   |  |  |             +----|
+|   |  |  |                  +-----------------Xiphinema_index
+|   |  +--|
+|   |     |                                     +--Gordius
+|   |     +-------------------------------------|
+|   |                                           +--Paragordius_varius
++---|
+|   |       +----------------------Echinoderes_kohni
+|   |  +----|
+|   |  |    +-------------Pycnophyes
+|   +--|
+|      |         +--------Halicryptus_spinolosus
+|      |  +------|
+|      |  |      +---------Priapulus_caudatus
+|      +--|
+|         +---------------------Meiopriapulus
+|
++-----------------Pamacea_canaliculata
+
+Tree in newick format:
+
+(Capitella_telata:0.4653123151,(((((((Daphnia_magna:0.4626320106,Paeneus_vanammei:0.4929649440):0.0280037757,((Frakliniella_occidentalis:0.3583292658,(Manduca_sexta:0.4416190402,Neodiprion_lecontei:0.3125728390):0.0427764095):0.1296167447,Pleomothra:0.3253030333):0.0223430271):0.0775125606,Strigamia_maritima:0.4464109863):0.0176305841,((Limulus_polyphemus:0.0368731721,Tachypleu:0.0352391581):0.2314316202,(Parasteatoda_tepidariorum:0.1824918327,Stegodyphus_mimosarum:0.1310784903):0.2562243308):0.1024754690):0.0470383391,(Epiperipatus:0.1834917005,((Ooperipatellus:0.0720860148,(Peripatoides:0.0251436343,Peripatoides_novaezelandiae:0.0168527308):0.0259242610):0.0333580409,(Opisthopatus_kwazululandi:0.0677667181,Peripatopsis_capensis:0.0596377335):0.0362649492):0.0626498543):0.2511236375):0.0273552983,((((Echiniscoides_sigismundi:0.4919949007,(Echiniscus_bisetosus:0.0526420127,Echiniscus_testudo:0.0671978513):0.3345448937):0.4001883723,(((Hypsibius_dujardini:0.2248104812,Ramazzottius_varieornatus:0.2526439013):0.0634160975,(Mesobiotus_philippinicus:0.2512821643,Richtersius_coronifer:0.1925444456):0.0639381998):0.1120441794,Milnesium_tardigradum:0.3770476019):0.2494856764):0.2135218953,(((Enoplus_brevis:0.4265929233,Pontonema_vulgare:0.5091128901):0.1157263920,Tobrilus:0.4602107863):0.0373135518,((Prionchulus_punctatus:0.2761256526,Romanomermis_culicivorax:0.4447158490):0.1212015224,Xiphinema_index:0.3983132721):0.1200805145):0.2551404857):0.0364122207,(Gordius:0.0173501378,Paragordius_varius:0.0263046655):0.8429143660):0.0344112055):0.0323158902,((Echinoderes_kohni:0.5044418068,Pycnophyes:0.3201204401):0.1196051488,((Halicryptus_spinolosus:0.2067606748,Priapulus_caudatus:0.2409463989):0.1598218782,Meiopriapulus:0.4969142674):0.0571445820):0.0367244332):0.1068529796,Pamacea_canaliculata:0.3991926336);
+
+ALISIM COMMAND
+--------------
+Currently, we only support exporting AliSim commands automatically from the analysis for common models of DNA, Protein, Binary, and Morphological data. To simulate data from other models (mixture, lie-markov, etc), please refer to the User Manual of AliSim. Thanks!
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed Apr 16 18:04:46 2025
+Total CPU time used: 682699 seconds (189h:38m:19s)
+Total wall-clock time used: 23612 seconds (6h:33m:31s)
+

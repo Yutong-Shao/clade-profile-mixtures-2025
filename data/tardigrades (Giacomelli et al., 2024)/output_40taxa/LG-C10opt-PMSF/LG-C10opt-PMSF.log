@@ -1,0 +1,106 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: /data/yutong/iqtree2 -s tardigrada/matrix_40sp.fasta -ft tardigrada/1_infer/LG-C10opt.treefile -m LGC10OPT -mdef tardigrada/1_infer/LGC10OPT.nex -safe -pre tardigrada/1_infer/LG-C10opt-PMSF -n 0 -nt 40
+Seed:    990006 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Apr 20 14:17:59 2025
+Kernel:  Safe AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading alignment file tardigrada/matrix_40sp.fasta ... Fasta format detected
+Reading fasta file: done in 0.0299849 secs using 99.95% CPU
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 70888 columns, 63149 distinct patterns
+48785 parsimony-informative, 7670 singleton sites, 14433 constant sites
+                             Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0104278 secs using 3106% CPU
+   1  Capitella_telata               5.00%    failed      0.00%
+   2  Daphnia_magna                  9.79%    failed      0.06%
+   3  Echiniscoides_sigismundi      49.39%    failed      0.00%
+   4  Echiniscus_bisetosus          82.96%    failed      0.00%
+   5  Echiniscus_testudo            50.24%    failed      0.00%
+   6  Echinoderes_kohni             88.58%    failed      0.00%
+   7  Enoplus_brevis                22.43%    failed      0.00%
+   8  Epiperipatus                  56.34%    failed      0.00%
+   9  Frakliniella_occidentalis      7.36%    failed      0.08%
+  10  Gordius                       70.84%    failed      0.00%
+  11  Halicryptus_spinolosus        13.41%    failed      0.00%
+  12  Hypsibius_dujardini            3.51%    failed      0.00%
+  13  Limulus_polyphemus            16.13%    failed      0.00%
+  14  Manduca_sexta                  9.59%    failed      0.00%
+  15  Meiopriapulus                 26.75%    failed      0.00%
+  16  Mesobiotus_philippinicus      19.72%    failed      0.00%
+  17  Milnesium_tardigradum         59.56%    failed      0.00%
+  18  Neodiprion_lecontei            4.62%    failed      0.01%
+  19  Ooperipatellus                72.91%    failed      0.00%
+  20  Opisthopatus_kwazululandi     26.52%    failed      0.00%
+  21  Paeneus_vanammei              12.28%    failed      0.00%
+  22  Pamacea_canaliculata           5.42%    failed      0.02%
+  23  Paragordius_varius            71.38%    failed      0.00%
+  24  Parasteatoda_tepidariorum      3.65%    failed      0.00%
+  25  Peripatoides                  73.44%    failed      0.00%
+  26  Peripatoides_novaezelandiae   16.34%    failed      0.00%
+  27  Peripatopsis_capensis         37.07%    failed      0.00%
+  28  Pleomothra                    21.78%    failed      0.00%
+  29  Pontonema_vulgare             24.88%    failed      0.00%
+  30  Priapulus_caudatus            13.43%    failed      0.00%
+  31  Prionchulus_punctatus         13.90%    failed      0.00%
+  32  Pycnophyes                    76.53%    failed      0.00%
+  33  Ramazzottius_varieornatus      3.20%    failed      0.00%
+  34  Richtersius_coronifer          6.00%    failed      0.00%
+  35  Romanomermis_culicivorax      36.04%    failed      0.00%
+  36  Stegodyphus_mimosarum         15.16%    failed      0.00%
+  37  Strigamia_maritima            13.05%    failed      0.00%
+  38  Tachypleu                      8.55%    failed      0.00%
+  39  Tobrilus                      23.43%    failed      0.00%
+  40  Xiphinema_index               27.20%    failed      0.00%
+WARNING: 10 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                         29.96%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+
+===> COMPUTING SITE FREQUENCY MODEL BASED ON TREE FILE tardigrada/1_infer/LG-C10opt.treefile
+Reading model definition file tardigrada/1_infer/LGC10OPT.nex ... 87 models and 224 frequency vectors loaded
+Model LGC10OPT is alias for LG+G{0.4990515982}+FMIX{C10_pi1:1:0.0556615049,C10_pi2:1:0.2991476767,C10_pi3:1:0.0402761973,C10_pi4:1:0.0541064887,C10_pi5:1:0.0800601490,C10_pi6:1:0.1270280516,C10_pi7:1:0.1038808192,C10_pi8:1:0.0414844473,C10_pi9:1:0.1126775034,C10_pi10:1:0.0856771618}
+NOTE: 15615 MB RAM is required!
+1. Initial log-likelihood: -2229958.956
+Optimal log-likelihood: -2229958.897
+Mixture weights: 0.056 0.299 0.040 0.054 0.080 0.127 0.104 0.041 0.113 0.086
+Gamma shape alpha: 0.499
+Parameters optimization took 1 rounds (45.825 sec)
+Computing posterior mean site frequencies....
+Site state frequency vectors printed to tardigrada/1_infer/LG-C10opt-PMSF.sitefreq
+
+===> CONTINUE ANALYSIS USING THE INFERRED SITE FREQUENCY MODEL
+Reading model definition file tardigrada/1_infer/LGC10OPT.nex ... 87 models and 224 frequency vectors loaded
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 1.096 seconds
+Model LGC10OPT is alias for LG+G{0.4990515982}+FMIX{C10_pi1:1:0.0556615049,C10_pi2:1:0.2991476767,C10_pi3:1:0.0402761973,C10_pi4:1:0.0541064887,C10_pi5:1:0.0800601490,C10_pi6:1:0.1270280516,C10_pi7:1:0.1038808192,C10_pi8:1:0.0414844473,C10_pi9:1:0.1126775034,C10_pi10:1:0.0856771618}
+
+NOTE: 2149 MB RAM (2 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2173624.736
+2. Current log-likelihood: -2104056.702
+3. Current log-likelihood: -2101799.027
+4. Current log-likelihood: -2101773.105
+5. Current log-likelihood: -2101771.450
+6. Current log-likelihood: -2101771.272
+7. Current log-likelihood: -2101771.255
+Optimal log-likelihood: -2101771.251
+Gamma shape alpha: 0.499
+Parameters optimization took 7 rounds (42.900 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -2101771.251
+Total tree length: 20.556
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 1578.928 sec (0h:26m:18s)
+Total wall-clock time used: 59.025 sec (0h:0m:59s)
+
+Analysis results written to: 
+  IQ-TREE report:                tardigrada/1_infer/LG-C10opt-PMSF.iqtree
+  Maximum-likelihood tree:       tardigrada/1_infer/LG-C10opt-PMSF.treefile
+  Screen log file:               tardigrada/1_infer/LG-C10opt-PMSF.log
+
+Date and Time: Sun Apr 20 14:19:48 2025

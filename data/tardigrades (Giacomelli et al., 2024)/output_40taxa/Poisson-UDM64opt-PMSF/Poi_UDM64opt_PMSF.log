@@ -1,0 +1,160 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: /data/yutong/iqtree2 -s tardigrada/matrix_40sp.fasta -fs tardigrada/1_infer/Poi-UDM64opt-PMSF.sitefreq -m POIUDM64OPT -mdef tardigrada/1_infer/POIUDM64OPT.nex -safe -pre tardigrada/1_infer/Poi_UDM64opt_PMSF -wsr -bb 1000 -nt 40
+Seed:    681393 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Apr 20 17:03:43 2025
+Kernel:  Safe AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading alignment file tardigrada/matrix_40sp.fasta ... Fasta format detected
+Reading fasta file: done in 0.0642514 secs using 93% CPU
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 70888 columns, 63149 distinct patterns
+48785 parsimony-informative, 7670 singleton sites, 14433 constant sites
+                             Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00945211 secs using 4976% CPU
+   1  Capitella_telata               5.00%    failed      0.00%
+   2  Daphnia_magna                  9.79%    failed      0.06%
+   3  Echiniscoides_sigismundi      49.39%    failed      0.00%
+   4  Echiniscus_bisetosus          82.96%    failed      0.00%
+   5  Echiniscus_testudo            50.24%    failed      0.00%
+   6  Echinoderes_kohni             88.58%    failed      0.00%
+   7  Enoplus_brevis                22.43%    failed      0.00%
+   8  Epiperipatus                  56.34%    failed      0.00%
+   9  Frakliniella_occidentalis      7.36%    failed      0.08%
+  10  Gordius                       70.84%    failed      0.00%
+  11  Halicryptus_spinolosus        13.41%    failed      0.00%
+  12  Hypsibius_dujardini            3.51%    failed      0.00%
+  13  Limulus_polyphemus            16.13%    failed      0.00%
+  14  Manduca_sexta                  9.59%    failed      0.00%
+  15  Meiopriapulus                 26.75%    failed      0.00%
+  16  Mesobiotus_philippinicus      19.72%    failed      0.00%
+  17  Milnesium_tardigradum         59.56%    failed      0.00%
+  18  Neodiprion_lecontei            4.62%    failed      0.01%
+  19  Ooperipatellus                72.91%    failed      0.00%
+  20  Opisthopatus_kwazululandi     26.52%    failed      0.00%
+  21  Paeneus_vanammei              12.28%    failed      0.00%
+  22  Pamacea_canaliculata           5.42%    failed      0.02%
+  23  Paragordius_varius            71.38%    failed      0.00%
+  24  Parasteatoda_tepidariorum      3.65%    failed      0.00%
+  25  Peripatoides                  73.44%    failed      0.00%
+  26  Peripatoides_novaezelandiae   16.34%    failed      0.00%
+  27  Peripatopsis_capensis         37.07%    failed      0.00%
+  28  Pleomothra                    21.78%    failed      0.00%
+  29  Pontonema_vulgare             24.88%    failed      0.00%
+  30  Priapulus_caudatus            13.43%    failed      0.00%
+  31  Prionchulus_punctatus         13.90%    failed      0.00%
+  32  Pycnophyes                    76.53%    failed      0.00%
+  33  Ramazzottius_varieornatus      3.20%    failed      0.00%
+  34  Richtersius_coronifer          6.00%    failed      0.00%
+  35  Romanomermis_culicivorax      36.04%    failed      0.00%
+  36  Stegodyphus_mimosarum         15.16%    failed      0.00%
+  37  Strigamia_maritima            13.05%    failed      0.00%
+  38  Tachypleu                      8.55%    failed      0.00%
+  39  Tobrilus                      23.43%    failed      0.00%
+  40  Xiphinema_index               27.20%    failed      0.00%
+WARNING: 10 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                         29.96%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Reading site-specific state frequency file tardigrada/1_infer/Poi-UDM64opt-PMSF.sitefreq ...
+63149 distinct per-site state frequency vectors detected
+Reading model definition file tardigrada/1_infer/POIUDM64OPT.nex ... 87 models and 278 frequency vectors loaded
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.858 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 681393)...
+Model POIUDM64OPT is alias for Poisson+G4{0.6046651589}+FMIX{UDM0064CLR_C0000:1:0.0023659873,UDM0064CLR_C0001:1:0.0236543972,UDM0064CLR_C0002:1:0.0109762806,UDM0064CLR_C0003:1:0.0585927925,UDM0064CLR_C0004:1:0.0039469672,UDM0064CLR_C0005:1:0.0101110034,UDM0064CLR_C0006:1:0.0164330427,UDM0064CLR_C0007:1:0.0228141067,UDM0064CLR_C0008:1:0.0070431125,UDM0064CLR_C0009:1:0.0046616801,UDM0064CLR_C0010:1:0.0229756050,UDM0064CLR_C0011:1:0.0374744341,UDM0064CLR_C0012:1:0.0369521347,UDM0064CLR_C0013:1:0.0174895067,UDM0064CLR_C0014:1:0.0462824887,UDM0064CLR_C0015:1:0.0242882346,UDM0064CLR_C0016:1:0.0036093818,UDM0064CLR_C0017:1:0.0227442943,UDM0064CLR_C0018:1:0.0202110308,UDM0064CLR_C0019:1:0.0147092012,UDM0064CLR_C0020:1:0.0116293275,UDM0064CLR_C0021:1:0.0208393748,UDM0064CLR_C0022:1:0.0166378315,UDM0064CLR_C0023:1:0.0219219112,UDM0064CLR_C0024:1:0.0210081460,UDM0064CLR_C0025:1:0.0163211112,UDM0064CLR_C0026:1:0.0180389622,UDM0064CLR_C0027:1:0.0149631653,UDM0064CLR_C0028:1:0.0110317272,UDM0064CLR_C0029:1:0.0259098541,UDM0064CLR_C0030:1:0.0000007408,UDM0064CLR_C0031:1:0.0085069893,UDM0064CLR_C0032:1:0.0174818404,UDM0064CLR_C0033:1:0.0097441311,UDM0064CLR_C0034:1:0.0128831846,UDM0064CLR_C0035:1:0.0165276110,UDM0064CLR_C0036:1:0.0202611403,UDM0064CLR_C0037:1:0.0214274030,UDM0064CLR_C0038:1:0.0113349117,UDM0064CLR_C0039:1:0.0200947702,UDM0064CLR_C0040:1:0.0085739045,UDM0064CLR_C0041:1:0.0236957475,UDM0064CLR_C0042:1:0.0205185994,UDM0064CLR_C0043:1:0.0196352799,UDM0064CLR_C0044:1:0.0017839955,UDM0064CLR_C0045:1:0.0190285670,UDM0064CLR_C0046:1:0.0282694917,UDM0064CLR_C0047:1:0.0000007408,UDM0064CLR_C0048:1:0.0146734197,UDM0064CLR_C0049:1:0.0035368076,UDM0064CLR_C0050:1:0.0124012252,UDM0064CLR_C0051:1:0.0243259346,UDM0064CLR_C0052:1:0.0119904793,UDM0064CLR_C0053:1:0.0106595549,UDM0064CLR_C0054:1:0.0064113386,UDM0064CLR_C0055:1:0.0189750459,UDM0064CLR_C0056:1:0.0081211884,UDM0064CLR_C0057:1:0.0097335889,UDM0064CLR_C0058:1:0.0009886302,UDM0064CLR_C0059:1:0.0109526819,UDM0064CLR_C0060:1:0.0076633706,UDM0064CLR_C0061:1:0.0037327914,UDM0064CLR_C0062:1:0.0096870314,UDM0064CLR_C0063:1:0.0007407697}
+
+NOTE: 2390 MB RAM (2 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -2042280.328
+2. Current log-likelihood: -1998929.710
+3. Current log-likelihood: -1998130.948
+4. Current log-likelihood: -1998119.336
+5. Current log-likelihood: -1998118.007
+6. Current log-likelihood: -1998117.853
+Optimal log-likelihood: -1998117.811
+Gamma shape alpha: 0.605
+Parameters optimization took 6 rounds (27.832 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 8.74371 secs using 1640% CPU
+Computing ML distances took 8.756911 sec (of wall-clock time) 143.676684 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0271496 secs using 2167% CPU
+Computing RapidNJ tree took 2.549494 sec (of wall-clock time) 47.856555 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -2002132.830
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 86.527 second
+Computing log-likelihood of 98 initial trees ... 287.436 seconds
+Current best score: -1998117.811
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -1997910.194
+Iteration 10 / LogL: -1997932.235 / Time: 0h:14m:45s
+Iteration 20 / LogL: -1997931.235 / Time: 0h:21m:54s
+Finish initializing candidate tree set (3)
+Current best tree score: -1997910.194 / CPU time: 1239.989
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -1997918.558 / Time: 0h:30m:14s (1h:14m:0s left)
+Iteration 40 / LogL: -1997924.892 / Time: 0h:38m:6s (0h:59m:35s left)
+Iteration 50 / LogL: -1997931.943 / Time: 0h:46m:51s (0h:48m:45s left)
+Log-likelihood cutoff on original alignment: -1997956.011
+Iteration 60 / LogL: -1997934.526 / Time: 0h:55m:7s (0h:38m:18s left)
+Iteration 70 / LogL: -1997938.996 / Time: 1h:3m:0s (0h:28m:17s left)
+Iteration 80 / LogL: -1997932.802 / Time: 1h:10m:34s (0h:18m:45s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -1997909.885
+Iteration 90 / LogL: -1997911.139 / Time: 1h:18m:55s (0h:9m:45s left)
+Iteration 100 / LogL: -1997930.406 / Time: 1h:26m:20s (0h:0m:52s left)
+Log-likelihood cutoff on original alignment: -1997949.610
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 1h:27m:38s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -1997909.885
+Optimal log-likelihood: -1997909.885
+Gamma shape alpha: 0.605
+Parameters optimization took 1 rounds (3.852 sec)
+BEST SCORE FOUND : -1997909.885
+Empirical proportions for each category: 0.288 0.176 0.265 0.271
+Site rates printed to tardigrada/1_infer/Poi_UDM64opt_PMSF.rate
+Creating bootstrap support values...
+Split supports printed to NEXUS file tardigrada/1_infer/Poi_UDM64opt_PMSF.splits.nex
+Total tree length: 14.352
+
+Total number of iterations: 102
+CPU time used for tree search: 189844.552 sec (52h:44m:4s)
+Wall-clock time used for tree search: 5183.252 sec (1h:26m:23s)
+Total CPU time used: 192076.073 sec (53h:21m:16s)
+Total wall-clock time used: 5263.044 sec (1h:27m:43s)
+
+Computing bootstrap consensus tree...
+Reading input file tardigrada/1_infer/Poi_UDM64opt_PMSF.splits.nex...
+40 taxa and 87 splits.
+Consensus tree written to tardigrada/1_infer/Poi_UDM64opt_PMSF.contree
+Reading input trees file tardigrada/1_infer/Poi_UDM64opt_PMSF.contree
+Log-likelihood of consensus tree: -1997912.125
+
+Analysis results written to: 
+  IQ-TREE report:                tardigrada/1_infer/Poi_UDM64opt_PMSF.iqtree
+  Maximum-likelihood tree:       tardigrada/1_infer/Poi_UDM64opt_PMSF.treefile
+  Likelihood distances:          tardigrada/1_infer/Poi_UDM64opt_PMSF.mldist
+  Site-specific rates:           tardigrada/1_infer/Poi_UDM64opt_PMSF.rate
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          tardigrada/1_infer/Poi_UDM64opt_PMSF.splits.nex
+  Consensus tree:                tardigrada/1_infer/Poi_UDM64opt_PMSF.contree
+  Screen log file:               tardigrada/1_infer/Poi_UDM64opt_PMSF.log
+
+Date and Time: Sun Apr 20 18:32:01 2025

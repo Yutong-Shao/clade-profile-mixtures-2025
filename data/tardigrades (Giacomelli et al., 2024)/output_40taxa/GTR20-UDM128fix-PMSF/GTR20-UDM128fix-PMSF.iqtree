@@ -1,0 +1,172 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Input file name: tardigrada/matrix_40sp.fasta
+Type of analysis: tree reconstruction
+Random seed number: 112507
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+Since you used site-specific frequency model please also cite: 
+
+Huai-Chun Wang, Edward Susko, Bui Quang Minh, and Andrew J. Roger (2018)
+Modeling site heterogeneity with posterior mean site frequency profiles
+accelerates accurate phylogenomic estimation. Syst. Biol., 67:216–235.
+https://doi.org/10.1093/sysbio/syx068
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 40 sequences with 70888 amino-acid sites
+Number of constant sites: 14433 (= 20.3603% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 14433 (= 20.3603% of all sites)
+Number of parsimony informative sites: 48785
+Number of distinct site patterns: 63149
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTRPMIX+SSF+F+G4
+
+State frequencies: (site specific frequencies)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.5554
+
+ Category  Relative_rate  Proportion
+  1         0.0441         0.2500
+  2         0.2866         0.2500
+  3         0.8567         0.2500
+  4         2.8126         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -1973576.7527 (s.e. 5580.3144)
+Unconstrained log-likelihood (without tree): -776568.6023
+Number of free parameters (#branches + #model parameters): 96
+Akaike information criterion (AIC) score: 3947345.5053
+Corrected Akaike information criterion (AICc) score: 3947345.7684
+Bayesian information criterion (BIC) score: 3948225.7155
+
+Total tree length (sum of branch lengths): 16.0342
+Sum of internal branch lengths: 5.4396 (33.9249% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Capitella_telata' is drawn at root
+
++-----------------Capitella_telata
+|
+|                        +-----------------Daphnia_magna
+|                     +--|
+|                     |  +-------------------Paeneus_vanammei
+|                  +--|
+|                  |  |     +------------Frakliniella_occidentalis
+|                  |  +-----|
+|                  |        |  +----------------Manduca_sexta
+|                  |        +--|
+|                  |           +----------Neodiprion_lecontei
+|               +--|
+|               |  +----------Pleomothra
+|            +--|
+|            |  +----------------Strigamia_maritima
+|         +--|
+|         |  |           +--Limulus_polyphemus
+|         |  |   +-------|
+|         |  |   |       +--Tachypleu
+|         |  +---|
+|         |      |         +------Parasteatoda_tepidariorum
+|         |      +---------|
+|         |                +---Stegodyphus_mimosarum
+|      +--|
+|      |  |        +------Epiperipatus
+|      |  +--------|
+|      |           |     +--Ooperipatellus
+|      |           |  +--|
+|      |           |  |  |  +--Peripatoides
+|      |           |  |  +--|
+|      |           |  |     +--Peripatoides_novaezelandiae
+|      |           +--|
+|      |              |  +--Opisthopatus_kwazululandi
+|      |              +--|
+|      |                 +--Peripatopsis_capensis
+|   +--|
+|   |  |      +-------------------Echinoderes_kohni
+|   |  |  +---|
+|   |  |  |   +----------Pycnophyes
+|   |  +--|
+|   |     |        +------Halicryptus_spinolosus
+|   |     |  +-----|
+|   |     |  |     +--------Priapulus_caudatus
+|   |     +--|
+|   |        +-------------------Meiopriapulus
++---|
+|   |                                     +------------------Echiniscoides_sigismundi
+|   |                 +-------------------|
+|   |                 |                   |            +--Echiniscus_bisetosus
+|   |                 |                   +------------|
+|   |                 |                                +--Echiniscus_testudo
+|   |     +-----------|
+|   |     |           |                  +-------Hypsibius_dujardini
+|   |     |           |               +--|
+|   |     |           |               |  +--------Ramazzottius_varieornatus
+|   |     |           |           +---|
+|   |     |           |           |   |  +--------Mesobiotus_philippinicus
+|   |     |           |           |   +--|
+|   |     |           |           |      +------Richtersius_coronifer
+|   |     |           +-----------|
+|   |     |                       +-------------Milnesium_tardigradum
+|   |  +--|
+|   |  |  |                                     +--Gordius
+|   |  |  +-------------------------------------|
+|   |  |                                        +--Paragordius_varius
+|   +--|
+|      |                     +----------------Enoplus_brevis
+|      |                +----|
+|      |                |    +--------------------Pontonema_vulgare
+|      |             +--|
+|      |             |  +-----------------Tobrilus
+|      +-------------|
+|                    |         +---------Prionchulus_punctatus
+|                    |    +----|
+|                    |    |    +-----------------Romanomermis_culicivorax
+|                    +----|
+|                         +--------------Xiphinema_index
+|
++--------------Pamacea_canaliculata
+
+Tree in newick format:
+
+(Capitella_telata:0.4668810860,((((((((Daphnia_magna:0.4705333732,Paeneus_vanammei:0.5048005136):0.0168787225,(Frakliniella_occidentalis:0.3474871618,(Manduca_sexta:0.4465759244,Neodiprion_lecontei:0.2962968814):0.0397169740):0.1559045686):0.0094636072,Pleomothra:0.2999281735):0.0954042446,Strigamia_maritima:0.4322792259):0.0153878040,((Limulus_polyphemus:0.0345441801,Tachypleu:0.0329246833):0.2074429661,(Parasteatoda_tepidariorum:0.1775154212,Stegodyphus_mimosarum:0.1195829177):0.2690406028):0.1006000999):0.0578630001,(Epiperipatus:0.1788376420,((Ooperipatellus:0.0682332801,(Peripatoides:0.0236015307,Peripatoides_novaezelandiae:0.0159041570):0.0239648690):0.0317338460,(Opisthopatus_kwazululandi:0.0641427262,Peripatopsis_capensis:0.0558326799):0.0333227039):0.0527300719):0.2370460825):0.0316251494,((Echinoderes_kohni:0.5198833456,Pycnophyes:0.2968238637):0.1252576789,((Halicryptus_spinolosus:0.1880537163,Priapulus_caudatus:0.2311266491):0.1529430531,Meiopriapulus:0.5058037242):0.0654170448):0.0469251455):0.0078719912,((((Echiniscoides_sigismundi:0.4958309304,(Echiniscus_bisetosus:0.0499710693,Echiniscus_testudo:0.0624058882):0.3482689850):0.5218602414,(((Hypsibius_dujardini:0.2108076866,Ramazzottius_varieornatus:0.2426518096):0.0590685048,(Mesobiotus_philippinicus:0.2462551176,Richtersius_coronifer:0.1782051148):0.0594706472):0.1172586589,Milnesium_tardigradum:0.3659903531):0.3074958643):0.3048500394,(Gordius:0.0144689422,Paragordius_varius:0.0267213126):0.9555427527):0.0111423888,(((Enoplus_brevis:0.4331146973,Pontonema_vulgare:0.5360982963):0.1352070124,Tobrilus:0.4519142587):0.0349370593,((Prionchulus_punctatus:0.2527934145,Romanomermis_culicivorax:0.4617402517):0.1302262443,Xiphinema_index:0.3955266461):0.1322873868):0.3737427268):0.0506114284):0.1210729111,Pamacea_canaliculata:0.3925058285);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t tardigrada/1_infer/GTR20-UDM128fix-PMSF.treefile -m "GTRPMIX+SSF{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}+F{0.0671842,0.0562926,0.0411466,0.0571274,0.0178611,0.0403571,0.07192,0.056343,0.0242398,0.0584632,0.0961556,0.0763241,0.0257463,0.0439913,0.0433302,0.0590488,0.0493787,0.0125105,0.0345257,0.0680537}+G4{0.5554}" --length 70888
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s tardigrada/matrix_40sp.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s tardigrada/matrix_40sp.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed Apr 16 12:39:59 2025
+Total CPU time used: 1457.29 seconds (0h:24m:17s)
+Total wall-clock time used: 63.2782 seconds (0h:1m:3s)
+

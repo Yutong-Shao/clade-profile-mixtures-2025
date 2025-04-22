@@ -1,0 +1,276 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Input file name: tardigrada/matrix_40sp.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 681393
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+Since you used site-specific frequency model please also cite: 
+
+Huai-Chun Wang, Edward Susko, Bui Quang Minh, and Andrew J. Roger (2018)
+Modeling site heterogeneity with posterior mean site frequency profiles
+accelerates accurate phylogenomic estimation. Syst. Biol., 67:216–235.
+https://doi.org/10.1093/sysbio/syx068
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 40 sequences with 70888 amino-acid sites
+Number of constant sites: 14433 (= 20.3603% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 14433 (= 20.3603% of all sites)
+Number of parsimony informative sites: 48785
+Number of distinct site patterns: 63149
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Poisson+SSF+F+G4
+
+State frequencies: (site specific frequencies)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.6047
+
+ Category  Relative_rate  Proportion
+  1         0.0541         0.2500
+  2         0.3149         0.2500
+  3         0.8837         0.2500
+  4         2.7474         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1997909.8850 (s.e. 5668.3519)
+Unconstrained log-likelihood (without tree): -776568.6023
+Number of free parameters (#branches + #model parameters): 96
+Akaike information criterion (AIC) score: 3996011.7700
+Corrected Akaike information criterion (AICc) score: 3996012.0331
+Bayesian information criterion (BIC) score: 3996891.9802
+
+Total tree length (sum of branch lengths): 14.3521
+Sum of internal branch lengths: 4.8014 (33.4544% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Capitella_telata' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++------------------Capitella_telata
+|
+|                        +------------------Daphnia_magna
+|                     +--| (43)
+|                     |  |    +-------------Frakliniella_occidentalis
+|                     |  +----| (100)
+|                     |       |  +-----------------Manduca_sexta
+|                     |       +--| (100)
+|                     |          +-----------Neodiprion_lecontei
+|                  +--| (60)
+|                  |  +------------Pleomothra
+|               +--| (100)
+|               |  +--------------------Paeneus_vanammei
+|            +--| (95)
+|            |  +-----------------Strigamia_maritima
+|         +--| (100)
+|         |  |            +--Limulus_polyphemus
+|         |  |   +--------| (100)
+|         |  |   |        +--Tachypleu
+|         |  +---| (100)
+|         |      |         +------Parasteatoda_tepidariorum
+|         |      +---------| (100)
+|         |                +----Stegodyphus_mimosarum
+|      +--| (100)
+|      |  |         +------Epiperipatus
+|      |  +---------| (100)
+|      |            |     +--Ooperipatellus
+|      |            |  +--| (100)
+|      |            |  |  |  +--Peripatoides
+|      |            |  |  +--| (100)
+|      |            |  |     +--Peripatoides_novaezelandiae
+|      |            +--| (100)
+|      |               |  +--Opisthopatus_kwazululandi
+|      |               +--| (100)
+|      |                  +--Peripatopsis_capensis
+|   +--| (100)
+|   |  |                                    +------------------Echiniscoides_sigismundi
+|   |  |                 +------------------| (100)
+|   |  |                 |                  |            +--Echiniscus_bisetosus
+|   |  |                 |                  +------------| (100)
+|   |  |                 |                               +--Echiniscus_testudo
+|   |  |     +-----------| (100)
+|   |  |     |           |                  +-------Hypsibius_dujardini
+|   |  |     |           |               +--| (100)
+|   |  |     |           |               |  +---------Ramazzottius_varieornatus
+|   |  |     |           |           +---| (100)
+|   |  |     |           |           |   |  +---------Mesobiotus_philippinicus
+|   |  |     |           |           |   +--| (100)
+|   |  |     |           |           |      +------Richtersius_coronifer
+|   |  |     |           +-----------| (100)
+|   |  |     |                       +--------------Milnesium_tardigradum
+|   |  |  +--| (97)
+|   |  |  |  |                     +---------------Enoplus_brevis
+|   |  |  |  |                +----| (100)
+|   |  |  |  |                |    +-------------------Pontonema_vulgare
+|   |  |  |  |             +--| (99)
+|   |  |  |  |             |  +-----------------Tobrilus
+|   |  |  |  +-------------| (100)
+|   |  |  |                |        +---------Prionchulus_punctatus
+|   |  |  |                |    +---| (100)
+|   |  |  |                |    |   +-----------------Romanomermis_culicivorax
+|   |  |  |                +----| (100)
+|   |  |  |                     +--------------Xiphinema_index
+|   |  +--| (98)
+|   |     |                                      +--Gordius
+|   |     +--------------------------------------| (100)
+|   |                                            +--Paragordius_varius
++---| (100)
+|   |       +--------------------Echinoderes_kohni
+|   |  +----| (100)
+|   |  |    +-----------Pycnophyes
+|   +--| (100)
+|      |        +-------Halicryptus_spinolosus
+|      |  +-----| (100)
+|      |  |     +--------Priapulus_caudatus
+|      +--| (100)
+|         +-------------------Meiopriapulus
+|
++---------------Pamacea_canaliculata
+
+Tree in newick format:
+
+(Capitella_telata:0.4153173849,((((((((Daphnia_magna:0.4330217879,(Frakliniella_occidentalis:0.3120930630,(Manduca_sexta:0.3933105648,Neodiprion_lecontei:0.2709992819)100:0.0370663559)100:0.1291680470)43:0.0164823906,Pleomothra:0.2860329033)60:0.0182931689,Paeneus_vanammei:0.4622240621)100:0.0778910702,Strigamia_maritima:0.4066079872)95:0.0164114005,((Limulus_polyphemus:0.0354449817,Tachypleu:0.0326773065)100:0.2042192270,(Parasteatoda_tepidariorum:0.1680099181,Stegodyphus_mimosarum:0.1192174262)100:0.2392364027)100:0.0952876626)100:0.0524210924,(Epiperipatus:0.1714302694,((Ooperipatellus:0.0669448900,(Peripatoides:0.0240647810,Peripatoides_novaezelandiae:0.0162792161)100:0.0253974513)100:0.0315197746,(Opisthopatus_kwazululandi:0.0644348898,Peripatopsis_capensis:0.0567077560)100:0.0320229137)100:0.0545909033)100:0.2279059321)100:0.0289057113,((((Echiniscoides_sigismundi:0.4173903893,(Echiniscus_bisetosus:0.0481602139,Echiniscus_testudo:0.0593331115)100:0.2841652974)100:0.4162264704,(((Hypsibius_dujardini:0.1920505288,Ramazzottius_varieornatus:0.2190371074)100:0.0502993868,(Mesobiotus_philippinicus:0.2231009249,Richtersius_coronifer:0.1659956887)100:0.0531859731)100:0.0992502304,Milnesium_tardigradum:0.3268774361)100:0.2655999506)100:0.2711898574,(((Enoplus_brevis:0.3632405702,Pontonema_vulgare:0.4526952300)100:0.1134294388,Tobrilus:0.4019274767)99:0.0271757972,((Prionchulus_punctatus:0.2315612971,Romanomermis_culicivorax:0.3955445455)100:0.1079253456,Xiphinema_index:0.3434385519)100:0.1160487443)100:0.3114091943)97:0.0337548664,(Gordius:0.0141517276,Paragordius_varius:0.0264165297)100:0.8569430399)98:0.0397153159)100:0.0290165745,((Echinoderes_kohni:0.4596526115,Pycnophyes:0.2711680638)100:0.1138751610,((Halicryptus_spinolosus:0.1808241496,Priapulus_caudatus:0.2149287565)100:0.1369233944,Meiopriapulus:0.4513628310)100:0.0562071684)100:0.0339442352)100:0.0983110496,Pamacea_canaliculata:0.3570150295);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -1997912.124840
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++------------------Capitella_telata
+|
+|                     +-------------------Daphnia_magna
+|                  +--| (60)
+|                  |  |        +-------------Frakliniella_occidentalis
+|                  |  |  +-----| (100)
+|                  |  |  |     |  +-----------------Manduca_sexta
+|                  |  |  |     +--| (100)
+|                  |  |  |        +-----------Neodiprion_lecontei
+|                  |  +--| (56)
+|                  |     +-----------Pleomothra
+|               +--| (100)
+|               |  +--------------------Paeneus_vanammei
+|            +--| (95)
+|            |  +-----------------Strigamia_maritima
+|         +--| (100)
+|         |  |            +--Limulus_polyphemus
+|         |  |   +--------| (100)
+|         |  |   |        +--Tachypleu
+|         |  +---| (100)
+|         |      |         +------Parasteatoda_tepidariorum
+|         |      +---------| (100)
+|         |                +----Stegodyphus_mimosarum
+|      +--| (100)
+|      |  |         +------Epiperipatus
+|      |  +---------| (100)
+|      |            |     +--Ooperipatellus
+|      |            |  +--| (100)
+|      |            |  |  |  +--Peripatoides
+|      |            |  |  +--| (100)
+|      |            |  |     +--Peripatoides_novaezelandiae
+|      |            +--| (100)
+|      |               |  +--Opisthopatus_kwazululandi
+|      |               +--| (100)
+|      |                  +--Peripatopsis_capensis
+|   +--| (100)
+|   |  |                                    +------------------Echiniscoides_sigismundi
+|   |  |                 +------------------| (100)
+|   |  |                 |                  |            +--Echiniscus_bisetosus
+|   |  |                 |                  +------------| (100)
+|   |  |                 |                               +--Echiniscus_testudo
+|   |  |     +-----------| (100)
+|   |  |     |           |                  +-------Hypsibius_dujardini
+|   |  |     |           |               +--| (100)
+|   |  |     |           |               |  +---------Ramazzottius_varieornatus
+|   |  |     |           |           +---| (100)
+|   |  |     |           |           |   |  +---------Mesobiotus_philippinicus
+|   |  |     |           |           |   +--| (100)
+|   |  |     |           |           |      +------Richtersius_coronifer
+|   |  |     |           +-----------| (100)
+|   |  |     |                       +--------------Milnesium_tardigradum
+|   |  |  +--| (97)
+|   |  |  |  |                     +---------------Enoplus_brevis
+|   |  |  |  |                +----| (100)
+|   |  |  |  |                |    +-------------------Pontonema_vulgare
+|   |  |  |  |             +--| (99)
+|   |  |  |  |             |  +-----------------Tobrilus
+|   |  |  |  +-------------| (100)
+|   |  |  |                |        +---------Prionchulus_punctatus
+|   |  |  |                |    +---| (100)
+|   |  |  |                |    |   +-----------------Romanomermis_culicivorax
+|   |  |  |                +----| (100)
+|   |  |  |                     +--------------Xiphinema_index
+|   |  +--| (98)
+|   |     |                                      +--Gordius
+|   |     +--------------------------------------| (100)
+|   |                                            +--Paragordius_varius
++---| (100)
+|   |       +--------------------Echinoderes_kohni
+|   |  +----| (100)
+|   |  |    +-----------Pycnophyes
+|   +--| (100)
+|      |        +-------Halicryptus_spinolosus
+|      |  +-----| (100)
+|      |  |     +--------Priapulus_caudatus
+|      +--| (100)
+|         +-------------------Meiopriapulus
+|
++---------------Pamacea_canaliculata
+
+
+Consensus tree in newick format: 
+
+(Capitella_telata:0.4153295096,(((((((Daphnia_magna:0.4394009454,((Frakliniella_occidentalis:0.3121487501,(Manduca_sexta:0.3938734287,Neodiprion_lecontei:0.2709391350)100:0.0373205410)100:0.1332782978,Pleomothra:0.2824464207)56:0.0130948596)60:0.0173845637,Paeneus_vanammei:0.4618883379)100:0.0778592734,Strigamia_maritima:0.4066157855)95:0.0162880104,((Limulus_polyphemus:0.0354448146,Tachypleu:0.0326755239)100:0.2042438946,(Parasteatoda_tepidariorum:0.1679856204,Stegodyphus_mimosarum:0.1192420946)100:0.2392137457)100:0.0952309729)100:0.0524236671,(Epiperipatus:0.1714945494,((Ooperipatellus:0.0669434130,(Peripatoides:0.0240638875,Peripatoides_novaezelandiae:0.0162814908)100:0.0253991358)100:0.0315187895,(Opisthopatus_kwazululandi:0.0644353660,Peripatopsis_capensis:0.0567110171)100:0.0320204667)100:0.0545263808)100:0.2279999688)100:0.0287817291,((((Echiniscoides_sigismundi:0.4174250342,(Echiniscus_bisetosus:0.0481637117,Echiniscus_testudo:0.0593368819)100:0.2841692879)100:0.4162533092,(((Hypsibius_dujardini:0.1920589203,Ramazzottius_varieornatus:0.2190376095)100:0.0503070976,(Mesobiotus_philippinicus:0.2231092097,Richtersius_coronifer:0.1660009176)100:0.0531742231)100:0.0992612180,Milnesium_tardigradum:0.3268783654)100:0.2656544393)100:0.2711315362,(((Enoplus_brevis:0.3632981774,Pontonema_vulgare:0.4526867415)100:0.1134329661,Tobrilus:0.4019821796)99:0.0271422162,((Prionchulus_punctatus:0.2315435563,Romanomermis_culicivorax:0.3955567576)100:0.1079305796,Xiphinema_index:0.3434539946)100:0.1160852544)100:0.3113820418)97:0.0337727325,(Gordius:0.0141902236,Paragordius_varius:0.0263831968)100:0.8568366467)98:0.0396764225)100:0.0290443101,((Echinoderes_kohni:0.4590474132,Pycnophyes:0.2709541963)100:0.1141447022,((Halicryptus_spinolosus:0.1808174786,Priapulus_caudatus:0.2149499825)100:0.1369410539,Meiopriapulus:0.4513710489)100:0.0561988204)100:0.0339168667)100:0.0983331463,Pamacea_canaliculata:0.3569654887);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t tardigrada/1_infer/Poi_UDM64opt_PMSF.treefile -m "Poisson+SSF{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}+F{0.0671842,0.0562926,0.0411466,0.0571274,0.0178611,0.0403571,0.07192,0.056343,0.0242398,0.0584632,0.0961556,0.0763241,0.0257463,0.0439913,0.0433302,0.0590488,0.0493787,0.0125105,0.0345257,0.0680537}+G4{0.604665}" --length 70888
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s tardigrada/matrix_40sp.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s tardigrada/matrix_40sp.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Apr 20 18:32:01 2025
+Total CPU time used: 192076.0732 seconds (53h:21m:16s)
+Total wall-clock time used: 5297.322245 seconds (1h:28m:17s)
+
