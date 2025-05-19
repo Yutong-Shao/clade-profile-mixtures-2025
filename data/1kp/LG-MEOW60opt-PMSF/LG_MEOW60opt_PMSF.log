@@ -1,0 +1,161 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: ./iqtree2 -s 1kp/1kp.fasta -fs 1kp/1_513/LG-MEOW60opt-PMSF.sitefreq -m LGESmodel -mdef 1kp/1_513/meow1545.nex -safe -pre 1kp/1_513/LG_MEOW60opt_PMSF -wsr -bb 1000 --wbtl -nt 40
+Seed:    212504 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue May 13 19:10:37 2025
+Kernel:  Safe AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading alignment file 1kp/1kp.fasta ... Fasta format detected
+Reading fasta file: done in 0.0881146 secs using 95.16% CPU
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 103658 columns, 97826 distinct patterns
+74754 parsimony-informative, 13250 singleton sites, 15653 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.014249 secs using 3401% CPU
+   1  BFIK         27.41%    failed      0.00%
+   2  BNCU         13.55%    failed      0.00%
+   3  CIEA         19.10%    failed      0.00%
+   4  CMEQ         13.47%    failed      0.00%
+   5  CSUV         27.21%    failed      0.00%
+   6  Chlre_v5.5   16.92%    failed      0.00%
+   7  GTHK         18.40%    failed      0.00%
+   8  HKZW         24.20%    failed      0.00%
+   9  ILBQ         16.53%    failed      0.00%
+  10  IYDF         17.50%    failed      0.00%
+  11  JEXA         19.01%    failed      0.00%
+  12  JOJQ         16.68%    failed      0.00%
+  13  JVSZ         25.96%    failed      0.00%
+  14  KNMB         16.28%    failed      0.00%
+  15  KWGC         29.11%    failed      0.00%
+  16  Klefl_v1.0    7.15%    failed      0.00%
+  17  MMKU         27.49%    failed      0.00%
+  18  Micpu_v3.0   25.86%    failed      0.00%
+  19  OAGK          6.76%    failed      0.00%
+  20  OLES         13.66%    failed      0.00%
+  21  POZS         25.34%    failed      0.00%
+  22  PQTO         21.02%    failed      0.00%
+  23  PYHZ         19.30%    failed      0.00%
+  24  QKMG         23.72%    failed      0.00%
+  25  QPDY         15.05%    failed      0.00%
+  26  SKYV         29.84%    failed      0.00%
+  27  Selmo_v1.0   13.65%    failed      0.00%
+  28  Spipo_v2      8.49%    failed      0.00%
+  29  VYLQ          4.05%    failed      0.00%
+  30  WDCW         24.70%    failed      0.00%
+  31  WKCY          7.98%    failed      0.00%
+  32  WQRD         23.20%    failed      0.00%
+  33  WTDE         26.95%    failed      0.00%
+  34  WWQZ         16.02%    failed      0.00%
+  35  XSZI         18.21%    failed      0.00%
+  36  XZME         11.12%    failed      0.00%
+  37  YOXI         25.48%    failed      0.00%
+  38  YPIC         24.57%    failed      0.00%
+  39  ZFGK         22.51%    failed      0.00%
+  40  ZUHO         17.59%    failed      0.00%
+****  TOTAL        19.03%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Reading site-specific state frequency file 1kp/1_513/LG-MEOW60opt-PMSF.sitefreq ...
+97826 distinct per-site state frequency vectors detected
+NOTE: minimal branch length is reduced to 0.000000964711 for long alignment
+Reading model definition file 1kp/1_513/meow1545.nex ... 89 models and 274 frequency vectors loaded
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 1.791 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 212504)...
+Model LGESmodel is alias for LG+G4{0.5677329687}+FMIX{EShighclass1:1.0:0.0533359756,EShighclass2:1.0:0.0436918165,EShighclass3:1.0:0.0903748590,EShighclass4:1.0:0.0678745292,EShighclass5:1.0:0.0383346148,EShighclass6:1.0:0.0709455075,EShighclass7:1.0:0.0348907748,EShighclass8:1.0:0.0573070087,EShighclass9:1.0:0.0348556588,EShighclass10:1.0:0.0138733443,EShighclass11:1.0:0.0681475073,EShighclass12:1.0:0.0157603653,EShighclass13:1.0:0.0386628709,EShighclass14:1.0:0.0388299385,EShighclass15:1.0:0.0386870785,ESlowclass1:1.0:0.0130787929,ESlowclass2:1.0:0.0003275844,ESlowclass3:1.0:0.0141767553,ESlowclass4:1.0:0.0012019148,ESlowclass5:1.0:0.0070227774,ESlowclass6:1.0:0.0031080179,ESlowclass7:1.0:0.0094021343,ESlowclass8:1.0:0.0099213777,ESlowclass9:1.0:0.0086341030,ESlowclass10:1.0:0.0078805965,ESlowclass11:1.0:0.0034338460,ESlowclass12:1.0:0.0112875009,ESlowclass13:1.0:0.0019090128,ESlowclass14:1.0:0.0029169668,ESlowclass15:1.0:0.0030173066,ESlowclass16:1.0:0.0035573633,ESlowclass17:1.0:0.0419057529,ESlowclass18:1.0:0.0011212210,ESlowclass19:1.0:0.0004992666,ESlowclass20:1.0:0.0041769495,ESlowclass21:1.0:0.0080304825,ESlowclass22:1.0:0.0037769736,ESlowclass23:1.0:0.0008060217,ESlowclass24:1.0:0.0021294628,ESlowclass25:1.0:0.0043520988,ESlowclass26:1.0:0.0051974420,ESlowclass27:1.0:0.0015077340,ESlowclass28:1.0:0.0086418692,ESlowclass29:1.0:0.0125471570,ESlowclass30:1.0:0.0032926726,ESlowclass31:1.0:0.0063344758,ESlowclass32:1.0:0.0081853664,ESlowclass33:1.0:0.0077453212,ESlowclass34:1.0:0.0054105142,ESlowclass35:1.0:0.0049694636,ESlowclass36:1.0:0.0023481151,ESlowclass37:1.0:0.0017268042,ESlowclass38:1.0:0.0012495993,ESlowclass39:1.0:0.0121464260,ESlowclass40:1.0:0.0048506108,ESlowclass41:1.0:0.0127968672,ESlowclass42:1.0:0.0174178920,ESlowclass43:1.0:0.0066631881,ESlowclass44:1.0:0.0036319764,ESlowclass45:1.0:0.0000903749}
+
+NOTE: 3702 MB RAM (3 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -3591982.955
+2. Current log-likelihood: -3460700.440
+3. Current log-likelihood: -3452410.072
+4. Current log-likelihood: -3452239.666
+5. Current log-likelihood: -3452236.340
+Optimal log-likelihood: -3452236.278
+Gamma shape alpha: 0.568
+Parameters optimization took 5 rounds (45.711 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 18.3354 secs using 2326% CPU
+Computing ML distances took 18.350630 sec (of wall-clock time) 426.994229 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0569421 secs using 2388% CPU
+Computing RapidNJ tree took 2.945645 sec (of wall-clock time) 63.175018 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -3455999.351
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 256.234 second
+Computing log-likelihood of 98 initial trees ... 336.253 seconds
+Current best score: -3452236.278
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3451786.640
+Iteration 10 / LogL: -3451828.993 / Time: 0h:22m:58s
+Iteration 20 / LogL: -3451956.458 / Time: 0h:33m:10s
+Finish initializing candidate tree set (1)
+Current best tree score: -3451786.640 / CPU time: 1853.606
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -3451789.324 / Time: 0h:40m:43s (1h:39m:37s left)
+Iteration 40 / LogL: -3451790.504 / Time: 0h:48m:16s (1h:15m:28s left)
+Iteration 50 / LogL: -3451792.965 / Time: 0h:56m:31s (0h:58m:47s left)
+Log-likelihood cutoff on original alignment: -3451845.392
+UFBoot trees printed to 1kp/1_513/LG_MEOW60opt_PMSF.ufboot
+Iteration 60 / LogL: -3451790.065 / Time: 1h:4m:33s (0h:44m:50s left)
+Iteration 70 / LogL: -3451787.680 / Time: 1h:12m:25s (0h:32m:31s left)
+Iteration 80 / LogL: -3451794.891 / Time: 1h:19m:19s (0h:21m:4s left)
+Iteration 90 / LogL: -3451793.240 / Time: 1h:28m:42s (0h:10m:57s left)
+Iteration 100 / LogL: -3451821.155 / Time: 1h:39m:25s (0h:1m:0s left)
+Log-likelihood cutoff on original alignment: -3451845.392
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+UFBoot trees printed to 1kp/1_513/LG_MEOW60opt_PMSF.ufboot
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 1h:41m:34s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3451786.640
+Optimal log-likelihood: -3451786.640
+Gamma shape alpha: 0.568
+Parameters optimization took 1 rounds (6.397 sec)
+BEST SCORE FOUND : -3451786.640
+Empirical proportions for each category: 0.290 0.265 0.254 0.190
+Site rates printed to 1kp/1_513/LG_MEOW60opt_PMSF.rate
+Creating bootstrap support values...
+Split supports printed to NEXUS file 1kp/1_513/LG_MEOW60opt_PMSF.splits.nex
+Total tree length: 32.368
+
+Total number of iterations: 102
+CPU time used for tree search: 218916.314 sec (60h:48m:36s)
+Wall-clock time used for tree search: 5957.475 sec (1h:39m:17s)
+Total CPU time used: 222784.042 sec (61h:53m:4s)
+Total wall-clock time used: 6104.016 sec (1h:41m:44s)
+UFBoot trees printed to 1kp/1_513/LG_MEOW60opt_PMSF.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file 1kp/1_513/LG_MEOW60opt_PMSF.splits.nex...
+40 taxa and 82 splits.
+Consensus tree written to 1kp/1_513/LG_MEOW60opt_PMSF.contree
+Reading input trees file 1kp/1_513/LG_MEOW60opt_PMSF.contree
+Log-likelihood of consensus tree: -3451786.641
+
+Analysis results written to: 
+  IQ-TREE report:                1kp/1_513/LG_MEOW60opt_PMSF.iqtree
+  Maximum-likelihood tree:       1kp/1_513/LG_MEOW60opt_PMSF.treefile
+  Likelihood distances:          1kp/1_513/LG_MEOW60opt_PMSF.mldist
+  Site-specific rates:           1kp/1_513/LG_MEOW60opt_PMSF.rate
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          1kp/1_513/LG_MEOW60opt_PMSF.splits.nex
+  Consensus tree:                1kp/1_513/LG_MEOW60opt_PMSF.contree
+  UFBoot trees:                  1kp/1_513/LG_MEOW60opt_PMSF.ufboot
+  Screen log file:               1kp/1_513/LG_MEOW60opt_PMSF.log
+
+Date and Time: Tue May 13 20:53:22 2025

@@ -1,0 +1,267 @@
+IQ-TREE version 3.0.0 for Linux x86 64-bit built Apr  4 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: /data/yutong/iqtree3 -s 1kp/1kp.fasta -fs 1kp/1_510/LG-C60opt-PMSF.sitefreq -m LGC60OPT -mdef 1kp/1_510/LGC60OPT.nex -safe --wbtl -pre 1kp/1_510/LG_C60opt_PMSF -wsr -bb 1000 -nt 40
+Seed:    68548 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat May 10 19:24:04 2025
+Kernel:  Safe AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading alignment file 1kp/1kp.fasta ... Fasta format detected
+Reading fasta file: done in 0.0805809 secs using 89.27% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.219333 secs using 308.3% CPU
+Alignment has 40 sequences with 103658 columns, 97826 distinct patterns
+74754 parsimony-informative, 13250 singleton sites, 15653 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.016253 secs using 3847% CPU
+   1  BFIK         27.41%    failed      0.00%
+   2  BNCU         13.55%    failed      0.00%
+   3  CIEA         19.10%    failed      0.00%
+   4  CMEQ         13.47%    failed      0.00%
+   5  CSUV         27.21%    failed      0.00%
+   6  Chlre_v5.5   16.92%    failed      0.00%
+   7  GTHK         18.40%    failed      0.00%
+   8  HKZW         24.20%    failed      0.00%
+   9  ILBQ         16.53%    failed      0.00%
+  10  IYDF         17.50%    failed      0.00%
+  11  JEXA         19.01%    failed      0.00%
+  12  JOJQ         16.68%    failed      0.00%
+  13  JVSZ         25.96%    failed      0.00%
+  14  KNMB         16.28%    failed      0.00%
+  15  KWGC         29.11%    failed      0.00%
+  16  Klefl_v1.0    7.15%    failed      0.00%
+  17  MMKU         27.49%    failed      0.00%
+  18  Micpu_v3.0   25.86%    failed      0.00%
+  19  OAGK          6.76%    failed      0.00%
+  20  OLES         13.66%    failed      0.00%
+  21  POZS         25.34%    failed      0.00%
+  22  PQTO         21.02%    failed      0.00%
+  23  PYHZ         19.30%    failed      0.00%
+  24  QKMG         23.72%    failed      0.00%
+  25  QPDY         15.05%    failed      0.00%
+  26  SKYV         29.84%    failed      0.00%
+  27  Selmo_v1.0   13.65%    failed      0.00%
+  28  Spipo_v2      8.49%    failed      0.00%
+  29  VYLQ          4.05%    failed      0.00%
+  30  WDCW         24.70%    failed      0.00%
+  31  WKCY          7.98%    failed      0.00%
+  32  WQRD         23.20%    failed      0.00%
+  33  WTDE         26.95%    failed      0.00%
+  34  WWQZ         16.02%    failed      0.00%
+  35  XSZI         18.21%    failed      0.00%
+  36  XZME         11.12%    failed      0.00%
+  37  YOXI         25.48%    failed      0.00%
+  38  YPIC         24.57%    failed      0.00%
+  39  ZFGK         22.51%    failed      0.00%
+  40  ZUHO         17.59%    failed      0.00%
+****  TOTAL        19.03%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Reading site-specific state frequency file 1kp/1_510/LG-C60opt-PMSF.sitefreq ...
+97826 distinct per-site state frequency vectors detected
+NOTE: minimal branch length is reduced to 0.000000964711 for long alignment
+Checking for duplicate sequences: done in 0.0602352 secs using 915.7% CPU
+Reading model definition file 1kp/1_510/LGC60OPT.nex ... 87 models and 274 frequency vectors loaded
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 1.756 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 68548)...
+Model LGC60OPT is alias for LG+G4{0.5163326898}+FMIX{C60_pi1:1.0:0.0252341208,C60_pi2:1.0:0.0005339025,C60_pi3:1.0:0.0047868287,C60_pi4:1.0:0.0046315467,C60_pi5:1.0:0.0180433872,C60_pi6:1.0:0.0095327912,C60_pi7:1.0:0.0012956580,C60_pi8:1.0:0.0038492233,C60_pi9:1.0:0.0086840598,C60_pi10:1.0:0.1102319019,C60_pi11:1.0:0.0203137819,C60_pi12:1.0:0.0068123492,C60_pi13:1.0:0.0039709516,C60_pi14:1.0:0.0133133656,C60_pi15:1.0:0.0035732989,C60_pi16:1.0:0.0090921461,C60_pi17:1.0:0.0530256888,C60_pi18:1.0:0.0284689134,C60_pi19:1.0:0.0090537149,C60_pi20:1.0:0.0046311240,C60_pi21:1.0:0.0026046881,C60_pi22:1.0:0.0246188483,C60_pi23:1.0:0.0040764059,C60_pi24:1.0:0.0000004548,C60_pi25:1.0:0.0084433471,C60_pi26:1.0:0.0117984693,C60_pi27:1.0:0.0190474636,C60_pi28:1.0:0.0482671550,C60_pi29:1.0:0.0489275086,C60_pi30:1.0:0.0450808734,C60_pi31:1.0:0.0043822963,C60_pi32:1.0:0.0137414686,C60_pi33:1.0:0.0150042091,C60_pi34:1.0:0.0164671935,C60_pi35:1.0:0.0259136286,C60_pi36:1.0:0.0082490199,C60_pi37:1.0:0.0074277985,C60_pi38:1.0:0.0170933450,C60_pi39:1.0:0.0017864813,C60_pi40:1.0:0.0064097029,C60_pi41:1.0:0.0039680998,C60_pi42:1.0:0.0052877896,C60_pi43:1.0:0.0181997406,C60_pi44:1.0:0.0338833276,C60_pi45:1.0:0.0279903059,C60_pi46:1.0:0.0012074798,C60_pi47:1.0:0.0094990314,C60_pi48:1.0:0.0094997708,C60_pi49:1.0:0.0014151068,C60_pi50:1.0:0.0733536928,C60_pi51:1.0:0.0082218813,C60_pi52:1.0:0.0412155124,C60_pi53:1.0:0.0012781788,C60_pi54:1.0:0.0080065432,C60_pi55:1.0:0.0458577542,C60_pi56:1.0:0.0058866956,C60_pi57:1.0:0.0049355272,C60_pi58:1.0:0.0230434780,C60_pi59:1.0:0.0083761937,C60_pi60:1.0:0.0004547785}
+
+NOTE: 3702 MB RAM (3 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -3642589.821
+2. Current log-likelihood: -3524830.187
+3. Current log-likelihood: -3517183.634
+4. Current log-likelihood: -3517065.641
+5. Current log-likelihood: -3517064.060
+Optimal log-likelihood: -3517064.039
+Gamma shape alpha: 0.516
+Parameters optimization took 5 rounds (46.581 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 21.6702 secs using 2519% CPU
+Computing ML distances took 21.690988 sec (of wall-clock time) 546.614087 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000731984 secs using 2045% CPU
+Constructing RapidNJ tree: done in 0.000413053 secs using 168% CPU
+Computing RapidNJ tree took 0.001614 sec (of wall-clock time) 0.019078 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -3520925.952
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 236.013 second
+Computing log-likelihood of 98 initial trees ... 367.669 seconds
+Current best score: -3517064.039
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 37.7524 secs using 3843% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3516484.775
+Optimizing NNI: done in 62.2638 secs using 3839% CPU
+Optimizing NNI: done in 58.7143 secs using 3844% CPU
+Optimizing NNI: done in 65.0002 secs using 3852% CPU
+Optimizing NNI: done in 63.9157 secs using 3840% CPU
+Optimizing NNI: done in 64.3006 secs using 3853% CPU
+Optimizing NNI: done in 73.9118 secs using 3831% CPU
+Optimizing NNI: done in 58.8751 secs using 3817% CPU
+Optimizing NNI: done in 73.1 secs using 3799% CPU
+Optimizing NNI: done in 70.0673 secs using 3843% CPU
+Iteration 10 / LogL: -3516500.897 / Time: 0h:23m:10s
+Optimizing NNI: done in 67.5872 secs using 3802% CPU
+Optimizing NNI: done in 60.6161 secs using 3794% CPU
+Optimizing NNI: done in 68.7834 secs using 3789% CPU
+Optimizing NNI: done in 76.1674 secs using 3836% CPU
+Optimizing NNI: done in 74.3934 secs using 3800% CPU
+Optimizing NNI: done in 69.8177 secs using 3828% CPU
+Optimizing NNI: done in 68.5939 secs using 3823% CPU
+Optimizing NNI: done in 74.4802 secs using 3794% CPU
+Optimizing NNI: done in 74.6186 secs using 3797% CPU
+Optimizing NNI: done in 81.9853 secs using 3801% CPU
+Iteration 20 / LogL: -3516490.440 / Time: 0h:35m:16s
+Finish initializing candidate tree set (1)
+Current best tree score: -3516484.775 / CPU time: 1974.006
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 76.9193 secs using 3759% CPU
+Optimizing NNI: done in 51.3393 secs using 3789% CPU
+Optimizing NNI: done in 57.7176 secs using 3809% CPU
+Optimizing NNI: done in 48.604 secs using 3758% CPU
+Optimizing NNI: done in 50.9165 secs using 3782% CPU
+Optimizing NNI: done in 47.7385 secs using 3729% CPU
+Optimizing NNI: done in 50.2686 secs using 3746% CPU
+Optimizing NNI: done in 54.0986 secs using 3786% CPU
+Optimizing NNI: done in 65.4698 secs using 3775% CPU
+Optimizing NNI: done in 67.7488 secs using 3783% CPU
+Iteration 30 / LogL: -3516515.959 / Time: 0h:44m:54s (1h:49m:53s left)
+Optimizing NNI: done in 44.6408 secs using 3776% CPU
+Optimizing NNI: done in 42.8216 secs using 3783% CPU
+Optimizing NNI: done in 51.3769 secs using 3773% CPU
+Optimizing NNI: done in 75.1353 secs using 3770% CPU
+Optimizing NNI: done in 85.6456 secs using 3766% CPU
+Optimizing NNI: done in 89.4284 secs using 3772% CPU
+Optimizing NNI: done in 60.2384 secs using 3793% CPU
+Optimizing NNI: done in 46.9078 secs using 3771% CPU
+Optimizing NNI: done in 73.2338 secs using 3770% CPU
+Optimizing NNI: done in 65.0043 secs using 3737% CPU
+Iteration 40 / LogL: -3516508.577 / Time: 0h:55m:37s (1h:26m:56s left)
+Optimizing NNI: done in 59.2032 secs using 3773% CPU
+Optimizing NNI: done in 70.0339 secs using 3822% CPU
+Optimizing NNI: done in 45.5977 secs using 3803% CPU
+Optimizing NNI: done in 62.3046 secs using 3789% CPU
+Optimizing NNI: done in 51.0104 secs using 3753% CPU
+Optimizing NNI: done in 53.3636 secs using 3781% CPU
+Optimizing NNI: done in 56.582 secs using 3762% CPU
+Optimizing NNI: done in 35.9983 secs using 3776% CPU
+Optimizing NNI: done in 56.3956 secs using 3759% CPU
+Optimizing NNI: done in 51.429 secs using 3817% CPU
+Iteration 50 / LogL: -3516513.474 / Time: 1h:4m:46s (1h:7m:23s left)
+Log-likelihood cutoff on original alignment: -3516539.010
+UFBoot trees printed to 1kp/1_510/LG_C60opt_PMSF.ufboot
+Optimizing NNI: done in 50.2937 secs using 3831% CPU
+Optimizing NNI: done in 52.8839 secs using 3794% CPU
+Optimizing NNI: done in 37.7617 secs using 3815% CPU
+Optimizing NNI: done in 31.814 secs using 3783% CPU
+Optimizing NNI: done in 35.9937 secs using 3770% CPU
+Optimizing NNI: done in 48.918 secs using 3820% CPU
+Optimizing NNI: done in 36.4955 secs using 3807% CPU
+Optimizing NNI: done in 51.5428 secs using 3803% CPU
+Optimizing NNI: done in 59.1578 secs using 3808% CPU
+Optimizing NNI: done in 55.9321 secs using 3834% CPU
+Iteration 60 / LogL: -3516487.377 / Time: 1h:12m:35s (0h:50m:25s left)
+Optimizing NNI: done in 72.3065 secs using 3834% CPU
+Optimizing NNI: done in 49.0304 secs using 3834% CPU
+Optimizing NNI: done in 45.3524 secs using 3803% CPU
+Optimizing NNI: done in 62.5644 secs using 3793% CPU
+Optimizing NNI: done in 48.0456 secs using 3798% CPU
+Optimizing NNI: done in 37.8669 secs using 3825% CPU
+Optimizing NNI: done in 58.8802 secs using 3829% CPU
+Optimizing NNI: done in 55.3434 secs using 3810% CPU
+Optimizing NNI: done in 44.969 secs using 3805% CPU
+Optimizing NNI: done in 49.3656 secs using 3822% CPU
+Iteration 70 / LogL: -3516485.252 / Time: 1h:21m:26s (0h:36m:34s left)
+Optimizing NNI: done in 51.8442 secs using 3840% CPU
+Optimizing NNI: done in 71.7775 secs using 3769% CPU
+Optimizing NNI: done in 60.7535 secs using 3816% CPU
+Optimizing NNI: done in 60.1961 secs using 3842% CPU
+Optimizing NNI: done in 36.1366 secs using 3818% CPU
+Optimizing NNI: done in 60.9648 secs using 3857% CPU
+Optimizing NNI: done in 43.5009 secs using 3796% CPU
+Optimizing NNI: done in 45.1651 secs using 3810% CPU
+Optimizing NNI: done in 52.377 secs using 3838% CPU
+Optimizing NNI: done in 52.5961 secs using 3812% CPU
+Iteration 80 / LogL: -3516490.895 / Time: 1h:30m:28s (0h:24m:2s left)
+Optimizing NNI: done in 60.4774 secs using 3802% CPU
+Optimizing NNI: done in 45.0206 secs using 3833% CPU
+Optimizing NNI: done in 50.7904 secs using 3855% CPU
+Optimizing NNI: done in 45.2693 secs using 3816% CPU
+Optimizing NNI: done in 40.1567 secs using 3745% CPU
+Optimizing NNI: done in 43.6774 secs using 3806% CPU
+Optimizing NNI: done in 45.8716 secs using 3781% CPU
+Optimizing NNI: done in 47.9289 secs using 3757% CPU
+Optimizing NNI: done in 46.1832 secs using 3796% CPU
+Optimizing NNI: done in 55.986 secs using 3789% CPU
+Iteration 90 / LogL: -3516506.397 / Time: 1h:38m:38s (0h:12m:11s left)
+Optimizing NNI: done in 32.9229 secs using 3787% CPU
+Optimizing NNI: done in 51.5917 secs using 3806% CPU
+Optimizing NNI: done in 48.0742 secs using 3832% CPU
+Optimizing NNI: done in 59.9796 secs using 3827% CPU
+Optimizing NNI: done in 65.1062 secs using 3743% CPU
+Optimizing NNI: done in 51.2455 secs using 3769% CPU
+Optimizing NNI: done in 63.837 secs using 3783% CPU
+Optimizing NNI: done in 48.4684 secs using 3766% CPU
+Optimizing NNI: done in 59.4722 secs using 3783% CPU
+Optimizing NNI: done in 41.9051 secs using 3797% CPU
+Iteration 100 / LogL: -3516514.443 / Time: 1h:47m:27s (0h:1m:5s left)
+Log-likelihood cutoff on original alignment: -3516539.167
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+UFBoot trees printed to 1kp/1_510/LG_C60opt_PMSF.ufboot
+Optimizing NNI: done in 60.5336 secs using 3770% CPU
+Optimizing NNI: done in 44.8751 secs using 3800% CPU
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 1h:49m:15s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3516484.775
+Optimal log-likelihood: -3516484.775
+Gamma shape alpha: 0.516
+Parameters optimization took 1 rounds (5.404 sec)
+BEST SCORE FOUND : -3516484.775
+Empirical proportions for each category: 0.276 0.248 0.272 0.204
+Site rates printed to 1kp/1_510/LG_C60opt_PMSF.rate
+Creating bootstrap support values...
+Split supports printed to NEXUS file 1kp/1_510/LG_C60opt_PMSF.splits.nex
+Total tree length: 26.341
+
+Total number of iterations: 102
+CPU time used for tree search: 234856.443 sec (65h:14m:16s)
+Wall-clock time used for tree search: 6412.952 sec (1h:46m:52s)
+Total CPU time used: 238678.545 sec (66h:17m:58s)
+Total wall-clock time used: 6561.242 sec (1h:49m:21s)
+UFBoot trees printed to 1kp/1_510/LG_C60opt_PMSF.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file 1kp/1_510/LG_C60opt_PMSF.splits.nex...
+40 taxa and 82 splits.
+Consensus tree written to 1kp/1_510/LG_C60opt_PMSF.contree
+Reading input trees file 1kp/1_510/LG_C60opt_PMSF.contree
+Log-likelihood of consensus tree: -3516484.775
+
+Analysis results written to: 
+  IQ-TREE report:                1kp/1_510/LG_C60opt_PMSF.iqtree
+  Maximum-likelihood tree:       1kp/1_510/LG_C60opt_PMSF.treefile
+  Likelihood distances:          1kp/1_510/LG_C60opt_PMSF.mldist
+  Site-specific rates:           1kp/1_510/LG_C60opt_PMSF.rate
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          1kp/1_510/LG_C60opt_PMSF.splits.nex
+  Consensus tree:                1kp/1_510/LG_C60opt_PMSF.contree
+  UFBoot trees:                  1kp/1_510/LG_C60opt_PMSF.ufboot
+  Screen log file:               1kp/1_510/LG_C60opt_PMSF.log
+
+Date and Time: Sat May 10 21:14:01 2025

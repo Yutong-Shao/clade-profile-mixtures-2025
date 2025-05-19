@@ -1,0 +1,278 @@
+IQ-TREE 3.0.0 built Apr  4 2025
+
+Input file name: 1kp/1kp.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 752711
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used site-specific frequency model please also cite: 
+
+Huai-Chun Wang, Edward Susko, Bui Quang Minh, and Andrew J. Roger (2018)
+Modeling site heterogeneity with posterior mean site frequency profiles
+accelerates accurate phylogenomic estimation. Syst. Biol., 67:216–235.
+https://doi.org/10.1093/sysbio/syx068
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 40 sequences with 103658 amino-acid sites
+Number of constant sites: 15654 (= 15.1016% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 15654 (= 15.1016% of all sites)
+Number of parsimony informative sites: 74754
+Number of distinct site patterns: 97826
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+SSF+F+G4
+
+State frequencies: (site specific frequencies)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.4705
+
+ Category  Relative_rate  Proportion
+  1         0.0281         0.2500
+  2         0.2322         0.2500
+  3         0.7975         0.2500
+  4         2.9422         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -3651050.3818 (s.e. 7922.2737)
+Unconstrained log-likelihood (without tree): -1185070.0576
+Number of free parameters (#branches + #model parameters): 97
+Akaike information criterion (AIC) score: 7302294.7636
+Corrected Akaike information criterion (AICc) score: 7302294.9472
+Bayesian information criterion (BIC) score: 7303221.0023
+
+Total tree length (sum of branch lengths): 31.3540
+Sum of internal branch lengths: 4.8169 (15.3631% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'BFIK' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++-------------BFIK
+|
+|                  +------BNCU
+|               +--| (100)
+|               |  +----ILBQ
+|            +--| (100)
+|            |  +--------CMEQ
+|        +---| (100)
+|        |   |                       +-----CIEA
+|        |   |                    +--| (100)
+|        |   |                    |  +----YPIC
+|        |   |                 +--| (100)
+|        |   |                 |  |  +---WTDE
+|        |   |                 |  +--| (100)
+|        |   |                 |     +-----XZME
+|        |   |              +--| (100)
+|        |   |              |  +-----Spipo_v2
+|        |   |         +----| (100)
+|        |   |         |    |                       +-----CSUV
+|        |   |         |    |                    +--| (100)
+|        |   |         |    |                    |  +----POZS
+|        |   |         |    |                 +--| (50)
+|        |   |         |    |                 |  +-----WWQZ
+|        |   |         |    |              +--| (100)
+|        |   |         |    |              |  |  +----KNMB
+|        |   |         |    |              |  +--| (100)
+|        |   |         |    |              |     +----WKCY
+|        |   |         |    |           +--| (94)
+|        |   |         |    |           |  |  +-----KWGC
+|        |   |         |    |           |  +--| (92)
+|        |   |         |    |           |     +-----OLES
+|        |   |         |    |        +--| (100)
+|        |   |         |    |        |  |        +---IYDF
+|        |   |         |    |        |  |     +--| (100)
+|        |   |         |    |        |  |     |  +----WQRD
+|        |   |         |    |        |  |  +--| (100)
+|        |   |         |    |        |  |  |  +----OAGK
+|        |   |         |    |        |  +--| (100)
+|        |   |         |    |        |     +----JEXA
+|        |   |         |    |     +--| (100)
+|        |   |         |    |     |  +-----QKMG
+|        |   |         |    |  +--| (100)
+|        |   |         |    |  |  +----ZUHO
+|        |   |         |    +--| (60)
+|        |   |         |       |  +----VYLQ
+|        |   |         |       +--| (100)
+|        |   |         |          +------XSZI
+|        |   |     +---| (100)
+|        |   |     |   +---------GTHK
+|        |   |  +--| (100)
+|        |   |  |  |  +-------JVSZ
+|        |   |  |  +--| (100)
+|        |   |  |     +---------SKYV
+|        |   +--| (100)
+|        |      |  +-------PQTO
+|        |      +--| (100)
+|        |         |  +--------PYHZ
+|        |         +--| (100)
+|        |            |   +------Selmo_v1.0
+|        |            +---| (100)
+|        |                +-------ZFGK
+|     +--| (100)
+|     |  |        +---------HKZW
+|     |  |     +--| (100)
+|     |  |     |  +-----JOJQ
+|     |  |  +--| (100)
+|     |  |  |  +-----------YOXI
+|     |  +--| (100)
+|     |     +----------WDCW
+|  +--| (100)
+|  |  +---------------QPDY
++--| (100)
+|  |             +------------------------------------Chlre_v5.5
+|  |          +--| (100)
+|  |          |  +----------------------------------------Micpu_v3.0
+|  +----------| (100)
+|             +-----------------------MMKU
+|
++------------Klefl_v1.0
+
+Tree in newick format:
+
+(BFIK:0.9916611276,((((((BNCU:0.5343526851,ILBQ:0.3970106815)100:0.2322343526,CMEQ:0.6602880771)100:0.0660150401,(((((((CIEA:0.4444441114,YPIC:0.4000817666)100:0.1187501929,(WTDE:0.3199296583,XZME:0.4077144348)100:0.0321468595)100:0.0489940223,Spipo_v2:0.4433075659)100:0.0558140524,((((((((CSUV:0.4499405874,POZS:0.3424587445)100:0.0337083782,WWQZ:0.4229531604)50:0.0171630116,(KNMB:0.3448657426,WKCY:0.3824528739)100:0.0351344239)100:0.0261840643,(KWGC:0.4175668949,OLES:0.4546757562)92:0.0269446946)94:0.0145631009,(((IYDF:0.3269958193,WQRD:0.3540355967)100:0.0454408625,OAGK:0.3579898764)100:0.0274666425,JEXA:0.3810398788)100:0.0334494872)100:0.0196672135,QKMG:0.4442442055)100:0.0550908824,ZUHO:0.3477140103)100:0.0602077916,(VYLQ:0.3720188193,XSZI:0.4970906988)100:0.0375494385)60:0.0192551055)100:0.4018872156,GTHK:0.7243757256)100:0.2844409442,(JVSZ:0.5713783873,SKYV:0.7105102680)100:0.1280526580)100:0.1048154161,(PQTO:0.5746023427,(PYHZ:0.6155513271,(Selmo_v1.0:0.4969245292,ZFGK:0.5753561845)100:0.3098918988)100:0.0787151030)100:0.0931080150)100:0.0757059846)100:0.3308508808,(((HKZW:0.7391138848,JOJQ:0.4537897530)100:0.1143249078,YOXI:0.8152373865)100:0.1970876136,WDCW:0.7617644829)100:0.1910455779)100:0.0792139997,QPDY:1.1404264233)100:0.1579228301,((Chlre_v5.5:2.5266755992,Micpu_v3.0:2.7837589154)100:0.2505876254,MMKU:1.6238237058)100:0.7977140247)100:0.2158041863,Klefl_v1.0:0.9289413176);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -3651050.38212459
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.00000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-------------BFIK
+|
+|                  +------BNCU
+|               +--| (100)
+|               |  +----ILBQ
+|            +--| (100)
+|            |  +--------CMEQ
+|        +---| (100)
+|        |   |                       +-----CIEA
+|        |   |                    +--| (100)
+|        |   |                    |  +----YPIC
+|        |   |                 +--| (100)
+|        |   |                 |  |  +---WTDE
+|        |   |                 |  +--| (100)
+|        |   |                 |     +-----XZME
+|        |   |              +--| (100)
+|        |   |              |  +-----Spipo_v2
+|        |   |         +----| (100)
+|        |   |         |    |                       +-----CSUV
+|        |   |         |    |                    +--| (100)
+|        |   |         |    |                    |  +----POZS
+|        |   |         |    |                 +--| (50)
+|        |   |         |    |                 |  +-----WWQZ
+|        |   |         |    |              +--| (100)
+|        |   |         |    |              |  |  +----KNMB
+|        |   |         |    |              |  +--| (100)
+|        |   |         |    |              |     +----WKCY
+|        |   |         |    |           +--| (94)
+|        |   |         |    |           |  |  +-----KWGC
+|        |   |         |    |           |  +--| (92)
+|        |   |         |    |           |     +-----OLES
+|        |   |         |    |        +--| (100)
+|        |   |         |    |        |  |        +---IYDF
+|        |   |         |    |        |  |     +--| (100)
+|        |   |         |    |        |  |     |  +----WQRD
+|        |   |         |    |        |  |  +--| (100)
+|        |   |         |    |        |  |  |  +----OAGK
+|        |   |         |    |        |  +--| (100)
+|        |   |         |    |        |     +----JEXA
+|        |   |         |    |     +--| (100)
+|        |   |         |    |     |  +-----QKMG
+|        |   |         |    |  +--| (100)
+|        |   |         |    |  |  +----ZUHO
+|        |   |         |    +--| (60)
+|        |   |         |       |  +----VYLQ
+|        |   |         |       +--| (100)
+|        |   |         |          +------XSZI
+|        |   |     +---| (100)
+|        |   |     |   +---------GTHK
+|        |   |  +--| (100)
+|        |   |  |  |  +-------JVSZ
+|        |   |  |  +--| (100)
+|        |   |  |     +---------SKYV
+|        |   +--| (100)
+|        |      |  +-------PQTO
+|        |      +--| (100)
+|        |         |  +--------PYHZ
+|        |         +--| (100)
+|        |            |   +------Selmo_v1.0
+|        |            +---| (100)
+|        |                +-------ZFGK
+|     +--| (100)
+|     |  |        +---------HKZW
+|     |  |     +--| (100)
+|     |  |     |  +-----JOJQ
+|     |  |  +--| (100)
+|     |  |  |  +-----------YOXI
+|     |  +--| (100)
+|     |     +----------WDCW
+|  +--| (100)
+|  |  +---------------QPDY
++--| (100)
+|  |             +------------------------------------Chlre_v5.5
+|  |          +--| (100)
+|  |          |  +----------------------------------------Micpu_v3.0
+|  +----------| (100)
+|             +-----------------------MMKU
+|
++------------Klefl_v1.0
+
+
+Consensus tree in newick format: 
+
+(BFIK:0.9915983550,((((((BNCU:0.5343186775,ILBQ:0.3969836238)100:0.2322243903,CMEQ:0.6602430017)100:0.0660141536,(((((((CIEA:0.4444077813,YPIC:0.4000489702)100:0.1187510074,(WTDE:0.3199033061,XZME:0.4076814143)100:0.0321507037)100:0.0489899746,Spipo_v2:0.4432738985)100:0.0558120179,((((((((CSUV:0.4499003883,POZS:0.3424300187)100:0.0337058721,WWQZ:0.4229155231)50:0.0171613462,(KNMB:0.3448312129,WKCY:0.3824156554)100:0.0351391460)100:0.0261819097,(KWGC:0.4175236357,OLES:0.4546300274)92:0.0269530231)94:0.0145613347,(((IYDF:0.3269651283,WQRD:0.3540040050)100:0.0454443392,OAGK:0.3579603654)100:0.0274646160,JEXA:0.3810075763)100:0.0334475292)100:0.0196679652,QKMG:0.4442084059)100:0.0550877209,ZUHO:0.3476855737)100:0.0602033027,(VYLQ:0.3719851760,XSZI:0.4970484115)100:0.0375535439)60:0.0192534817)100:0.4018669625,GTHK:0.7243230791)100:0.2844204390,(JVSZ:0.5713307651,SKYV:0.7104529824)100:0.1280607255)100:0.1048060965,(PQTO:0.5745614009,(PYHZ:0.6155066999,(Selmo_v1.0:0.4968898553,ZFGK:0.5753154329)100:0.3098771323)100:0.0787145790)100:0.0931053704)100:0.0757021013)100:0.3308317554,(((HKZW:0.7390695842,JOJQ:0.4537586115)100:0.1143234790,YOXI:0.8151856169)100:0.1970760970,WDCW:0.7617141265)100:0.1910380483)100:0.0792150692,QPDY:1.1403523186)100:0.1579150764,((Chlre_v5.5:2.5265095998,Micpu_v3.0:2.7835827490)100:0.2506073184,MMKU:1.6237192838)100:0.7976823226)100:0.2158025353,Klefl_v1.0:0.9288798230);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t 1kp/1_infer/LG_UDM8HOC_PMSF.treefile -m "LG+SSF{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}+F{0.0838042,0.0590739,0.033003,0.0570268,0.0150537,0.0364705,0.068433,0.070003,0.0214466,0.0499878,0.102462,0.0596845,0.0210341,0.0400547,0.0463935,0.0722693,0.0471973,0.0130218,0.0274887,0.0760918}+G4{0.470489}" --length 103658
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s 1kp/1kp.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s 1kp/1kp.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed May  7 15:17:28 2025
+Total CPU time used: 186466.3121 seconds (51h:47m:46s)
+Total wall-clock time used: 5041.131172 seconds (1h:24m:1s)
+

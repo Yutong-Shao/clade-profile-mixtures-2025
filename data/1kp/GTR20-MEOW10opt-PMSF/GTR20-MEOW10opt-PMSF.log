@@ -1,0 +1,108 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: ./iqtree2 -s 1kp/1kp.fasta -ft 1kp/1_infer/GTR20-MEOW10opt.treefile -m GTRMEOW10OPT -mdef 1kp/1_infer/GTRMEOW10OPT.nex -safe -pre 1kp/1_infer/GTR20-MEOW10opt-PMSF -n 0 -wspmr -nt 40
+Seed:    256173 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat May 17 03:47:04 2025
+Kernel:  Safe AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading alignment file 1kp/1kp.fasta ... Fasta format detected
+Reading fasta file: done in 0.043067 secs using 77.79% CPU
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 103658 columns, 97826 distinct patterns
+74754 parsimony-informative, 13250 singleton sites, 15653 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.016759 secs using 4270% CPU
+   1  BFIK         27.41%    failed      0.00%
+   2  BNCU         13.55%    failed      0.00%
+   3  CIEA         19.10%    failed      0.00%
+   4  CMEQ         13.47%    failed      0.00%
+   5  CSUV         27.21%    failed      0.00%
+   6  Chlre_v5.5   16.92%    failed      0.00%
+   7  GTHK         18.40%    failed      0.00%
+   8  HKZW         24.20%    failed      0.00%
+   9  ILBQ         16.53%    failed      0.00%
+  10  IYDF         17.50%    failed      0.00%
+  11  JEXA         19.01%    failed      0.00%
+  12  JOJQ         16.68%    failed      0.00%
+  13  JVSZ         25.96%    failed      0.00%
+  14  KNMB         16.28%    failed      0.00%
+  15  KWGC         29.11%    failed      0.00%
+  16  Klefl_v1.0    7.15%    failed      0.00%
+  17  MMKU         27.49%    failed      0.00%
+  18  Micpu_v3.0   25.86%    failed      0.00%
+  19  OAGK          6.76%    failed      0.00%
+  20  OLES         13.66%    failed      0.00%
+  21  POZS         25.34%    failed      0.00%
+  22  PQTO         21.02%    failed      0.00%
+  23  PYHZ         19.30%    failed      0.00%
+  24  QKMG         23.72%    failed      0.00%
+  25  QPDY         15.05%    failed      0.00%
+  26  SKYV         29.84%    failed      0.00%
+  27  Selmo_v1.0   13.65%    failed      0.00%
+  28  Spipo_v2      8.49%    failed      0.00%
+  29  VYLQ          4.05%    failed      0.00%
+  30  WDCW         24.70%    failed      0.00%
+  31  WKCY          7.98%    failed      0.00%
+  32  WQRD         23.20%    failed      0.00%
+  33  WTDE         26.95%    failed      0.00%
+  34  WWQZ         16.02%    failed      0.00%
+  35  XSZI         18.21%    failed      0.00%
+  36  XZME         11.12%    failed      0.00%
+  37  YOXI         25.48%    failed      0.00%
+  38  YPIC         24.57%    failed      0.00%
+  39  ZFGK         22.51%    failed      0.00%
+  40  ZUHO         17.59%    failed      0.00%
+****  TOTAL        19.03%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+
+===> COMPUTING SITE FREQUENCY MODEL BASED ON TREE FILE 1kp/1_infer/GTR20-MEOW10opt.treefile
+Reading model definition file 1kp/1_infer/GTRMEOW10OPT.nex ... 89 models and 224 frequency vectors loaded
+Model GTRMEOW10OPT is alias for GTRPMIX+G4{0.6036}+FMIX{EShighclass1:1.0:0.3666398741,EShighclass2:1.0:0.2152706819,EShighclass3:1.0:0.1847903488,ESlowclass1:1.0:0.0880586138,ESlowclass2:1.0:0.0443716132,ESlowclass3:1.0:0.0294506231,ESlowclass4:1.0:0.0170207238,ESlowclass5:1.0:0.0222553522,ESlowclass6:1.0:0.0120724176,ESlowclass7:1.0:0.0200697515}
+NOTE: 24187 MB RAM is required!
+1. Initial log-likelihood: -3806606.702
+Optimal log-likelihood: -3806606.595
+Mixture weights: 0.367 0.215 0.185 0.088 0.044 0.029 0.017 0.022 0.012 0.020
+Gamma shape alpha: 0.604
+Parameters optimization took 1 rounds (50.379 sec)
+Computing posterior mean site frequencies....
+Site state frequency vectors printed to 1kp/1_infer/GTR20-MEOW10opt-PMSF.sitefreq
+
+===> CONTINUE ANALYSIS USING THE INFERRED SITE FREQUENCY MODEL
+NOTE: minimal branch length is reduced to 0.000000964711 for long alignment
+Reading model definition file 1kp/1_infer/GTRMEOW10OPT.nex ... 89 models and 224 frequency vectors loaded
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 1.255 seconds
+Model GTRMEOW10OPT is alias for GTRPMIX+G4{0.6036}+FMIX{EShighclass1:1.0:0.3666398741,EShighclass2:1.0:0.2152706819,EShighclass3:1.0:0.1847903488,ESlowclass1:1.0:0.0880586138,ESlowclass2:1.0:0.0443716132,ESlowclass3:1.0:0.0294506231,ESlowclass4:1.0:0.0170207238,ESlowclass5:1.0:0.0222553522,ESlowclass6:1.0:0.0120724176,ESlowclass7:1.0:0.0200697515}
+
+NOTE: 3329 MB RAM (3 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3735019.704
+2. Current log-likelihood: -3635823.465
+3. Current log-likelihood: -3631849.258
+4. Current log-likelihood: -3631786.274
+5. Current log-likelihood: -3631784.780
+6. Current log-likelihood: -3631784.744
+Optimal log-likelihood: -3631784.741
+Gamma shape alpha: 0.604
+Parameters optimization took 6 rounds (39.432 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -3631784.741
+WARNING: Switch now to '-wspr' as it is the only option for non-mixture model
+Site probabilities per category printed to 1kp/1_infer/GTR20-MEOW10opt-PMSF.siteprob
+Total tree length: 20.108
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 1518.266 sec (0h:25m:18s)
+Total wall-clock time used: 62.731 sec (0h:1m:2s)
+
+Analysis results written to: 
+  IQ-TREE report:                1kp/1_infer/GTR20-MEOW10opt-PMSF.iqtree
+  Maximum-likelihood tree:       1kp/1_infer/GTR20-MEOW10opt-PMSF.treefile
+  Site probability per rate/mix: 1kp/1_infer/GTR20-MEOW10opt-PMSF.siteprob
+  Screen log file:               1kp/1_infer/GTR20-MEOW10opt-PMSF.log
+
+Date and Time: Sat May 17 03:49:02 2025

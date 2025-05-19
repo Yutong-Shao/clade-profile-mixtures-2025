@@ -1,0 +1,198 @@
+IQ-TREE 3.0.0 built Apr  4 2025
+
+Input file name: 1kp/1kp.fasta
+User tree file name: 1kp/lgc60pmsf.contree
+Type of analysis: tree reconstruction
+Random seed number: 856345
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+To cite GTRpmix please use: 
+
+Hector Banos, Thomas KF Wong, Justin Daneau, Edward Susko, Bui Quang Minh,
+Robert Lanfear, Matthew W Brown, Laura Eme, Andrew J Roger (2025)
+GTRpmix: A linked general-time reversible model for profile mixture models.
+Molecular Biology and Evolution, 92:msae174.
+https://doi.org/10.1093/molbev/msae174
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 40 sequences with 103658 amino-acid sites
+Number of constant sites: 15654 (= 15.1016% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 15654 (= 15.1016% of all sites)
+Number of parsimony informative sites: 74754
+Number of distinct site patterns: 97826
+
+SUBSTITUTION PROCESS
+--------------------
+
+Mixture model of substitution: MIX{GTR20+FC10pi1,GTR20+FC10pi2,GTR20+FC10pi3,GTR20+FC10pi4,GTR20+FC10pi5,GTR20+FC10pi6,GTR20+FC10pi7,GTR20+FC10pi8,GTR20+FC10pi9,GTR20+FC10pi10}+G4
+
+  No  Component      Rate    Weight   Parameters
+   1  GTR20+FC10pi1  1.0000000000  0.0748349988  GTR20+FC10pi1
+   2  GTR20+FC10pi2  1.0000000000  0.1591331779  GTR20+FC10pi2
+   3  GTR20+FC10pi3  1.0000000000  0.0490896407  GTR20+FC10pi3
+   4  GTR20+FC10pi4  1.0000000000  0.0572035817  GTR20+FC10pi4
+   5  GTR20+FC10pi5  1.0000000000  0.0889130951  GTR20+FC10pi5
+   6  GTR20+FC10pi6  1.0000000000  0.2171851911  GTR20+FC10pi6
+   7  GTR20+FC10pi7  1.0000000000  0.0852695998  GTR20+FC10pi7
+   8  GTR20+FC10pi8  1.0000000000  0.0353083056  GTR20+FC10pi8
+   9  GTR20+FC10pi9  1.0000000000  0.1344772081  GTR20+FC10pi9
+  10  GTR20+FC10pi10  1.0000000000  0.0985852013  GTR20+FC10pi10
+
+Linked substitution parameters (lower-diagonal):
+
+ 1.081351
+ 0.984894 1.992007
+ 0.933259 0.357600 8.958699
+ 5.676808 11.032015 5.401080 1.991242
+ 1.350549 6.331155 2.747196 0.333853 2.581352
+ 2.090936 0.531832 1.089215 8.964927 0.873625 6.005665
+ 8.968768 4.817100 3.951948 3.920991 7.503232 1.899043 3.773325
+ 0.811199 6.602221 10.723866 2.905010 7.000339 14.273870 1.093668 1.228386
+ 2.735852 1.645120 6.819030 1.902757 3.441853 0.658901 1.058300 2.546751 1.195947
+ 4.508445 3.640039 0.708159 0.816328 7.009251 6.799729 1.519679 2.618176 3.471833 27.404829
+ 1.296695 15.955534 8.710251 0.351982 0.246942 5.168939 2.644188 2.804883 0.629511 3.312580 1.211563
+ 6.343722 3.399371 2.077425 0.849581 1.640136 4.980019 2.115778 4.193060 0.190426 31.897032 34.460591 7.054929
+ 3.510554 0.668389 1.095380 1.679512 19.856054 0.483131 0.636216 2.941773 2.826473 15.030142 29.831477 0.454249 6.772875
+ 5.595074 2.916376 0.561266 0.698460 1.542441 3.909406 0.648601 2.770009 4.097833 2.183428 9.186172 1.360570 2.295973 5.299371
+ 14.615468 3.806151 11.392117 2.536255 30.678219 1.965207 1.137263 9.322544 2.852496 4.905742 9.497272 2.709138 5.084998 12.273296 11.151542
+ 9.162948 2.052600 6.969347 0.933959 5.290653 1.482159 1.201846 1.394765 1.068675 14.315403 2.873580 4.257276 15.231427 1.746410 3.167843 17.890163
+ 1.355337 6.512515 0.121609 0.524776 14.488824 1.223710 0.922760 5.845585 0.719578 1.296646 8.435472 0.677702 3.195011 7.281309 1.947842 4.668939 0.768800
+ 0.761853 1.461164 3.267237 2.507409 19.229092 0.740760 1.006359 0.680784 14.558824 2.272596 2.408260 0.575993 0.452000 33.502515 1.109876 5.108548 1.137175 3.775142
+ 20.103839 0.986447 1.556159 2.149511 8.916813 1.018619 4.057279 4.980005 1.094808 76.603569 20.832138 1.747978 13.994443 11.591181 4.851637 2.866183 10.056720 1.461058 1.000000
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.5897
+
+ Category  Relative_rate  Proportion
+  1         0.0510         0.2500
+  2         0.3065         0.2500
+  3         0.8760         0.2500
+  4         2.7665         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -3808107.8069 (s.e. 7977.9226)
+Unconstrained log-likelihood (without tree): -1185070.0576
+Number of free parameters (#branches + #model parameters): 276
+Akaike information criterion (AIC) score: 7616767.6137
+Corrected Akaike information criterion (AICc) score: 7616769.0927
+Bayesian information criterion (BIC) score: 7619403.0969
+
+Total tree length (sum of branch lengths): 20.4911
+Sum of internal branch lengths: 3.1065 (15.1604% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'BFIK' is drawn at root
+
++--------------BFIK
+| (100)
+|                   +-------BNCU
+|                +--| (100)
+|                |  +-----ILBQ
+|             +--| (100)
+|             |  +----------CMEQ
+|        +----| (100)
+|        |    |                           +------CIEA
+|        |    |                        +--| (100)
+|        |    |                        |  +-----YPIC
+|        |    |                     +--| (100)
+|        |    |                     |  |  +----WTDE
+|        |    |                     |  +--| (100)
+|        |    |                     |     +-----XZME
+|        |    |                  +--| (100)
+|        |    |                  |  +------Spipo_v2
+|        |    |               +--| (100)
+|        |    |               |  |  +-----VYLQ
+|        |    |               |  +--| (100)
+|        |    |               |     +-------XSZI
+|        |    |         +-----| (100)
+|        |    |         |     |                       +------CSUV
+|        |    |         |     |                    +--| (100)
+|        |    |         |     |                    |  +-----POZS
+|        |    |         |     |                 +--| (54)
+|        |    |         |     |                 |  |  +-----KNMB
+|        |    |         |     |                 |  +--| (100)
+|        |    |         |     |                 |     +-----WKCY
+|        |    |         |     |              +--| (100)
+|        |    |         |     |              |  +------WWQZ
+|        |    |         |     |           +--| (50)
+|        |    |         |     |           |  +------KWGC
+|        |    |         |     |        +--| (84)
+|        |    |         |     |        |  +-------OLES
+|        |    |         |     |     +--| (100)
+|        |    |         |     |     |  |        +----IYDF
+|        |    |         |     |     |  |     +--| (100)
+|        |    |         |     |     |  |     |  +-----WQRD
+|        |    |         |     |     |  |  +--| (100)
+|        |    |         |     |     |  |  |  +-----OAGK
+|        |    |         |     |     |  +--| (100)
+|        |    |         |     |     |     +-----JEXA
+|        |    |         |     |  +--| (100)
+|        |    |         |     |  |  +------QKMG
+|        |    |         |     +--| (100)
+|        |    |         |        +-----ZUHO
+|        |    |     +---| (100)
+|        |    |     |   +----------GTHK
+|        |    |  +--| (100)
+|        |    |  |  |  +--------JVSZ
+|        |    |  |  +--| (100)
+|        |    |  |     +----------SKYV
+|        |    +--| (100)
+|        |       |  +--------PQTO
+|        |       +--| (100)
+|        |          |  +---------PYHZ
+|        |          +--| (100)
+|        |             |    +-------Selmo_v1.0
+|        |             +----| (100)
+|        |                  +--------ZFGK
+|     +--| (100)
+|     |  |        +-----------HKZW
+|     |  |     +--| (100)
+|     |  |     |  +------JOJQ
+|     |  |  +--| (100)
+|     |  |  |  +------------YOXI
+|     |  +--| (100)
+|     |     +-----------WDCW
+|  +--| (100)
+|  |  +-----------------QPDY
++--| (100)
+|  |              +--------------------------------------Chlre_v5.5
+|  |           +--|
+|  |           |  +-----------------------MMKU
+|  +-----------| (86)
+|              +-------------------------------------------Micpu_v3.0
+|
++--------------Klefl_v1.0
+
+Tree in newick format:
+
+(BFIK:0.6280603595,((((((BNCU:0.3505244274,ILBQ:0.2709966537)100:0.1553240285,CMEQ:0.4381123748)100:0.0451891083,((((((((CIEA:0.3056980524,YPIC:0.2739040897)100:0.0836688463,(WTDE:0.2202806922,XZME:0.2746526880)100:0.0211088902)100:0.0351672701,Spipo_v2:0.3019441035)100:0.0448369051,(VYLQ:0.2510635547,XSZI:0.3350222113)100:0.0252455695)100:0.0147460760,((((((((CSUV:0.3114805524,POZS:0.2399505999)100:0.0284359576,(KNMB:0.2417160402,WKCY:0.2652826118)100:0.0209766487)54:0.0108787825,WWQZ:0.2992532421)100:0.0133118065,KWGC:0.3032334451)50:0.0088125376,OLES:0.3288473878)84:0.0084045416,(((IYDF:0.2288465196,WQRD:0.2473725629)100:0.0331846089,OAGK:0.2537951946)100:0.0192750868,JEXA:0.2632486246)100:0.0266844827)100:0.0135924743,QKMG:0.3007695555)100:0.0395326281,ZUHO:0.2417935006)100:0.0376691808)100:0.2665587201,GTHK:0.4635588768)100:0.1870477848,(JVSZ:0.3733054095,SKYV:0.4545048613)100:0.0854395981)100:0.0704482865,(PQTO:0.3763837961,(PYHZ:0.4037555011,(Selmo_v1.0:0.3291224235,ZFGK:0.3837710894)100:0.2052140049)100:0.0504274551)100:0.0635833456)100:0.0513808531)100:0.2194876069,(((HKZW:0.4853049311,JOJQ:0.3013020983)100:0.0758435286,YOXI:0.5333312883)100:0.1287063976,WDCW:0.5007945754)100:0.1263330862)100:0.0545341017,QPDY:0.7204682109)100:0.1054951992,((Chlre_v5.5:1.5614389306,MMKU:0.9566913198):0.1186993890,Micpu_v3.0:1.7664934467)86:0.4787093449)100:0.1325924439,Klefl_v1.0:0.5985183628)100;
+
+ALISIM COMMAND
+--------------
+Currently, we only support exporting AliSim commands automatically from the analysis for common models of DNA, Protein, Binary, and Morphological data. To simulate data from other models (mixture, lie-markov, etc), please refer to the User Manual of AliSim. Thanks!
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri May  9 21:07:23 2025
+Total CPU time used: 4420492.8 seconds (1227h:54m:52s)
+Total wall-clock time used: 123393.71 seconds (34h:16m:33s)
+

@@ -1,0 +1,174 @@
+IQ-TREE 3.0.0 built Apr  4 2025
+
+Input file name: 1kp/1kp.fasta
+Type of analysis: tree reconstruction
+Random seed number: 982466
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used site-specific frequency model please also cite: 
+
+Huai-Chun Wang, Edward Susko, Bui Quang Minh, and Andrew J. Roger (2018)
+Modeling site heterogeneity with posterior mean site frequency profiles
+accelerates accurate phylogenomic estimation. Syst. Biol., 67:216–235.
+https://doi.org/10.1093/sysbio/syx068
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 40 sequences with 103658 amino-acid sites
+Number of constant sites: 15654 (= 15.1016% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 15654 (= 15.1016% of all sites)
+Number of parsimony informative sites: 74754
+Number of distinct site patterns: 97826
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Poisson+SSF+F+G4
+
+State frequencies: (site specific frequencies)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.6164
+
+ Category  Relative_rate  Proportion
+  1         0.0565         0.2500
+  2         0.3213         0.2500
+  3         0.8895         0.2500
+  4         2.7327         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -3489127.2545 (s.e. 7740.2010)
+Unconstrained log-likelihood (without tree): -1185070.0576
+Number of free parameters (#branches + #model parameters): 97
+Akaike information criterion (AIC) score: 6978448.5091
+Corrected Akaike information criterion (AICc) score: 6978448.6927
+Bayesian information criterion (BIC) score: 6979374.7478
+
+Total tree length (sum of branch lengths): 19.4372
+Sum of internal branch lengths: 3.4229 (17.6103% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'BFIK' is drawn at root
+
++-------------BFIK
+|
+|                    +------BNCU
+|                 +--|
+|                 |  +----ILBQ
+|              +--|
+|              |  +--------CMEQ
+|        +-----|
+|        |     |                             +-----CIEA
+|        |     |                          +--|
+|        |     |                          |  +-----YPIC
+|        |     |                       +--|
+|        |     |                       |  |  +----WTDE
+|        |     |                       |  +--|
+|        |     |                       |     +-----XZME
+|        |     |                    +--|
+|        |     |                    |  +-----Spipo_v2
+|        |     |                 +--|
+|        |     |                 |  |                    +------CSUV
+|        |     |                 |  |                 +--|
+|        |     |                 |  |                 |  +----POZS
+|        |     |                 |  |              +--|
+|        |     |                 |  |              |  +-----WWQZ
+|        |     |                 |  |           +--|
+|        |     |                 |  |           |  |  +----KNMB
+|        |     |                 |  |           |  +--|
+|        |     |                 |  |           |     +-----WKCY
+|        |     |                 |  |        +--|
+|        |     |                 |  |        |  |           +----IYDF
+|        |     |                 |  |        |  |        +--|
+|        |     |                 |  |        |  |        |  +----WQRD
+|        |     |                 |  |        |  |     +--|
+|        |     |                 |  |        |  |     |  +----OAGK
+|        |     |                 |  |        |  |  +--|
+|        |     |                 |  |        |  |  |  +-----JEXA
+|        |     |                 |  |        |  +--|
+|        |     |                 |  |        |     |  +-----KWGC
+|        |     |                 |  |        |     +--|
+|        |     |                 |  |        |        +------OLES
+|        |     |                 |  |     +--|
+|        |     |                 |  |     |  +------QKMG
+|        |     |                 |  |  +--|
+|        |     |                 |  |  |  +----ZUHO
+|        |     |                 |  +--|
+|        |     |                 |     +-----VYLQ
+|        |     |          +------|
+|        |     |          |      +------XSZI
+|        |     |     +----|
+|        |     |     |    +---------GTHK
+|        |     |  +--|
+|        |     |  |  |  +-------JVSZ
+|        |     |  |  +--|
+|        |     |  |     +---------SKYV
+|        |     +--|
+|        |        |  +-------PQTO
+|        |        +--|
+|        |           |  +--------PYHZ
+|        |           +--|
+|        |              |   +------Selmo_v1.0
+|        |              +---|
+|        |                  +-------ZFGK
+|     +--|
+|     |  |        +---------HKZW
+|     |  |     +--|
+|     |  |     |  +-----JOJQ
+|     |  |  +--|
+|     |  |  |  +----------YOXI
+|     |  +--|
+|     |     +---------WDCW
+|  +--|
+|  |  +---------------QPDY
++--|
+|  |                 +---------------------------------Chlre_v5.5
+|  |              +--|
+|  |              |  +------------------------------------Micpu_v3.0
+|  +--------------|
+|                 +-------------------MMKU
+|
++-----------Klefl_v1.0
+
+Tree in newick format:
+
+(BFIK:0.5794890197,((((((BNCU:0.3271601336,ILBQ:0.2447523006):0.1409310835,CMEQ:0.3991256225):0.0332034584,((((((((CIEA:0.2887872615,YPIC:0.2577034591):0.0816604980,(WTDE:0.2084283619,XZME:0.2657708347):0.0189895537):0.0349159332,Spipo_v2:0.2872743905):0.0449904644,(((((((CSUV:0.2973606856,POZS:0.2273291887):0.0236344458,WWQZ:0.2788120565):0.0120984141,(KNMB:0.2320304103,WKCY:0.2530222789):0.0238681190):0.0227865591,((((IYDF:0.2181869304,WQRD:0.2379578630):0.0319731860,OAGK:0.2382651360):0.0191776644,JEXA:0.2526035787):0.0233658578,(KWGC:0.2747297059,OLES:0.2991828247):0.0195016891):0.0087507683):0.0158278003,QKMG:0.2906937027):0.0428269227,ZUHO:0.2299122868):0.0457256054,VYLQ:0.2581297069):0.0079253555):0.0154859963,XSZI:0.3234103014):0.3035120861,GTHK:0.4387155721):0.2259548504,(JVSZ:0.3465918025,SKYV:0.4329368632):0.0729527495):0.0844171512,(PQTO:0.3456961476,(PYHZ:0.3734344191,(Selmo_v1.0:0.2983150864,ZFGK:0.3578801244):0.2017532565):0.0510312823):0.0571217120):0.0622920375):0.2686070087,(((HKZW:0.4415083915,JOJQ:0.2550917767):0.0657088485,YOXI:0.4709460629):0.1233073235,WDCW:0.4374720107):0.1178368681):0.0600842211,QPDY:0.6696609419):0.1391364444,((Chlre_v5.5:1.4212045146,Micpu_v3.0:1.5575374603):0.1619521378,MMKU:0.8676145334):0.6601746361):0.0994621390,Klefl_v1.0:0.5294977913);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t 1kp/1_infer/POISSON-UDM64HOC-PMSF.treefile -m "Poisson+SSF{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}+F{0.0838042,0.0590739,0.033003,0.0570268,0.0150537,0.0364705,0.068433,0.070003,0.0214466,0.0499878,0.102462,0.0596845,0.0210341,0.0400547,0.0463935,0.0722693,0.0471973,0.0130218,0.0274887,0.0760918}+G4{0.616417}" --length 103658
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s 1kp/1kp.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s 1kp/1kp.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu May  8 05:31:43 2025
+Total CPU time used: 3413.8647 seconds (0h:56m:53s)
+Total wall-clock time used: 106.28858 seconds (0h:1m:46s)
+

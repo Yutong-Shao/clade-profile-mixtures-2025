@@ -1,0 +1,161 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: ./iqtree2 -s 1kp/1kp.fasta -fs 1kp/1_infer/LG-UDM128opt-PMSF.sitefreq -m LGUDM128OPT -mdef 1kp/udm_hogenom_0128_clr_iqtree.nex -safe -pre 1kp/1_infer/LG-_UDM128opt-_PMSF -wsr -bb 1000 --wbtl -nt 40
+Seed:    858523 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat May 17 09:17:47 2025
+Kernel:  Safe AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading alignment file 1kp/1kp.fasta ... Fasta format detected
+Reading fasta file: done in 0.0702577 secs using 99.94% CPU
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 103658 columns, 97826 distinct patterns
+74754 parsimony-informative, 13250 singleton sites, 15653 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.011997 secs using 3849% CPU
+   1  BFIK         27.41%    failed      0.00%
+   2  BNCU         13.55%    failed      0.00%
+   3  CIEA         19.10%    failed      0.00%
+   4  CMEQ         13.47%    failed      0.00%
+   5  CSUV         27.21%    failed      0.00%
+   6  Chlre_v5.5   16.92%    failed      0.00%
+   7  GTHK         18.40%    failed      0.00%
+   8  HKZW         24.20%    failed      0.00%
+   9  ILBQ         16.53%    failed      0.00%
+  10  IYDF         17.50%    failed      0.00%
+  11  JEXA         19.01%    failed      0.00%
+  12  JOJQ         16.68%    failed      0.00%
+  13  JVSZ         25.96%    failed      0.00%
+  14  KNMB         16.28%    failed      0.00%
+  15  KWGC         29.11%    failed      0.00%
+  16  Klefl_v1.0    7.15%    failed      0.00%
+  17  MMKU         27.49%    failed      0.00%
+  18  Micpu_v3.0   25.86%    failed      0.00%
+  19  OAGK          6.76%    failed      0.00%
+  20  OLES         13.66%    failed      0.00%
+  21  POZS         25.34%    failed      0.00%
+  22  PQTO         21.02%    failed      0.00%
+  23  PYHZ         19.30%    failed      0.00%
+  24  QKMG         23.72%    failed      0.00%
+  25  QPDY         15.05%    failed      0.00%
+  26  SKYV         29.84%    failed      0.00%
+  27  Selmo_v1.0   13.65%    failed      0.00%
+  28  Spipo_v2      8.49%    failed      0.00%
+  29  VYLQ          4.05%    failed      0.00%
+  30  WDCW         24.70%    failed      0.00%
+  31  WKCY          7.98%    failed      0.00%
+  32  WQRD         23.20%    failed      0.00%
+  33  WTDE         26.95%    failed      0.00%
+  34  WWQZ         16.02%    failed      0.00%
+  35  XSZI         18.21%    failed      0.00%
+  36  XZME         11.12%    failed      0.00%
+  37  YOXI         25.48%    failed      0.00%
+  38  YPIC         24.57%    failed      0.00%
+  39  ZFGK         22.51%    failed      0.00%
+  40  ZUHO         17.59%    failed      0.00%
+****  TOTAL        19.03%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Reading site-specific state frequency file 1kp/1_infer/LG-UDM128opt-PMSF.sitefreq ...
+97826 distinct per-site state frequency vectors detected
+NOTE: minimal branch length is reduced to 0.000000964711 for long alignment
+Reading model definition file 1kp/udm_hogenom_0128_clr_iqtree.nex ... 89 models and 342 frequency vectors loaded
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 1.136 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 858523)...
+Model LGUDM128OPT is alias for LG+G4{0.5141993626}+FMIX{UDM0128CLR_C0000:1.0:0.0000000885,UDM0128CLR_C0001:1.0:0.0154321693,UDM0128CLR_C0002:1.0:0.0130068525,UDM0128CLR_C0003:1.0:0.0032460762,UDM0128CLR_C0004:1.0:0.0000000885,UDM0128CLR_C0005:1.0:0.0157754721,UDM0128CLR_C0006:1.0:0.0075974995,UDM0128CLR_C0007:1.0:0.0326874804,UDM0128CLR_C0008:1.0:0.0059145130,UDM0128CLR_C0009:1.0:0.0000000885,UDM0128CLR_C0010:1.0:0.0011840078,UDM0128CLR_C0011:1.0:0.0078166611,UDM0128CLR_C0012:1.0:0.0080328119,UDM0128CLR_C0013:1.0:0.0000000885,UDM0128CLR_C0014:1.0:0.0000000885,UDM0128CLR_C0015:1.0:0.0000000885,UDM0128CLR_C0016:1.0:0.0000000885,UDM0128CLR_C0017:1.0:0.0000000885,UDM0128CLR_C0018:1.0:0.0335511488,UDM0128CLR_C0019:1.0:0.0000000885,UDM0128CLR_C0020:1.0:0.0301023307,UDM0128CLR_C0021:1.0:0.0014726818,UDM0128CLR_C0022:1.0:0.0048387978,UDM0128CLR_C0023:1.0:0.0055124175,UDM0128CLR_C0024:1.0:0.0066094095,UDM0128CLR_C0025:1.0:0.0048291513,UDM0128CLR_C0026:1.0:0.0141210170,UDM0128CLR_C0027:1.0:0.0225275741,UDM0128CLR_C0028:1.0:0.0015086743,UDM0128CLR_C0029:1.0:0.0000178417,UDM0128CLR_C0030:1.0:0.0000000885,UDM0128CLR_C0031:1.0:0.0034782197,UDM0128CLR_C0032:1.0:0.0079044222,UDM0128CLR_C0033:1.0:0.0000000885,UDM0128CLR_C0034:1.0:0.0024210426,UDM0128CLR_C0035:1.0:0.0093504215,UDM0128CLR_C0036:1.0:0.0000000885,UDM0128CLR_C0037:1.0:0.0000000885,UDM0128CLR_C0038:1.0:0.0000000885,UDM0128CLR_C0039:1.0:0.0000000885,UDM0128CLR_C0040:1.0:0.0714336937,UDM0128CLR_C0041:1.0:0.0000000885,UDM0128CLR_C0042:1.0:0.0036286563,UDM0128CLR_C0043:1.0:0.0067599832,UDM0128CLR_C0044:1.0:0.0000000885,UDM0128CLR_C0045:1.0:0.0113349478,UDM0128CLR_C0046:1.0:0.0020342440,UDM0128CLR_C0047:1.0:0.0000000885,UDM0128CLR_C0048:1.0:0.0000754955,UDM0128CLR_C0049:1.0:0.0000000885,UDM0128CLR_C0050:1.0:0.0011496023,UDM0128CLR_C0051:1.0:0.0090781285,UDM0128CLR_C0052:1.0:0.0000000885,UDM0128CLR_C0053:1.0:0.0146450187,UDM0128CLR_C0054:1.0:0.0036310072,UDM0128CLR_C0055:1.0:0.0000000885,UDM0128CLR_C0056:1.0:0.0144864725,UDM0128CLR_C0057:1.0:0.0035758285,UDM0128CLR_C0058:1.0:0.0070543103,UDM0128CLR_C0059:1.0:0.0009641203,UDM0128CLR_C0060:1.0:0.0081220976,UDM0128CLR_C0061:1.0:0.0204287233,UDM0128CLR_C0062:1.0:0.0102743913,UDM0128CLR_C0063:1.0:0.0014908273,UDM0128CLR_C0064:1.0:0.0015356209,UDM0128CLR_C0065:1.0:0.0069573827,UDM0128CLR_C0066:1.0:0.0113061625,UDM0128CLR_C0067:1.0:0.0017344825,UDM0128CLR_C0068:1.0:0.0009635960,UDM0128CLR_C0069:1.0:0.0021283631,UDM0128CLR_C0070:1.0:0.0116105143,UDM0128CLR_C0071:1.0:0.0013416401,UDM0128CLR_C0072:1.0:0.0135721315,UDM0128CLR_C0073:1.0:0.0053023625,UDM0128CLR_C0074:1.0:0.0050530335,UDM0128CLR_C0075:1.0:0.0184197869,UDM0128CLR_C0076:1.0:0.0371841782,UDM0128CLR_C0077:1.0:0.0000000885,UDM0128CLR_C0078:1.0:0.0090437935,UDM0128CLR_C0079:1.0:0.0015325421,UDM0128CLR_C0080:1.0:0.0071687862,UDM0128CLR_C0081:1.0:0.0137777001,UDM0128CLR_C0082:1.0:0.0000000885,UDM0128CLR_C0083:1.0:0.0038672167,UDM0128CLR_C0084:1.0:0.0043892813,UDM0128CLR_C0085:1.0:0.0205060752,UDM0128CLR_C0086:1.0:0.0007994377,UDM0128CLR_C0087:1.0:0.0030151069,UDM0128CLR_C0088:1.0:0.0000000885,UDM0128CLR_C0089:1.0:0.0082978240,UDM0128CLR_C0090:1.0:0.0000000885,UDM0128CLR_C0091:1.0:0.0150221996,UDM0128CLR_C0092:1.0:0.0000000885,UDM0128CLR_C0093:1.0:0.0185958428,UDM0128CLR_C0094:1.0:0.0885162234,UDM0128CLR_C0095:1.0:0.0029856016,UDM0128CLR_C0096:1.0:0.0046015689,UDM0128CLR_C0097:1.0:0.0183143784,UDM0128CLR_C0098:1.0:0.0036051721,UDM0128CLR_C0099:1.0:0.0106883279,UDM0128CLR_C0100:1.0:0.0030692977,UDM0128CLR_C0101:1.0:0.0041708912,UDM0128CLR_C0102:1.0:0.0000000885,UDM0128CLR_C0103:1.0:0.0289237150,UDM0128CLR_C0104:1.0:0.0000000885,UDM0128CLR_C0105:1.0:0.0000000885,UDM0128CLR_C0106:1.0:0.0051951230,UDM0128CLR_C0107:1.0:0.0000000885,UDM0128CLR_C0108:1.0:0.0152186080,UDM0128CLR_C0109:1.0:0.0036343946,UDM0128CLR_C0110:1.0:0.0000000885,UDM0128CLR_C0111:1.0:0.0130346735,UDM0128CLR_C0112:1.0:0.0377172450,UDM0128CLR_C0113:1.0:0.0052352558,UDM0128CLR_C0114:1.0:0.0141540756,UDM0128CLR_C0115:1.0:0.0120363106,UDM0128CLR_C0116:1.0:0.0050096309,UDM0128CLR_C0117:1.0:0.0081287044,UDM0128CLR_C0118:1.0:0.0013560389,UDM0128CLR_C0119:1.0:0.0169489953,UDM0128CLR_C0120:1.0:0.0000000885,UDM0128CLR_C0121:1.0:0.0042342440,UDM0128CLR_C0122:1.0:0.0114891361,UDM0128CLR_C0123:1.0:0.0005306899,UDM0128CLR_C0124:1.0:0.0025224583,UDM0128CLR_C0125:1.0:0.0030414318,UDM0128CLR_C0126:1.0:0.0033151560,UDM0128CLR_C0127:1.0:0.0000885162}
+
+NOTE: 3702 MB RAM (3 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -3610248.932
+2. Current log-likelihood: -3493664.086
+3. Current log-likelihood: -3485262.273
+4. Current log-likelihood: -3485139.495
+5. Current log-likelihood: -3485138.156
+Optimal log-likelihood: -3485138.142
+Gamma shape alpha: 0.514
+Parameters optimization took 5 rounds (35.400 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 33.538 secs using 2582% CPU
+Computing ML distances took 33.549168 sec (of wall-clock time) 866.114971 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0434643 secs using 2605% CPU
+Computing RapidNJ tree took 1.898433 sec (of wall-clock time) 50.687870 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -3488840.769
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 124.509 second
+Computing log-likelihood of 98 initial trees ... 334.993 seconds
+Current best score: -3485138.142
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3484564.336
+Iteration 10 / LogL: -3484569.885 / Time: 0h:21m:5s
+Iteration 20 / LogL: -3484590.270 / Time: 0h:34m:3s
+Finish initializing candidate tree set (1)
+Current best tree score: -3484564.336 / CPU time: 1919.853
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -3484578.886 / Time: 0h:43m:30s (1h:46m:28s left)
+Iteration 40 / LogL: -3484596.975 / Time: 0h:53m:11s (1h:23m:10s left)
+Iteration 50 / LogL: -3484568.764 / Time: 1h:3m:23s (1h:5m:57s left)
+Log-likelihood cutoff on original alignment: -3484645.106
+UFBoot trees printed to 1kp/1_infer/LG-_UDM128opt-_PMSF.ufboot
+Iteration 60 / LogL: -3484572.697 / Time: 1h:14m:4s (0h:51m:27s left)
+Iteration 70 / LogL: -3484572.129 / Time: 1h:24m:11s (0h:37m:49s left)
+Iteration 80 / LogL: -3484592.516 / Time: 1h:36m:3s (0h:25m:31s left)
+Iteration 90 / LogL: -3484592.801 / Time: 1h:46m:25s (0h:13m:9s left)
+Iteration 100 / LogL: -3484564.586 / Time: 1h:56m:12s (0h:1m:10s left)
+Log-likelihood cutoff on original alignment: -3484645.106
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+UFBoot trees printed to 1kp/1_infer/LG-_UDM128opt-_PMSF.ufboot
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 1h:58m:19s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3484564.336
+Optimal log-likelihood: -3484564.336
+Gamma shape alpha: 0.514
+Parameters optimization took 1 rounds (5.767 sec)
+BEST SCORE FOUND : -3484564.336
+Empirical proportions for each category: 0.277 0.247 0.270 0.207
+Site rates printed to 1kp/1_infer/LG-_UDM128opt-_PMSF.rate
+Creating bootstrap support values...
+Split supports printed to NEXUS file 1kp/1_infer/LG-_UDM128opt-_PMSF.splits.nex
+Total tree length: 27.781
+
+Total number of iterations: 102
+CPU time used for tree search: 229911.099 sec (63h:51m:51s)
+Wall-clock time used for tree search: 6975.677 sec (1h:56m:15s)
+Total CPU time used: 233393.037 sec (64h:49m:53s)
+Total wall-clock time used: 7106.111 sec (1h:58m:26s)
+UFBoot trees printed to 1kp/1_infer/LG-_UDM128opt-_PMSF.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file 1kp/1_infer/LG-_UDM128opt-_PMSF.splits.nex...
+40 taxa and 83 splits.
+Consensus tree written to 1kp/1_infer/LG-_UDM128opt-_PMSF.contree
+Reading input trees file 1kp/1_infer/LG-_UDM128opt-_PMSF.contree
+Log-likelihood of consensus tree: -3484564.336
+
+Analysis results written to: 
+  IQ-TREE report:                1kp/1_infer/LG-_UDM128opt-_PMSF.iqtree
+  Maximum-likelihood tree:       1kp/1_infer/LG-_UDM128opt-_PMSF.treefile
+  Likelihood distances:          1kp/1_infer/LG-_UDM128opt-_PMSF.mldist
+  Site-specific rates:           1kp/1_infer/LG-_UDM128opt-_PMSF.rate
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          1kp/1_infer/LG-_UDM128opt-_PMSF.splits.nex
+  Consensus tree:                1kp/1_infer/LG-_UDM128opt-_PMSF.contree
+  UFBoot trees:                  1kp/1_infer/LG-_UDM128opt-_PMSF.ufboot
+  Screen log file:               1kp/1_infer/LG-_UDM128opt-_PMSF.log
+
+Date and Time: Sat May 17 11:16:54 2025

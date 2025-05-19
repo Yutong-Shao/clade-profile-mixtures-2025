@@ -1,0 +1,238 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Input file name: 1kp/1kp.fasta
+User tree file name: 1kp/lgc60pmsf.contree
+Type of analysis: tree reconstruction
+Random seed number: 370158
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 40 sequences with 103658 amino-acid sites
+Number of constant sites: 15654 (= 15.1016% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 15654 (= 15.1016% of all sites)
+Number of parsimony informative sites: 74754
+Number of distinct site patterns: 97826
+
+SUBSTITUTION PROCESS
+--------------------
+
+Mixture model of substitution: MIX{GTR20+FC60pi1,GTR20+FC60pi2,GTR20+FC60pi3,GTR20+FC60pi4,GTR20+FC60pi5,GTR20+FC60pi6,GTR20+FC60pi7,GTR20+FC60pi8,GTR20+FC60pi9,GTR20+FC60pi10,GTR20+FC60pi11,GTR20+FC60pi12,GTR20+FC60pi13,GTR20+FC60pi14,GTR20+FC60pi15,GTR20+FC60pi16,GTR20+FC60pi17,GTR20+FC60pi18,GTR20+FC60pi19,GTR20+FC60pi20,GTR20+FC60pi21,GTR20+FC60pi22,GTR20+FC60pi23,GTR20+FC60pi24,GTR20+FC60pi25,GTR20+FC60pi26,GTR20+FC60pi27,GTR20+FC60pi28,GTR20+FC60pi29,GTR20+FC60pi30,GTR20+FC60pi31,GTR20+FC60pi32,GTR20+FC60pi33,GTR20+FC60pi34,GTR20+FC60pi35,GTR20+FC60pi36,GTR20+FC60pi37,GTR20+FC60pi38,GTR20+FC60pi39,GTR20+FC60pi40,GTR20+FC60pi41,GTR20+FC60pi42,GTR20+FC60pi43,GTR20+FC60pi44,GTR20+FC60pi45,GTR20+FC60pi46,GTR20+FC60pi47,GTR20+FC60pi48,GTR20+FC60pi49,GTR20+FC60pi50,GTR20+FC60pi51,GTR20+FC60pi52,GTR20+FC60pi53,GTR20+FC60pi54,GTR20+FC60pi55,GTR20+FC60pi56,GTR20+FC60pi57,GTR20+FC60pi58,GTR20+FC60pi59,GTR20+FC60pi60}+G4
+
+  No  Component      Rate    Weight   Parameters
+   1  GTR20+FC60pi1  1.0000000000  0.0362299565  GTR20+FC60pi1
+   2  GTR20+FC60pi2  1.0000000000  0.0050297670  GTR20+FC60pi2
+   3  GTR20+FC60pi3  1.0000000000  0.0078652977  GTR20+FC60pi3
+   4  GTR20+FC60pi4  1.0000000000  0.0128501468  GTR20+FC60pi4
+   5  GTR20+FC60pi5  1.0000000000  0.0225952102  GTR20+FC60pi5
+   6  GTR20+FC60pi6  1.0000000000  0.0087010612  GTR20+FC60pi6
+   7  GTR20+FC60pi7  1.0000000000  0.0058702194  GTR20+FC60pi7
+   8  GTR20+FC60pi8  1.0000000000  0.0034895159  GTR20+FC60pi8
+   9  GTR20+FC60pi9  1.0000000000  0.0090981472  GTR20+FC60pi9
+  10  GTR20+FC60pi10  1.0000000000  0.0389436991  GTR20+FC60pi10
+  11  GTR20+FC60pi11  1.0000000000  0.0154125241  GTR20+FC60pi11
+  12  GTR20+FC60pi12  1.0000000000  0.0068553679  GTR20+FC60pi12
+  13  GTR20+FC60pi13  1.0000000000  0.0068809533  GTR20+FC60pi13
+  14  GTR20+FC60pi14  1.0000000000  0.0178627769  GTR20+FC60pi14
+  15  GTR20+FC60pi15  1.0000000000  0.0202738762  GTR20+FC60pi15
+  16  GTR20+FC60pi16  1.0000000000  0.0080566070  GTR20+FC60pi16
+  17  GTR20+FC60pi17  1.0000000000  0.0237833909  GTR20+FC60pi17
+  18  GTR20+FC60pi18  1.0000000000  0.0386460401  GTR20+FC60pi18
+  19  GTR20+FC60pi19  1.0000000000  0.0206753043  GTR20+FC60pi19
+  20  GTR20+FC60pi20  1.0000000000  0.0044454594  GTR20+FC60pi20
+  21  GTR20+FC60pi21  1.0000000000  0.0034042902  GTR20+FC60pi21
+  22  GTR20+FC60pi22  1.0000000000  0.0124735923  GTR20+FC60pi22
+  23  GTR20+FC60pi23  1.0000000000  0.0062574896  GTR20+FC60pi23
+  24  GTR20+FC60pi24  1.0000000000  0.0003243194  GTR20+FC60pi24
+  25  GTR20+FC60pi25  1.0000000000  0.0093583420  GTR20+FC60pi25
+  26  GTR20+FC60pi26  1.0000000000  0.0198086663  GTR20+FC60pi26
+  27  GTR20+FC60pi27  1.0000000000  0.0251576595  GTR20+FC60pi27
+  28  GTR20+FC60pi28  1.0000000000  0.0450153691  GTR20+FC60pi28
+  29  GTR20+FC60pi29  1.0000000000  0.0302787720  GTR20+FC60pi29
+  30  GTR20+FC60pi30  1.0000000000  0.0233112482  GTR20+FC60pi30
+  31  GTR20+FC60pi31  1.0000000000  0.0038343726  GTR20+FC60pi31
+  32  GTR20+FC60pi32  1.0000000000  0.0129395033  GTR20+FC60pi32
+  33  GTR20+FC60pi33  1.0000000000  0.0141010540  GTR20+FC60pi33
+  34  GTR20+FC60pi34  1.0000000000  0.0206257337  GTR20+FC60pi34
+  35  GTR20+FC60pi35  1.0000000000  0.0340089837  GTR20+FC60pi35
+  36  GTR20+FC60pi36  1.0000000000  0.0163738343  GTR20+FC60pi36
+  37  GTR20+FC60pi37  1.0000000000  0.0129562544  GTR20+FC60pi37
+  38  GTR20+FC60pi38  1.0000000000  0.0107623718  GTR20+FC60pi38
+  39  GTR20+FC60pi39  1.0000000000  0.0028181569  GTR20+FC60pi39
+  40  GTR20+FC60pi40  1.0000000000  0.0183286934  GTR20+FC60pi40
+  41  GTR20+FC60pi41  1.0000000000  0.0047519143  GTR20+FC60pi41
+  42  GTR20+FC60pi42  1.0000000000  0.0045624248  GTR20+FC60pi42
+  43  GTR20+FC60pi43  1.0000000000  0.0169391246  GTR20+FC60pi43
+  44  GTR20+FC60pi44  1.0000000000  0.0232829807  GTR20+FC60pi44
+  45  GTR20+FC60pi45  1.0000000000  0.0172150013  GTR20+FC60pi45
+  46  GTR20+FC60pi46  1.0000000000  0.0007894952  GTR20+FC60pi46
+  47  GTR20+FC60pi47  1.0000000000  0.0290082106  GTR20+FC60pi47
+  48  GTR20+FC60pi48  1.0000000000  0.0058844441  GTR20+FC60pi48
+  49  GTR20+FC60pi49  1.0000000000  0.0040316430  GTR20+FC60pi49
+  50  GTR20+FC60pi50  1.0000000000  0.0986396436  GTR20+FC60pi50
+  51  GTR20+FC60pi51  1.0000000000  0.0098958617  GTR20+FC60pi51
+  52  GTR20+FC60pi52  1.0000000000  0.0203597226  GTR20+FC60pi52
+  53  GTR20+FC60pi53  1.0000000000  0.0030717210  GTR20+FC60pi53
+  54  GTR20+FC60pi54  1.0000000000  0.0033858938  GTR20+FC60pi54
+  55  GTR20+FC60pi55  1.0000000000  0.0637052107  GTR20+FC60pi55
+  56  GTR20+FC60pi56  1.0000000000  0.0069033960  GTR20+FC60pi56
+  57  GTR20+FC60pi57  1.0000000000  0.0041898646  GTR20+FC60pi57
+  58  GTR20+FC60pi58  1.0000000000  0.0348278979  GTR20+FC60pi58
+  59  GTR20+FC60pi59  1.0000000000  0.0103220779  GTR20+FC60pi59
+  60  GTR20+FC60pi60  1.0000000000  0.0025294436  GTR20+FC60pi60
+
+Linked substitution parameters (lower-diagonal):
+
+ 0.828264
+ 0.954795 3.126746
+ 1.219418 0.602264 16.681341
+ 4.158844 11.342286 7.574322 3.659236
+ 1.165899 8.095810 3.863781 0.832570 3.361071
+ 2.330146 0.728047 2.032176 15.768786 1.378193 8.911783
+ 4.723557 4.252225 5.033818 5.642895 6.618774 1.812425 4.768106
+ 0.801224 8.841501 16.093770 4.729905 11.147525 20.202540 1.499131 1.445081
+ 2.711085 1.699946 8.726810 2.532885 4.133112 0.712227 0.931557 2.807188 1.226686
+ 3.484767 3.456899 1.074141 1.269019 5.525029 6.496080 1.690208 1.998666 5.221358 29.283292
+ 1.059849 18.789100 12.858631 0.739501 0.404357 6.990285 4.302776 2.386257 0.843965 3.708469 1.227444
+ 4.863228 3.449112 2.564224 1.132493 1.118142 4.267031 2.361749 3.122723 0.459031 44.177370 25.877782 7.657868
+ 2.739001 0.788678 2.107078 2.157677 15.319594 0.837536 0.825451 2.392396 4.878364 14.454320 21.495130 0.630299 5.705513
+ 2.874016 2.322501 0.712544 0.506442 1.979929 4.704974 0.714877 1.200321 4.788191 1.070362 4.670905 0.804888 1.698110 3.407471
+ 10.534725 3.924781 15.325374 3.498886 27.932857 2.299845 1.594459 7.060667 3.543499 5.154591 9.767551 2.839462 4.850151 11.501915 7.791453
+ 9.313645 2.402128 9.740153 1.305379 4.525184 1.637392 1.438995 2.526331 1.291343 17.476446 3.423825 4.949048 17.670609 1.972380 3.477224 21.699339
+ 0.876862 5.874806 0.354978 0.679328 14.750326 1.942791 1.309860 3.670903 1.333715 1.377252 5.579653 0.822482 2.204143 4.463744 0.713506 4.713342 0.801952
+ 0.714827 1.738935 5.415228 3.215569 19.522540 1.143722 1.182735 0.892072 21.779046 1.599699 2.541585 0.641292 0.575926 31.348226 0.908384 5.507757 1.173516 2.608027
+ 15.234963 1.155431 2.366453 3.266829 5.289591 1.203526 4.814210 5.858400 1.386855 82.324844 22.223211 2.025103 17.298962 10.174683 2.271546 3.422349 9.886281 1.188163 1.000000
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.5651
+
+ Category  Relative_rate  Proportion
+  1         0.0460         0.2500
+  2         0.2923         0.2500
+  3         0.8624         0.2500
+  4         2.7993         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -3767625.1111 (s.e. 7888.7808)
+Unconstrained log-likelihood (without tree): -1185070.0576
+Number of free parameters (#branches + #model parameters): 326
+Akaike information criterion (AIC) score: 7535902.2222
+Corrected Akaike information criterion (AICc) score: 7535904.2855
+Bayesian information criterion (BIC) score: 7539015.1481
+
+Total tree length (sum of branch lengths): 22.1590
+Sum of internal branch lengths: 3.5162 (15.8682% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'BFIK' is drawn at root
+
++------------BFIK
+|
+|                  +------BNCU
+|               +--| (100)
+|               |  +----ILBQ
+|            +--| (100)
+|            |  +-------CMEQ
+|        +---| (100)
+|        |   |                         +----CIEA
+|        |   |                      +--| (100)
+|        |   |                      |  +----YPIC
+|        |   |                   +--| (100)
+|        |   |                   |  |  +---WTDE
+|        |   |                   |  +--| (100)
+|        |   |                   |     +----XZME
+|        |   |                +--| (100)
+|        |   |                |  +----Spipo_v2
+|        |   |             +--| (100)
+|        |   |             |  |  +---VYLQ
+|        |   |             |  +--| (100)
+|        |   |             |     +-----XSZI
+|        |   |        +----| (100)
+|        |   |        |    |                    +----CSUV
+|        |   |        |    |                 +--| (100)
+|        |   |        |    |                 |  +---POZS
+|        |   |        |    |              +--| (57)
+|        |   |        |    |              |  |  +---KNMB
+|        |   |        |    |              |  +--| (100)
+|        |   |        |    |              |     +----WKCY
+|        |   |        |    |           +--| (100)
+|        |   |        |    |           |  +----WWQZ
+|        |   |        |    |        +--| (99)
+|        |   |        |    |        |  |  +----KWGC
+|        |   |        |    |        |  +--| (83)
+|        |   |        |    |        |     +----OLES
+|        |   |        |    |     +--| (100)
+|        |   |        |    |     |  |        +---IYDF
+|        |   |        |    |     |  |     +--| (100)
+|        |   |        |    |     |  |     |  +---WQRD
+|        |   |        |    |     |  |  +--| (100)
+|        |   |        |    |     |  |  |  +---OAGK
+|        |   |        |    |     |  +--| (100)
+|        |   |        |    |     |     +---JEXA
+|        |   |        |    |  +--| (100)
+|        |   |        |    |  |  +----QKMG
+|        |   |        |    +--| (100)
+|        |   |        |       +---ZUHO
+|        |   |     +--| (100)
+|        |   |     |  +-------GTHK
+|        |   |  +--| (100)
+|        |   |  |  |  +------JVSZ
+|        |   |  |  +--| (100)
+|        |   |  |     +--------SKYV
+|        |   +--| (100)
+|        |      |  +------PQTO
+|        |      +--| (100)
+|        |         |  +------PYHZ
+|        |         +--| (100)
+|        |            |   +-----Selmo_v1.0
+|        |            +---| (100)
+|        |                +------ZFGK
+|     +--| (100)
+|     |  |        +--------HKZW
+|     |  |     +--| (100)
+|     |  |     |  +-----JOJQ
+|     |  |  +--| (100)
+|     |  |  |  +----------YOXI
+|     |  +--| (100)
+|     |     +---------WDCW
+|  +--| (100)
+|  |  +--------------QPDY
++--| (100)
+|  |              +------------------------------------Chlre_v5.5
+|  |           +--| (86)
+|  |           |  +---------------------------------------Micpu_v3.0
+|  +-----------| (100)
+|              +---------------------MMKU
+|
++-----------Klefl_v1.0
+
+Tree in newick format:
+
+(BFIK:0.7052754846,((((((BNCU:0.3634142022,ILBQ:0.2683288221)100:0.1609734744,CMEQ:0.4540777469)100:0.0409161169,((((((((CIEA:0.3010703152,YPIC:0.2745833058)100:0.0818178398,(WTDE:0.2171385130,XZME:0.2713220111)100:0.0188959951)100:0.0342477282,Spipo_v2:0.3046152072)100:0.0449635617,(VYLQ:0.2452893496,XSZI:0.3318839378)100:0.0217855077)100:0.0135836794,(((((((CSUV:0.3067376124,POZS:0.2377573430)100:0.0254210787,(KNMB:0.2358905698,WKCY:0.2634973009)100:0.0186451530)57:0.0097907897,WWQZ:0.2952724712)100:0.0164380146,(KWGC:0.2857437264,OLES:0.3074332224)83:0.0166332473)99:0.0093163354,(((IYDF:0.2263596556,WQRD:0.2446496977)100:0.0322080762,OAGK:0.2452740946)100:0.0178097229,JEXA:0.2562284493)100:0.0249535870)100:0.0122042184,QKMG:0.2958653225)100:0.0396453972,ZUHO:0.2338068309)100:0.0355064993)100:0.2833030249,GTHK:0.4649059236)100:0.2043845840,(JVSZ:0.3746875521,SKYV:0.4686948045)100:0.0825710879)100:0.0769250019,(PQTO:0.3723172065,(PYHZ:0.4073033908,(Selmo_v1.0:0.3345959816,ZFGK:0.3930299164)100:0.2198239411)100:0.0534633985)100:0.0620307345)100:0.0557155134)100:0.2526546880,(((HKZW:0.5099116764,JOJQ:0.3159079351)100:0.0773231519,YOXI:0.5821639334)100:0.1467348802,WDCW:0.5424910520)100:0.1447619151)100:0.0572782791,QPDY:0.8018815290)100:0.1309083739,((Chlre_v5.5:1.9444940666,Micpu_v3.0:2.1135113391)86:0.1842068040,MMKU:1.1812779676)100:0.6594142310)100:0.1489784233,Klefl_v1.0:0.6640671455);
+
+ALISIM COMMAND
+--------------
+Currently, we only support exporting AliSim commands automatically from the analysis for common models of DNA, Protein, Binary, and Morphological data. To simulate data from other models (mixture, lie-markov, etc), please refer to the User Manual of AliSim. Thanks!
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri May 16 03:20:13 2025
+Total CPU time used: 7703518.7 seconds (2139h:51m:58s)
+Total wall-clock time used: 230642.11 seconds (64h:4m:2s)
+

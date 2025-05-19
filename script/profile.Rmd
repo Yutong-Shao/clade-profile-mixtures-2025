@@ -1,0 +1,503 @@
+---
+title: "profile"
+author: "u7627793 Yutong Shao"
+date: "2025-05-15"
+output: html_document
+---
+
+
+```{r}
+library(ape)
+library(ggtree)
+library(ggplot2)
+library(reshape2)
+```
+
+
+```{r}
+parse_profile_nex <- function(file_path, 
+                              model_prefix = "UDM64",
+                              profile_prefix = "UDM0064CLR_C", 
+                              profile_pattern = "^frequency\\s+UDM0064CLR_C\\d{4}\\s*=", 
+                              profile_regex = "^frequency\\s+([^ ]+)\\s*=\\s*(.+);$", 
+                              profile_idx_regex = ".*_C0*(\\d+)$", 
+                              profile_label = "UDM",
+                              profile_count = 64,
+                              fmix_pattern = "^frequency\\s+UDM0064CLR.*=\\s*FMIX\\{", 
+                              fmix_regex = "^frequency\\s+UDM0064CLR(_(.*?))?\\s*=\\s*FMIX\\{(.+)\\};?$",
+                              fmix_profile_idx_regex = ".*_C0*(\\d+)$") {
+  lines <- readLines(file_path)
+  # profile freq
+  freq_lines <- grep(profile_pattern, lines, value = TRUE)
+  freq_list <- list()
+  for (ln in freq_lines) {
+    m <- regexec(profile_regex, ln)
+    parts <- regmatches(ln, m)[[1]]
+    raw_label <- parts[2]
+    nums_str  <- parts[3]
+    freqs <- as.numeric(strsplit(nums_str, "\\s+")[[1]])
+    idx_raw <- sub(profile_idx_regex, "\\1", raw_label)
+    idx     <- as.integer(idx_raw) + ifelse(profile_label=="C", 0, 1)
+    prof    <- paste0(model_prefix, ".", idx)
+    freq_list[[prof]] <- freqs
+  }
+  freq_list <- freq_list[order(as.numeric(sub(".*\\.", "", names(freq_list))))]
+  # FMIX
+  fmix_lines_idx <- grep(fmix_pattern, lines)
+  fmix_lines     <- lines[fmix_lines_idx]
+  weight_mat_list <- list()
+  for (ln in fmix_lines) {
+    m <- regexec(fmix_regex, ln)
+    parts <- regmatches(ln, m)[[1]]
+    group_raw <- parts[3]
+    if (is.na(group_raw) || group_raw == "") {
+      group_name <- "Weight"
+    } else {
+      if (group_raw == "_LGopt_tar") group_name <- "Weight_LG_tar"
+      else if (group_raw == "_POISSONopt_tar") group_name <- "Weight_POISSONopt_tar"
+      else group_name <- paste0("Weight_", gsub("opt", "", gsub("_", "", group_raw)))
+    }
+    fmix_str <- parts[4]
+    entries <- strsplit(fmix_str, ",")[[1]]
+    weight_vec <- numeric(profile_count)
+    names(weight_vec) <- paste0(model_prefix, ".", 1:profile_count)
+    for (ent in entries) {
+      ps <- strsplit(ent, ":")[[1]]
+      idx_raw <- sub(fmix_profile_idx_regex, "\\1", ps[1])
+      idx <- as.integer(idx_raw) + ifelse(profile_label=="C", 0, 1)
+      prof <- paste0(model_prefix, ".", idx)
+      weight_vec[prof] <- as.numeric(ps[3])
+    }
+    weight_mat_list[[group_name]] <- weight_vec
+  }
+  weight_df <- as.data.frame(weight_mat_list)
+  weight_df <- weight_df[paste0(model_prefix, ".", 1:profile_count), , drop=FALSE]
+  list(freq_list=freq_list, weight_df=weight_df)
+}
+
+
+amino_acids <- c("A","R","N","D","C","Q","E","G","H",
+                 "I","L","K","M","F","P","S","T","W","Y","V")
+
+
+UDM8_table <- {
+  parsed <- parse_profile_nex(
+    file_path = "D:/8701/May/profile/udm_hogenom_0008_clr_iqtree.nex",
+    model_prefix = "UDM8",
+    profile_prefix = "UDM0008CLR_C",
+    profile_pattern = "^frequency\\s+UDM0008CLR_C\\d{4}\\s*=",
+    profile_regex = "^frequency\\s+([^ ]+)\\s*=\\s*(.+);$",
+    profile_idx_regex = ".*_C0*(\\d+)$",
+    profile_label = "UDM",
+    profile_count = 8,
+    fmix_pattern = "^frequency\\s+UDM0008CLR.*=\\s*FMIX\\{",
+    fmix_regex = "^frequency\\s+UDM0008CLR(_(.*?))?\\s*=\\s*FMIX\\{(.+)\\};?$",
+    fmix_profile_idx_regex = ".*_C0*(\\d+)$"
+  )
+  freq_mat <- do.call(rbind, parsed$freq_list)
+  colnames(freq_mat) <- amino_acids
+  rownames(freq_mat) <- names(parsed$freq_list)
+  data.frame(Profile = rownames(freq_mat), parsed$weight_df[rownames(freq_mat), , drop=FALSE], freq_mat, row.names = NULL, stringsAsFactors = FALSE)
+}
+
+UDM64_table <- {
+  parsed <- parse_profile_nex(
+    file_path = "D:/8701/May/profile/udm_hogenom_0064_clr_iqtree.nex",
+    model_prefix = "UDM64",
+    profile_prefix = "UDM0064CLR_C",
+    profile_pattern = "^frequency\\s+UDM0064CLR_C\\d{4}\\s*=",
+    profile_regex = "^frequency\\s+([^ ]+)\\s*=\\s*(.+);$",
+    profile_idx_regex = ".*_C0*(\\d+)$",
+    profile_label = "UDM",
+    profile_count = 64,
+    fmix_pattern = "^frequency\\s+UDM0064CLR.*=\\s*FMIX\\{",
+    fmix_regex = "^frequency\\s+UDM0064CLR(_(.*?))?\\s*=\\s*FMIX\\{(.+)\\};?$",
+    fmix_profile_idx_regex = ".*_C0*(\\d+)$"
+  )
+  freq_mat <- do.call(rbind, parsed$freq_list)
+  colnames(freq_mat) <- amino_acids
+  rownames(freq_mat) <- names(parsed$freq_list)
+  data.frame(Profile = rownames(freq_mat), parsed$weight_df[rownames(freq_mat), , drop=FALSE], freq_mat, row.names = NULL, stringsAsFactors = FALSE)
+}
+
+UDM128_table <- {
+  parsed <- parse_profile_nex(
+    file_path = "D:/8701/May/profile/udm_hogenom_0128_clr_iqtree.nex",
+    model_prefix = "UDM128",
+    profile_prefix = "UDM0128CLR_C",
+    profile_pattern = "^frequency\\s+UDM0128CLR_C\\d{4}\\s*=",
+    profile_regex = "^frequency\\s+([^ ]+)\\s*=\\s*(.+);$",
+    profile_idx_regex = ".*_C0*(\\d+)$",
+    profile_label = "UDM",
+    profile_count = 128,
+    fmix_pattern = "^frequency\\s+UDM0128CLR.*=\\s*FMIX\\{",
+    fmix_regex = "^frequency\\s+UDM0128CLR(_(.*?))?\\s*=\\s*FMIX\\{(.+)\\};?$",
+    fmix_profile_idx_regex = ".*_C0*(\\d+)$"
+  )
+  freq_mat <- do.call(rbind, parsed$freq_list)
+  colnames(freq_mat) <- amino_acids
+  rownames(freq_mat) <- names(parsed$freq_list)
+  data.frame(Profile = rownames(freq_mat), parsed$weight_df[rownames(freq_mat), , drop=FALSE], freq_mat, row.names = NULL, stringsAsFactors = FALSE)
+}
+
+C10_table <- {
+  parsed <- parse_profile_nex(
+    file_path = "D:/8701/May/profile/C10.nex",
+    model_prefix = "C10",
+    profile_prefix = "C10_pi",
+    profile_pattern = "^frequency\\s+C10_pi\\d+\\s*=",
+    profile_regex = "^frequency\\s+(C10_pi\\d+)\\s*=\\s*(.+);$",
+    profile_idx_regex = "C10_pi(\\d+)$",
+    profile_label = "C",
+    profile_count = 10,
+    fmix_pattern = "^frequency\\s+C10(_.*)?\\s*=\\s*FMIX\\{",
+    fmix_regex = "^frequency\\s+C10(_(.*?))?\\s*=\\s*FMIX\\{(.+)\\};?$",
+    fmix_profile_idx_regex = ".*_pi(\\d+)$"
+  )
+  freq_mat <- do.call(rbind, parsed$freq_list)
+  colnames(freq_mat) <- amino_acids
+  rownames(freq_mat) <- names(parsed$freq_list)
+  data.frame(Profile = rownames(freq_mat), parsed$weight_df[rownames(freq_mat), , drop=FALSE], freq_mat, row.names = NULL, stringsAsFactors = FALSE)
+}
+
+C60_table <- {
+  parsed <- parse_profile_nex(
+    file_path = "D:/8701/May/profile/C60.nex",
+    model_prefix = "C60",
+    profile_prefix = "C60_pi",
+    profile_pattern = "^frequency\\s+C60_pi\\d+\\s*=",
+    profile_regex = "^frequency\\s+(C60_pi\\d+)\\s*=\\s*(.+);$",
+    profile_idx_regex = "C60_pi(\\d+)$",
+    profile_label = "C",
+    profile_count = 60,
+    fmix_pattern = "^frequency\\s+C60(_.*)?\\s*=\\s*FMIX\\{",
+    fmix_regex = "^frequency\\s+C60(_(.*?))?\\s*=\\s*FMIX\\{(.+)\\};?$",
+    fmix_profile_idx_regex = ".*_pi(\\d+)$"
+  )
+  freq_mat <- do.call(rbind, parsed$freq_list)
+  colnames(freq_mat) <- amino_acids
+  rownames(freq_mat) <- names(parsed$freq_list)
+  data.frame(Profile = rownames(freq_mat), parsed$weight_df[rownames(freq_mat), , drop=FALSE], freq_mat, row.names = NULL, stringsAsFactors = FALSE)
+}
+
+
+read_meow_table <- function(file_path, n_profile, 
+                            aa_order = c("A","R","N","D","C","Q","E","G","H",
+                                         "I","L","K","M","F","P","S","T","W","Y","V"),
+                            model_prefix = "MEOW10") {
+  lines <- readLines(file_path)
+  freq_lines <- grep("^frequency\\s+", lines, value = TRUE)
+  freq_lines <- freq_lines[grepl("=", freq_lines) & !grepl("FMIX\\{", freq_lines)]
+  freq_list <- list()
+  for (i in seq_len(n_profile)) {
+    ln <- freq_lines[i]
+    m <- regexec("^frequency\\s+[^ ]+\\s*=\\s*(.+);$", ln)
+    parts <- regmatches(ln, m)[[1]]
+    freqs <- as.numeric(strsplit(parts[2], "\\s+")[[1]])
+    prof <- paste0(model_prefix, ".", i)
+    freq_list[[prof]] <- freqs
+  }
+  fmix_lines_idx <- grep("^frequency\\s+.*=\\s*FMIX\\{", lines)
+  fmix_lines     <- lines[fmix_lines_idx]
+  weight_mat_list <- list()
+  for (ln in fmix_lines) {
+    m <- regexec("^frequency\\s+[^ ]+(_(.*?))?\\s*=\\s*FMIX\\{(.+)\\};?$", ln)
+    parts <- regmatches(ln, m)[[1]]
+    group_raw <- parts[3]
+    if (is.na(group_raw) || group_raw == "") {
+      group_name <- "Weight"
+    } else {
+      if (group_raw == "_LGopt_tar") group_name <- "Weight_LG_tar"
+      else if (group_raw == "_POISSONopt_tar") group_name <- "Weight_POISSONopt_tar"
+      else group_name <- paste0("Weight_", gsub("opt", "", gsub("_", "", group_raw)))
+    }
+    fmix_str <- parts[4]
+    entries <- strsplit(fmix_str, ",")[[1]]
+    weight_vec <- numeric(n_profile)
+    names(weight_vec) <- paste0(model_prefix, ".", 1:n_profile)
+    for (i in seq_along(entries)) {
+      ps <- strsplit(entries[i], ":")[[1]]
+      weight_vec[i] <- as.numeric(ps[3])
+    }
+    weight_mat_list[[group_name]] <- weight_vec
+  }
+  weight_df <- as.data.frame(weight_mat_list)
+  weight_df <- weight_df[paste0(model_prefix, ".", 1:n_profile), , drop=FALSE]
+  freq_mat <- do.call(rbind, freq_list)
+  colnames(freq_mat) <- aa_order
+  rownames(freq_mat) <- names(freq_list)
+  out <- data.frame(
+    Profile = rownames(freq_mat),
+    weight_df[rownames(freq_mat), , drop=FALSE],
+    freq_mat,
+    row.names = NULL,
+    stringsAsFactors = FALSE
+  )
+  return(out)
+}
+
+meow10_tar_table <- read_meow_table(
+  file_path = "D:/8701/May/profile/MEOW10_tar.nex",
+  n_profile = 10,
+  model_prefix = "MEOW10"
+)
+
+meow60_tar_table <- read_meow_table(
+  file_path = "D:/8701/May/profile/MEOW60_tar.nex",
+  n_profile = 60,
+  model_prefix = "MEOW60"
+)
+
+meow120_tar_table <- read_meow_table(
+  file_path = "D:/8701/May/profile/MEOW120_tar.nex",
+  n_profile = 120,
+  model_prefix = "MEOW120"
+)
+```
+
+
+```{r}
+# 获取氨基酸列名
+amino_acids <- c("A","R","N","D","C","Q","E","G","H",
+                 "I","L","K","M","F","P","S","T","W","Y","V")
+
+# 从table中读取 profile 频率
+get_profile_matrix <- function(tbl, aa_cols = amino_acids) {
+  mat <- as.matrix(tbl[, aa_cols])
+  rownames(mat) <- tbl$Profile
+  return(mat)
+}
+
+# 分别提取各模型的profile矩阵
+mat_MEOW10  <- get_profile_matrix(meow10_tar_table)
+mat_MEOW60  <- get_profile_matrix(meow60_tar_table)
+mat_MEOW120  <- get_profile_matrix(meow120_tar_table)
+mat_C10   <- get_profile_matrix(C10_table)
+mat_C60   <- get_profile_matrix(C60_table)
+mat_UDM8 <- get_profile_matrix(UDM8_table)
+mat_UDM64 <- get_profile_matrix(UDM64_table)
+mat_UDM128 <- get_profile_matrix(UDM128_table)
+
+# 依次组合每个profile mixture model
+mat_MEOW10_MEOW60 <- rbind(mat_MEOW10, mat_MEOW60)
+mat_MEOW60_MEOW120 <- rbind(mat_MEOW120, mat_MEOW60)
+mat_MEOW10_MEOW120 <- rbind(mat_MEOW10, mat_MEOW120)
+mat_C10_MEOW60 <- rbind(mat_MEOW60, mat_C10)
+mat_C60_MEOW60 <- rbind(mat_MEOW60, mat_C60)
+mat_UDM8_MEOW60 <- rbind(mat_UDM8, mat_MEOW60)
+mat_UDM64_MEOW60 <- rbind(mat_UDM64, mat_MEOW60)
+mat_UDM128_MEOW60 <- rbind(mat_UDM128, mat_MEOW60)
+mat_C10_MEOW10    <- rbind(mat_MEOW10, mat_C10)
+mat_C60_MEOW10    <- rbind(mat_MEOW10, mat_C60)
+mat_UDM8_MEOW10   <- rbind(mat_UDM8, mat_MEOW10)
+mat_UDM64_MEOW10  <- rbind(mat_UDM64, mat_MEOW10)
+mat_UDM128_MEOW10 <- rbind(mat_UDM128, mat_MEOW10)
+mat_C10_MEOW120    <- rbind(mat_MEOW120, mat_C10)
+mat_C60_MEOW120    <- rbind(mat_MEOW120, mat_C60)
+mat_UDM8_MEOW120   <- rbind(mat_UDM8, mat_MEOW120)
+mat_UDM64_MEOW120  <- rbind(mat_UDM64, mat_MEOW120)
+mat_UDM128_MEOW120 <- rbind(mat_UDM128, mat_MEOW120)
+mat_C10_UDM8 <- rbind(mat_C10, mat_UDM8)
+mat_C10_UDM64 <- rbind(mat_C10, mat_UDM64)
+mat_C10_UDM128 <- rbind(mat_C10, mat_UDM128)
+mat_C60_UDM8 <- rbind(mat_C60, mat_UDM8)
+mat_C60_UDM64 <- rbind(mat_C60, mat_UDM64)
+mat_C60_UDM128 <- rbind(mat_C60, mat_UDM128)
+mat_UDM8_UDM64 <- rbind(mat_UDM8, mat_UDM64)
+mat_UDM64_UDM128 <- rbind(mat_UDM64, mat_UDM128)
+mat_UDM8_UDM128 <- rbind(mat_UDM8, mat_UDM128)
+mat_C10_C60 <- rbind(mat_C10, mat_C60)
+
+# KL距离
+kl_dist <- function(p, q) {
+  p <- p + 1e-10
+  q <- q + 1e-10
+  sum(p * log(p / q), na.rm = TRUE)
+}
+
+build_tree <- function(mat) {
+  n <- nrow(mat)
+  dm <- matrix(0, n, n, dimnames = list(rownames(mat), rownames(mat)))
+  for(i in seq_len(n)) for(j in seq_len(n)) {
+    dm[i, j] <- kl_dist(mat[i, ], mat[j, ])
+  }
+  hc <- hclust(as.dist(dm), method = "complete")
+  return(hc)
+}
+
+# 1. 先收集所有矩阵变量名
+matrix_names <- c(
+  "mat_MEOW10", "mat_MEOW60", "mat_MEOW120", "mat_C10", "mat_C60",
+  "mat_UDM8", "mat_UDM64", "mat_UDM128",
+  "mat_MEOW10_MEOW60", "mat_MEOW60_MEOW120", "mat_MEOW10_MEOW120",
+  "mat_C10_MEOW60", "mat_C60_MEOW60", "mat_UDM8_MEOW60", "mat_UDM64_MEOW60", "mat_UDM128_MEOW60",
+  "mat_C10_MEOW10", "mat_C60_MEOW10", "mat_UDM8_MEOW10", "mat_UDM64_MEOW10", "mat_UDM128_MEOW10",
+  "mat_C10_MEOW120", "mat_C60_MEOW120", "mat_UDM8_MEOW120", "mat_UDM64_MEOW120", "mat_UDM128_MEOW120", "mat_C10_UDM8", "mat_C10_UDM64", "mat_C10_UDM128", "mat_C60_UDM8", "mat_C60_UDM64", "mat_C60_UDM128", "mat_UDM8_UDM64", "mat_UDM8_UDM128", "mat_UDM64_UDM128", "mat_C10_C60"
+)
+
+# 2. 循环为每个变量建树，并命名hc_xxx/tree_xxx
+for (mat_name in matrix_names) {
+  mat <- get(mat_name)
+  hc_obj <- build_tree(mat)
+  tree_obj <- as.phylo(hc_obj)
+  assign(sub("^mat_", "hc_", mat_name), hc_obj, envir = .GlobalEnv)
+  assign(sub("^mat_", "tree_", mat_name), tree_obj, envir = .GlobalEnv)
+}
+
+#ggtree(tree_UDM64_MEOW60) + geom_tiplab(size = 2) + ggtitle("UDM64 vs MEOW60")
+#ggtree(tree_C60_UDM64) + geom_tiplab(size = 2) + ggtitle("C60 vs UDM64")
+#ggtree(tree_MEOW10_MEOW60) + geom_tiplab(size = 2) + ggtitle("MEOW10 vs MEOW60")
+
+#par(mfrow = c(1, 3))
+#plot(hc_MEOW10,   main = "MEOW10 Profiles",   xlab = "", sub = "", cex = 0.5)
+#plot(hc_MEOW60, main = "MEOW60 Profiles", xlab = "", sub = "", cex = 0.5)
+#plot(hc_MEOW120,  main = "MEOW60 Profiles", xlab = "", sub = "", cex = 0.5)
+```
+
+
+## Richness: PD
+
+```{r}
+get_pd <- function(hc) {
+  # hclust 的 merge 顺序中，每一步的 height 是累加的，需要差分
+  heights <- hc$height
+  pd <- sum(diff(c(0, heights)))
+  return(pd)
+}
+
+PD_C10 <- get_pd(hc_C10)
+PD_C60 <- get_pd(hc_C60)
+PD_UDM8 <- get_pd(hc_UDM8)
+PD_UDM64 <- get_pd(hc_UDM64)
+PD_UDM128 <- get_pd(hc_UDM128)
+PD_MEOW10 <- get_pd(hc_MEOW10)
+PD_MEOW60 <- get_pd(hc_MEOW60)
+PD_MEOW120 <- get_pd(hc_MEOW120)
+
+cat("PD of C10:", PD_C10, "\n")
+cat("PD of C60:", PD_C60, "\n")
+cat("PD of UDM8:", PD_UDM8, "\n")
+cat("PD of UDM64:", PD_UDM64, "\n")
+cat("PD of UDM128:", PD_UDM128, "\n")
+cat("PD of MEOW10:", PD_MEOW10, "\n")
+cat("PD of MEOW60:", PD_MEOW60, "\n")
+cat("PD of MEOW120:", PD_MEOW120, "\n")
+```
+
+
+## Divergency: MNTD
+
+
+```{r}
+tree_names <- c(
+  "tree_C10_MEOW10", "tree_C10_MEOW60", "tree_C10_MEOW120", "tree_C60_MEOW10", 
+  "tree_C60_MEOW60", "tree_C60_MEOW120",
+  "tree_UDM8_MEOW10", "tree_UDM8_MEOW60", "tree_UDM8_MEOW120",
+  "tree_UDM64_MEOW10", "tree_UDM64_MEOW60", "tree_UDM64_MEOW120", "tree_UDM128_MEOW10", 
+  "tree_UDM128_MEOW60", "tree_UDM128_MEOW120","tree_MEOW10_MEOW60", 
+  "tree_MEOW60_MEOW120", "tree_MEOW10_MEOW120", "tree_C10_UDM8", "tree_C10_UDM64", "tree_C10_UDM128",
+  "tree_C60_UDM8", "tree_C60_UDM64", "tree_C60_UDM128", "tree_UDM8_UDM64", 
+  "tree_UDM8_UDM128", "tree_UDM64_UDM128", "tree_C10_C60"
+)
+
+mntd_results <- list()
+
+for (tree_var in tree_names) {
+  # 获取对应的组合名
+  model_names <- unlist(strsplit(sub("tree_", "", tree_var), "_"))
+  model1 <- model_names[1]
+  model2 <- model_names[2]
+  
+  # 自动推导表名（你的变量名约定要统一！比如C10_table/meow10_tar_table）
+  table1 <- ifelse(grepl("^MEOW", model1), paste0(tolower(model1), "_tar_table"), paste0(model1, "_table"))
+  table2 <- ifelse(grepl("^MEOW", model2), paste0(tolower(model2), "_tar_table"), paste0(model2, "_table"))
+  
+  # profile与权重
+  profiles1 <- get(table1)$Profile
+  weights1  <- get(table1)$Weight
+  profiles2 <- get(table2)$Profile
+  weights2  <- get(table2)$Weight
+  
+  # 距离矩阵
+  dist_mat <- cophenetic(get(tree_var))
+  
+  # model1基准
+  nearest2_dist <- numeric(length(profiles1))
+  for (i in seq_along(profiles1)) {
+    dists <- dist_mat[profiles1[i], profiles2]
+    nearest2_dist[i] <- min(dists, na.rm = TRUE)
+  }
+  name1 <- paste0("MNTD_", model1, "_", model2)
+  mntd_results[[name1]] <- sum(weights1 * nearest2_dist)
+  
+  # model2基准
+  nearest1_dist <- numeric(length(profiles2))
+  for (i in seq_along(profiles2)) {
+    dists <- dist_mat[profiles2[i], profiles1]
+    nearest1_dist[i] <- min(dists, na.rm = TRUE)
+  }
+  name2 <- paste0("MNTD_", model2, "_", model1)
+  mntd_results[[name2]] <- sum(weights2 * nearest1_dist)
+}
+
+# 结果表
+mntd_results_df <- data.frame(
+  Comparison = names(mntd_results),
+  MNTD = unlist(mntd_results)
+)
+```
+
+
+```{r}
+# 按实际模型顺序排列
+model_list <- c(#"MEOW10", 
+                "MEOW60", "MEOW120", 
+                #"C10", 
+                "C60", 
+                #"UDM8", 
+                "UDM64", "UDM128")
+n_model <- length(model_list)
+mntd_mat <- matrix(NA, nrow = n_model, ncol = n_model,
+                   dimnames = list(model_list, model_list))
+
+# 将所有已计算的MNTD结果填入矩阵
+for (name in names(mntd_results)) {
+  m <- regmatches(name, regexec("^MNTD_([^_]+)_([^_]+)$", name))[[1]]
+  if (length(m) == 3) {
+    row_model <- m[2]
+    col_model <- m[3]
+    if (row_model %in% model_list && col_model %in% model_list) {
+      mntd_mat[row_model, col_model] <- mntd_results[[name]]
+    }
+  }
+}
+
+# 转为数据框
+mntd_df <- as.data.frame(mntd_mat)
+
+
+df_long <- melt(as.matrix(mntd_df), varnames = c("Row", "Col"), value.name = "MNTD")
+
+ggplot(df_long, aes(x = Col, y = Row, fill = MNTD)) +
+  geom_tile(color = "white") +
+  geom_text(aes(label = ifelse(is.na(MNTD), "", sprintf("%.3f", MNTD))), size = 3.2) +
+  scale_fill_gradient(
+    low = "#98CADD",
+    high = "#DA9599", 
+    na.value = "grey90",
+    name = "MNTD"
+  ) +
+  coord_fixed() + 
+  theme_minimal(base_size = 12) +
+  labs(title = "Pairwise Weighted MNTD", x = "", y = "") +
+  theme(
+    plot.title = element_text(size = 13, face = "bold", hjust = 0.5), 
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 9), 
+    axis.text.y = element_text(size = 9), 
+    legend.title = element_text(size = 10), 
+    legend.text = element_text(size = 9)
+  )
+
+#ggsave("mntd_heatmap.jpg", plot = p, width = 18, height = 18, units = "cm", dpi = 600)
+```
+

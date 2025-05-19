@@ -1,0 +1,117 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: ./iqtree2 -s 1kp/1kp.fasta -m Poisson+ESmodel+G4 -mdef 1kp/1_513/meow0307.nex -te 1kp/lgc60pmsf.contree -me 0.99 -safe -pre 1kp/1_513/Poi-MEOW10opt -prec 10 -nt 40
+Seed:    294345 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue May 13 15:00:54 2025
+Kernel:  Safe AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading alignment file 1kp/1kp.fasta ... Fasta format detected
+Reading fasta file: done in 0.0860353 secs using 90.24% CPU
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 103658 columns, 97826 distinct patterns
+74754 parsimony-informative, 13250 singleton sites, 15653 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0205464 secs using 3747% CPU
+   1  BFIK         27.41%    failed      0.00%
+   2  BNCU         13.55%    failed      0.00%
+   3  CIEA         19.10%    failed      0.00%
+   4  CMEQ         13.47%    failed      0.00%
+   5  CSUV         27.21%    failed      0.00%
+   6  Chlre_v5.5   16.92%    failed      0.00%
+   7  GTHK         18.40%    failed      0.00%
+   8  HKZW         24.20%    failed      0.00%
+   9  ILBQ         16.53%    failed      0.00%
+  10  IYDF         17.50%    failed      0.00%
+  11  JEXA         19.01%    failed      0.00%
+  12  JOJQ         16.68%    failed      0.00%
+  13  JVSZ         25.96%    failed      0.00%
+  14  KNMB         16.28%    failed      0.00%
+  15  KWGC         29.11%    failed      0.00%
+  16  Klefl_v1.0    7.15%    failed      0.00%
+  17  MMKU         27.49%    failed      0.00%
+  18  Micpu_v3.0   25.86%    failed      0.00%
+  19  OAGK          6.76%    failed      0.00%
+  20  OLES         13.66%    failed      0.00%
+  21  POZS         25.34%    failed      0.00%
+  22  PQTO         21.02%    failed      0.00%
+  23  PYHZ         19.30%    failed      0.00%
+  24  QKMG         23.72%    failed      0.00%
+  25  QPDY         15.05%    failed      0.00%
+  26  SKYV         29.84%    failed      0.00%
+  27  Selmo_v1.0   13.65%    failed      0.00%
+  28  Spipo_v2      8.49%    failed      0.00%
+  29  VYLQ          4.05%    failed      0.00%
+  30  WDCW         24.70%    failed      0.00%
+  31  WKCY          7.98%    failed      0.00%
+  32  WQRD         23.20%    failed      0.00%
+  33  WTDE         26.95%    failed      0.00%
+  34  WWQZ         16.02%    failed      0.00%
+  35  XSZI         18.21%    failed      0.00%
+  36  XZME         11.12%    failed      0.00%
+  37  YOXI         25.48%    failed      0.00%
+  38  YPIC         24.57%    failed      0.00%
+  39  ZFGK         22.51%    failed      0.00%
+  40  ZUHO         17.59%    failed      0.00%
+****  TOTAL        19.03%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: minimal branch length is reduced to 0.000000964711 for long alignment
+Reading model definition file 1kp/1_513/meow0307.nex ... 87 models and 224 frequency vectors loaded
+Reading input tree file 1kp/lgc60pmsf.contree ...
+Model Poisson+ESmodel+G4 is alias for Poisson+FMIX{EShighclass1,EShighclass2,EShighclass3,ESlowclass1,ESlowclass2,ESlowclass3,ESlowclass4,ESlowclass5,ESlowclass6,ESlowclass7}+G4
+
+NOTE: 24187 MB RAM (23 GB) is required!
+Estimate model parameters (epsilon = 0.990)
+1. Initial log-likelihood: -3995696.671
+2. Current log-likelihood: -3936670.428
+3. Current log-likelihood: -3932465.360
+4. Current log-likelihood: -3932338.286
+5. Current log-likelihood: -3932326.029
+6. Current log-likelihood: -3932321.559
+7. Current log-likelihood: -3932316.777
+8. Current log-likelihood: -3932301.157
+9. Current log-likelihood: -3932288.480
+10. Current log-likelihood: -3932285.879
+11. Current log-likelihood: -3932284.728
+12. Current log-likelihood: -3932282.603
+13. Current log-likelihood: -3932280.998
+14. Current log-likelihood: -3932279.119
+15. Current log-likelihood: -3932277.823
+16. Current log-likelihood: -3932276.298
+17. Current log-likelihood: -3932275.082
+18. Current log-likelihood: -3932273.664
+19. Current log-likelihood: -3932272.438
+20. Current log-likelihood: -3932271.034
+21. Current log-likelihood: -3932269.848
+22. Current log-likelihood: -3932268.508
+23. Current log-likelihood: -3932267.348
+24. Current log-likelihood: -3932266.056
+25. Current log-likelihood: -3932264.926
+26. Current log-likelihood: -3932263.686
+27. Current log-likelihood: -3932262.588
+28. Current log-likelihood: -3932261.398
+29. Current log-likelihood: -3932260.333
+30. Current log-likelihood: -3932259.194
+31. Current log-likelihood: -3932258.172
+32. Current log-likelihood: -3932257.090
+Optimal log-likelihood: -3932256.116
+Mixture weights: 0.225 0.162 0.149 0.151 0.091 0.035 0.052 0.075 0.028 0.032
+Gamma shape alpha: 0.660
+Parameters optimization took 32 rounds (771.581 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -3932256.116
+Total tree length: 15.596
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 28066.474 sec (7h:47m:46s)
+Total wall-clock time used: 771.715 sec (0h:12m:51s)
+
+Analysis results written to: 
+  IQ-TREE report:                1kp/1_513/Poi-MEOW10opt.iqtree
+  Maximum-likelihood tree:       1kp/1_513/Poi-MEOW10opt.treefile
+  Screen log file:               1kp/1_513/Poi-MEOW10opt.log
+
+Date and Time: Tue May 13 15:13:48 2025

@@ -1,0 +1,238 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Input file name: 1kp/1kp.fasta
+User tree file name: 1kp/lgc60pmsf.contree
+Type of analysis: tree reconstruction
+Random seed number: 711
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 40 sequences with 103658 amino-acid sites
+Number of constant sites: 15654 (= 15.1016% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 15654 (= 15.1016% of all sites)
+Number of parsimony informative sites: 74754
+Number of distinct site patterns: 97826
+
+SUBSTITUTION PROCESS
+--------------------
+
+Mixture model of substitution: MIX{GTR20+FC60pi1,GTR20+FC60pi2,GTR20+FC60pi3,GTR20+FC60pi4,GTR20+FC60pi5,GTR20+FC60pi6,GTR20+FC60pi7,GTR20+FC60pi8,GTR20+FC60pi9,GTR20+FC60pi10,GTR20+FC60pi11,GTR20+FC60pi12,GTR20+FC60pi13,GTR20+FC60pi14,GTR20+FC60pi15,GTR20+FC60pi16,GTR20+FC60pi17,GTR20+FC60pi18,GTR20+FC60pi19,GTR20+FC60pi20,GTR20+FC60pi21,GTR20+FC60pi22,GTR20+FC60pi23,GTR20+FC60pi24,GTR20+FC60pi25,GTR20+FC60pi26,GTR20+FC60pi27,GTR20+FC60pi28,GTR20+FC60pi29,GTR20+FC60pi30,GTR20+FC60pi31,GTR20+FC60pi32,GTR20+FC60pi33,GTR20+FC60pi34,GTR20+FC60pi35,GTR20+FC60pi36,GTR20+FC60pi37,GTR20+FC60pi38,GTR20+FC60pi39,GTR20+FC60pi40,GTR20+FC60pi41,GTR20+FC60pi42,GTR20+FC60pi43,GTR20+FC60pi44,GTR20+FC60pi45,GTR20+FC60pi46,GTR20+FC60pi47,GTR20+FC60pi48,GTR20+FC60pi49,GTR20+FC60pi50,GTR20+FC60pi51,GTR20+FC60pi52,GTR20+FC60pi53,GTR20+FC60pi54,GTR20+FC60pi55,GTR20+FC60pi56,GTR20+FC60pi57,GTR20+FC60pi58,GTR20+FC60pi59,GTR20+FC60pi60}+G4
+
+  No  Component      Rate    Weight   Parameters
+   1  GTR20+FC60pi1  1.0000   0.0170   GTR20+FC60pi1
+   2  GTR20+FC60pi2  1.0000   0.0212   GTR20+FC60pi2
+   3  GTR20+FC60pi3  1.0000   0.0277   GTR20+FC60pi3
+   4  GTR20+FC60pi4  1.0000   0.0066   GTR20+FC60pi4
+   5  GTR20+FC60pi5  1.0000   0.0141   GTR20+FC60pi5
+   6  GTR20+FC60pi6  1.0000   0.0069   GTR20+FC60pi6
+   7  GTR20+FC60pi7  1.0000   0.0147   GTR20+FC60pi7
+   8  GTR20+FC60pi8  1.0000   0.0067   GTR20+FC60pi8
+   9  GTR20+FC60pi9  1.0000   0.0018   GTR20+FC60pi9
+  10  GTR20+FC60pi10  1.0000   0.0103   GTR20+FC60pi10
+  11  GTR20+FC60pi11  1.0000   0.0231   GTR20+FC60pi11
+  12  GTR20+FC60pi12  1.0000   0.0058   GTR20+FC60pi12
+  13  GTR20+FC60pi13  1.0000   0.0125   GTR20+FC60pi13
+  14  GTR20+FC60pi14  1.0000   0.0205   GTR20+FC60pi14
+  15  GTR20+FC60pi15  1.0000   0.0071   GTR20+FC60pi15
+  16  GTR20+FC60pi16  1.0000   0.0118   GTR20+FC60pi16
+  17  GTR20+FC60pi17  1.0000   0.0068   GTR20+FC60pi17
+  18  GTR20+FC60pi18  1.0000   0.0434   GTR20+FC60pi18
+  19  GTR20+FC60pi19  1.0000   0.0318   GTR20+FC60pi19
+  20  GTR20+FC60pi20  1.0000   0.0223   GTR20+FC60pi20
+  21  GTR20+FC60pi21  1.0000   0.0102   GTR20+FC60pi21
+  22  GTR20+FC60pi22  1.0000   0.0151   GTR20+FC60pi22
+  23  GTR20+FC60pi23  1.0000   0.0134   GTR20+FC60pi23
+  24  GTR20+FC60pi24  1.0000   0.0149   GTR20+FC60pi24
+  25  GTR20+FC60pi25  1.0000   0.0239   GTR20+FC60pi25
+  26  GTR20+FC60pi26  1.0000   0.0129   GTR20+FC60pi26
+  27  GTR20+FC60pi27  1.0000   0.0222   GTR20+FC60pi27
+  28  GTR20+FC60pi28  1.0000   0.0247   GTR20+FC60pi28
+  29  GTR20+FC60pi29  1.0000   0.0214   GTR20+FC60pi29
+  30  GTR20+FC60pi30  1.0000   0.0115   GTR20+FC60pi30
+  31  GTR20+FC60pi31  1.0000   0.0076   GTR20+FC60pi31
+  32  GTR20+FC60pi32  1.0000   0.0130   GTR20+FC60pi32
+  33  GTR20+FC60pi33  1.0000   0.0094   GTR20+FC60pi33
+  34  GTR20+FC60pi34  1.0000   0.0467   GTR20+FC60pi34
+  35  GTR20+FC60pi35  1.0000   0.0442   GTR20+FC60pi35
+  36  GTR20+FC60pi36  1.0000   0.0322   GTR20+FC60pi36
+  37  GTR20+FC60pi37  1.0000   0.0403   GTR20+FC60pi37
+  38  GTR20+FC60pi38  1.0000   0.0150   GTR20+FC60pi38
+  39  GTR20+FC60pi39  1.0000   0.0105   GTR20+FC60pi39
+  40  GTR20+FC60pi40  1.0000   0.0215   GTR20+FC60pi40
+  41  GTR20+FC60pi41  1.0000   0.0155   GTR20+FC60pi41
+  42  GTR20+FC60pi42  1.0000   0.0102   GTR20+FC60pi42
+  43  GTR20+FC60pi43  1.0000   0.0228   GTR20+FC60pi43
+  44  GTR20+FC60pi44  1.0000   0.0123   GTR20+FC60pi44
+  45  GTR20+FC60pi45  1.0000   0.0067   GTR20+FC60pi45
+  46  GTR20+FC60pi46  1.0000   0.0004   GTR20+FC60pi46
+  47  GTR20+FC60pi47  1.0000   0.0344   GTR20+FC60pi47
+  48  GTR20+FC60pi48  1.0000   0.0114   GTR20+FC60pi48
+  49  GTR20+FC60pi49  1.0000   0.0127   GTR20+FC60pi49
+  50  GTR20+FC60pi50  1.0000   0.0124   GTR20+FC60pi50
+  51  GTR20+FC60pi51  1.0000   0.0262   GTR20+FC60pi51
+  52  GTR20+FC60pi52  1.0000   0.0065   GTR20+FC60pi52
+  53  GTR20+FC60pi53  1.0000   0.0103   GTR20+FC60pi53
+  54  GTR20+FC60pi54  1.0000   0.0142   GTR20+FC60pi54
+  55  GTR20+FC60pi55  1.0000   0.0216   GTR20+FC60pi55
+  56  GTR20+FC60pi56  1.0000   0.0199   GTR20+FC60pi56
+  57  GTR20+FC60pi57  1.0000   0.0039   GTR20+FC60pi57
+  58  GTR20+FC60pi58  1.0000   0.0113   GTR20+FC60pi58
+  59  GTR20+FC60pi59  1.0000   0.0129   GTR20+FC60pi59
+  60  GTR20+FC60pi60  1.0000   0.0118   GTR20+FC60pi60
+
+Linked substitution parameters (lower-diagonal):
+
+ 1.150835
+ 1.244285 2.658430
+ 1.628610 0.682080 10.759521
+ 4.446787 12.976802 7.153838 3.993059
+ 1.435664 7.385987 3.348161 0.829727 3.984478
+ 2.850601 0.739021 1.827644 12.521432 1.776301 7.831729
+ 6.037321 5.068320 3.991011 5.365834 7.373389 2.233188 6.107087
+ 1.000497 7.896322 11.732611 4.498926 12.428589 17.983380 1.545750 1.479015
+ 3.763889 2.003638 10.148427 3.776489 4.669532 0.925583 1.313714 4.771444 1.911230
+ 4.856955 3.892873 1.323318 1.614101 7.070768 7.268484 2.184151 2.993847 5.962880 24.587725
+ 1.378583 14.466856 10.314571 0.850735 0.559044 5.897825 3.922404 2.884922 0.809236 4.056469 1.416800
+ 6.155336 3.848444 2.869284 1.430103 1.400357 4.625369 2.753546 4.361657 0.491144 38.117641 23.256670 8.038547
+ 3.761808 1.005515 2.273016 2.602729 20.223448 0.975011 1.077269 3.472354 4.701780 16.568567 24.097894 0.756057 6.705128
+ 3.398659 2.436370 0.836383 0.805530 2.282224 5.243062 1.021787 1.372155 5.059883 1.866601 6.489038 0.877462 2.202843 4.431623
+ 12.389393 4.288168 12.830867 3.624596 26.919179 2.430748 1.781969 8.663877 3.729089 6.656874 12.390371 3.095462 6.109551 14.743060 8.390231
+ 10.242436 2.565381 8.341024 1.363240 4.680852 1.686663 1.482947 2.952386 1.414104 16.673282 4.177574 4.907527 17.966282 2.503398 3.824583 18.614655
+ 1.481271 7.424331 0.389843 0.825069 53.399467 2.211065 1.520748 5.420800 1.185183 2.007334 7.756815 1.163985 3.353934 2.695402 0.926493 6.144583 1.045761
+ 0.971426 1.959779 5.485542 3.774116 27.977476 1.469657 1.432086 1.238832 17.258715 2.547878 3.372299 0.741610 0.757626 23.654672 1.157134 6.857085 1.562738 1.698538
+ 17.971193 1.372353 2.638201 4.281367 6.072618 1.488283 5.775202 8.442570 1.727287 60.435407 21.970120 2.382901 17.803697 12.385075 3.153223 4.114807 9.574395 1.700367 1.000000
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.5687
+
+ Category  Relative_rate  Proportion
+  1         0.0467         0.2500
+  2         0.2944         0.2500
+  3         0.8645         0.2500
+  4         2.7944         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -3779627.1318 (s.e. 7954.2637)
+Unconstrained log-likelihood (without tree): -1185070.0576
+Number of free parameters (#branches + #model parameters): 267
+Akaike information criterion (AIC) score: 7559788.2636
+Corrected Akaike information criterion (AICc) score: 7559789.6478
+Bayesian information criterion (BIC) score: 7562337.8071
+
+Total tree length (sum of branch lengths): 22.2641
+Sum of internal branch lengths: 3.6217 (16.2672% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'BFIK' is drawn at root
+
++------------BFIK
+|
+|                  +-----BNCU
+|               +--| (100)
+|               |  +----ILBQ
+|            +--| (100)
+|            |  +-------CMEQ
+|        +---| (100)
+|        |   |                          +----CIEA
+|        |   |                       +--| (100)
+|        |   |                       |  +----YPIC
+|        |   |                    +--| (100)
+|        |   |                    |  |  +---WTDE
+|        |   |                    |  +--| (100)
+|        |   |                    |     +----XZME
+|        |   |                 +--| (100)
+|        |   |                 |  +----Spipo_v2
+|        |   |              +--| (100)
+|        |   |              |  |  +---VYLQ
+|        |   |              |  +--| (100)
+|        |   |              |     +-----XSZI
+|        |   |         +----| (100)
+|        |   |         |    |                    +----CSUV
+|        |   |         |    |                 +--| (100)
+|        |   |         |    |                 |  +---POZS
+|        |   |         |    |              +--| (57)
+|        |   |         |    |              |  |  +---KNMB
+|        |   |         |    |              |  +--| (100)
+|        |   |         |    |              |     +---WKCY
+|        |   |         |    |           +--| (100)
+|        |   |         |    |           |  +----WWQZ
+|        |   |         |    |        +--| (99)
+|        |   |         |    |        |  |  +----KWGC
+|        |   |         |    |        |  +--| (83)
+|        |   |         |    |        |     +----OLES
+|        |   |         |    |     +--| (100)
+|        |   |         |    |     |  |        +---IYDF
+|        |   |         |    |     |  |     +--| (100)
+|        |   |         |    |     |  |     |  +---WQRD
+|        |   |         |    |     |  |  +--| (100)
+|        |   |         |    |     |  |  |  +---OAGK
+|        |   |         |    |     |  +--| (100)
+|        |   |         |    |     |     +---JEXA
+|        |   |         |    |  +--| (100)
+|        |   |         |    |  |  +----QKMG
+|        |   |         |    +--| (100)
+|        |   |         |       +---ZUHO
+|        |   |     +---| (100)
+|        |   |     |   +-------GTHK
+|        |   |  +--| (100)
+|        |   |  |  |  +------JVSZ
+|        |   |  |  +--| (100)
+|        |   |  |     +-------SKYV
+|        |   +--| (100)
+|        |      |  +-----PQTO
+|        |      +--| (100)
+|        |         |  +------PYHZ
+|        |         +--| (100)
+|        |            |   +-----Selmo_v1.0
+|        |            +---| (100)
+|        |                +------ZFGK
+|     +--| (100)
+|     |  |        +--------HKZW
+|     |  |     +--| (100)
+|     |  |     |  +----JOJQ
+|     |  |  +--| (100)
+|     |  |  |  +---------YOXI
+|     |  +--| (100)
+|     |     +--------WDCW
+|  +--| (100)
+|  |  +-------------QPDY
++--| (100)
+|  |               +-----------------------------------Chlre_v5.5
+|  |            +--| (86)
+|  |            |  +---------------------------------------Micpu_v3.0
+|  +------------| (100)
+|               +---------------------MMKU
+|
++-----------Klefl_v1.0
+
+Tree in newick format:
+
+(BFIK:0.6989280676,((((((BNCU:0.3599211939,ILBQ:0.2673420869)100:0.1620628978,CMEQ:0.4535218688)100:0.0390034608,((((((((CIEA:0.3039054117,YPIC:0.2724599050)100:0.0823280187,(WTDE:0.2159574982,XZME:0.2706061435)100:0.0182204635)100:0.0343465367,Spipo_v2:0.3004057150)100:0.0454339099,(VYLQ:0.2449326064,XSZI:0.3317233606)100:0.0211880268)100:0.0129520787,(((((((CSUV:0.3079821152,POZS:0.2372360924)100:0.0247591337,(KNMB:0.2366440049,WKCY:0.2623729378)100:0.0184202397)57:0.0097570900,WWQZ:0.2939538803)100:0.0163959649,(KWGC:0.2859655089,OLES:0.3080573342)83:0.0157011687)99:0.0093153104,(((IYDF:0.2260661324,WQRD:0.2439188654)100:0.0315639772,OAGK:0.2458338670)100:0.0178717670,JEXA:0.2562054612)100:0.0251358407)100:0.0121906032,QKMG:0.2935836956)100:0.0407005480,ZUHO:0.2336996289)100:0.0362595764)100:0.2953591518,GTHK:0.4692421521)100:0.2148260455,(JVSZ:0.3750265455,SKYV:0.4702150133)100:0.0815858715)100:0.0804776397,(PQTO:0.3711867126,(PYHZ:0.4074763612,(Selmo_v1.0:0.3318972462,ZFGK:0.3932590816)100:0.2245722692)100:0.0534437370)100:0.0625531792)100:0.0585960917)100:0.2662598586,(((HKZW:0.5089306336,JOJQ:0.3073150603)100:0.0770078219,YOXI:0.5715555333)100:0.1477809534,WDCW:0.5300386103)100:0.1425972482)100:0.0591093774,QPDY:0.7972580524)100:0.1418954529,((Chlre_v5.5:1.9548590916,Micpu_v3.0:2.1615172262)86:0.1888164660,MMKU:1.1782560499)100:0.7123409726)100:0.1409179244,Klefl_v1.0:0.6631267146);
+
+ALISIM COMMAND
+--------------
+Currently, we only support exporting AliSim commands automatically from the analysis for common models of DNA, Protein, Binary, and Morphological data. To simulate data from other models (mixture, lie-markov, etc), please refer to the User Manual of AliSim. Thanks!
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri May 16 03:57:44 2025
+Total CPU time used: 8030051.1 seconds (2230h:34m:11s)
+Total wall-clock time used: 224567.8 seconds (62h:22m:47s)
+

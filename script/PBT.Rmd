@@ -39,6 +39,14 @@ Poisson_UDM64optPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tar
 
 Poisson_UDM128fixPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/Poisson-UDM128fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
+Poisson_UDM128optPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/Poisson-UDM128opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_MEOW10optPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/Poisson-MEOW10opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_MEOW60optPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/Poisson-MEOW60opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_MEOW120optPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/Poisson-MEOW120opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
 # LG exchangeability
 
 LG_C60fix <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/LG-C60fix/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
@@ -61,9 +69,13 @@ LG_UDM64optPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigra
 
 LG_UDM128fixPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/LG-UDM128fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
-LG_MEOW60highfixPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/LG-MEOW60high-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+LG_UDM128optPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/LG-UDM128opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
-LG_MEOW60highoptPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/LG-MEOW60highopt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+LG_MEOW10optPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/LG-MEOW10opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_MEOW60optPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/LG-MEOW60opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_MEOW120optPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/LG-MEOW120opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
 # GTR20 exchangeability
 
@@ -74,8 +86,6 @@ GTR20_C10optPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigr
 GTR20_C60fixPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/GTR20-C60fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
 GTR20_C60optPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/GTR20-C60opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
-
-GTR20_MEOW60highoptPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/GTR20-MEOW60opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
 GTR20_UDM8fixPMSF <- read.table("D:/8701/clade-profile-mixtures-2025/data/tardigrades (Giacomelli et al., 2024)/output_40taxa/GTR20-UDM8fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
@@ -110,6 +120,10 @@ Poisson_UDM8optPMSF$dataset <- "Poisson+UDM8opt-PMSF"
 Poisson_UDM64fixPMSF$dataset <- "Poisson+UDM64fix-PMSF"
 Poisson_UDM64optPMSF$dataset <- "Poisson+UDM64opt-PMSF"
 Poisson_UDM128fixPMSF$dataset <- "Poisson+UDM128fix-PMSF"
+Poisson_UDM128optPMSF$dataset <- "Poisson+UDM128opt-PMSF"
+Poisson_MEOW10optPMSF$dataset <- "Poisson+MEOW10opt-PMSF"
+Poisson_MEOW60optPMSF$dataset <- "Poisson+MEOW60opt-PMSF"
+Poisson_MEOW120optPMSF$dataset <- "Poisson+MEOW120opt-PMSF"
 
 LG_C60fix$dataset <- "LG+C60fix"
 LG_C10fixPMSF$dataset <- "LG+C10fix-PMSF"
@@ -121,8 +135,10 @@ LG_UDM8optPMSF$dataset <- "LG+UDM8opt-PMSF"
 LG_UDM64fixPMSF$dataset <- "LG+UDM64fix-PMSF"
 LG_UDM64optPMSF$dataset <- "LG+UDM64opt-PMSF"
 LG_UDM128fixPMSF$dataset <- "LG+UDM128fix-PMSF"
-LG_MEOW60highfixPMSF$dataset <- "LG+MEOW60fix-PMSF"
-LG_MEOW60highoptPMSF$dataset <- "LG+MEOW60opt-PMSF"
+LG_UDM128optPMSF$dataset <- "LG+UDM128opt-PMSF"
+LG_MEOW10optPMSF$dataset <- "LG+MEOW10opt-PMSF"
+LG_MEOW60optPMSF$dataset <- "LG+MEOW60opt-PMSF"
+LG_MEOW120optPMSF$dataset <- "LG+MEOW120opt-PMSF"
 
 GTR20_C10fixPMSF$dataset <- "GTR20+C10fix-PMSF"
 GTR20_C10optPMSF$dataset <- "GTR20+C10opt-PMSF"
@@ -134,9 +150,8 @@ GTR20_UDM64fixPMSF$dataset <- "GTR20+UDM64fix-PMSF"
 GTR20_UDM64optPMSF$dataset <- "GTR20+UDM64opt-PMSF"
 GTR20_UDM128fixPMSF$dataset <- "GTR20+UDM128fix-PMSF"
 GTR20_UDM128optPMSF$dataset <- "GTR20+UDM128opt-PMSF"
-GTR20_MEOW60highoptPMSF$dataset <- "GTR20+MEOW60opt-PMSF"
 
-combined_data <- rbind(Poisson_CAT_PMSF, Poisson_C60fix, Poisson_C60opt, Poisson_C10fixPMSF, Poisson_C10optPMSF, Poisson_C60fixPMSF, Poisson_C60optPMSF, Poisson_UDM8fixPMSF, Poisson_UDM8optPMSF, Poisson_UDM64fixPMSF, Poisson_UDM64optPMSF, Poisson_UDM128fixPMSF, LG_C60fix, LG_C10fixPMSF, LG_C10optPMSF, LG_C60fixPMSF, LG_C60optPMSF, LG_UDM8fixPMSF, LG_UDM8optPMSF, LG_UDM64fixPMSF, LG_UDM64optPMSF, LG_UDM128fixPMSF, LG_MEOW60highfixPMSF, LG_MEOW60highoptPMSF, GTR20_C10fixPMSF, GTR20_C10optPMSF, GTR20_C60fixPMSF, GTR20_C60optPMSF, GTR20_UDM8fixPMSF, GTR20_UDM8optPMSF, GTR20_UDM64fixPMSF, GTR20_UDM64optPMSF, GTR20_UDM128fixPMSF, GTR20_UDM128optPMSF, GTR20_MEOW60highoptPMSF)
+combined_data <- rbind(Poisson_CAT_PMSF, Poisson_C60fix, Poisson_C60opt, Poisson_C10fixPMSF, Poisson_C10optPMSF, Poisson_C60fixPMSF, Poisson_C60optPMSF, Poisson_UDM8fixPMSF, Poisson_UDM8optPMSF, Poisson_UDM64fixPMSF, Poisson_UDM64optPMSF, Poisson_UDM128fixPMSF, Poisson_UDM128optPMSF, Poisson_MEOW10optPMSF, Poisson_MEOW60optPMSF, Poisson_MEOW120optPMSF, LG_C60fix, LG_C10fixPMSF, LG_C10optPMSF, LG_C60fixPMSF, LG_C60optPMSF, LG_UDM8fixPMSF, LG_UDM8optPMSF, LG_UDM64fixPMSF, LG_UDM64optPMSF, LG_UDM128fixPMSF, LG_UDM128optPMSF, LG_MEOW10optPMSF, LG_MEOW60optPMSF, LG_MEOW120optPMSF, GTR20_C10fixPMSF, GTR20_C10optPMSF, GTR20_C60fixPMSF, GTR20_C60optPMSF, GTR20_UDM8fixPMSF, GTR20_UDM8optPMSF, GTR20_UDM64fixPMSF, GTR20_UDM64optPMSF, GTR20_UDM128fixPMSF, GTR20_UDM128optPMSF)
 ```
 
 
@@ -149,9 +164,9 @@ combined_data <- combined_data %>%
     
     dataset %in% c("GTR20+C10fix-PMSF", "GTR20+C10opt-PMSF", "GTR20+C60fix-PMSF", "GTR20+C60opt-PMSF", "LG+C10fix-PMSF", "LG+C10opt-PMSF","LG+C60fix-PMSF", "LG+C60opt-PMSF", "Poisson+C10fix-PMSF", "Poisson+C10opt-PMSF","Poisson+C60fix-PMSF", "Poisson+C60opt-PMSF") ~ "CXX-PMSF",
     
-    dataset %in% c("Poisson+UDM8fix-PMSF", "Poisson+UDM8opt-PMSF", "Poisson+UDM64fix-PMSF", "Poisson+UDM64opt-PMSF", "Poisson+UDM128fix-PMSF", "LG+UDM8fix-PMSF", "LG+UDM8opt-PMSF", "LG+UDM64fix-PMSF", "LG+UDM64opt-PMSF", "LG+UDM128fix-PMSF", "GTR20+UDM8fix-PMSF", "GTR20+UDM8opt-PMSF", "GTR20+UDM64fix-PMSF", "GTR20+UDM64opt-PMSF", "GTR20+UDM128fix-PMSF", "GTR20+UDM128opt-PMSF") ~ "UDM-PMSF",
+    dataset %in% c("Poisson+UDM8fix-PMSF", "Poisson+UDM8opt-PMSF", "Poisson+UDM64fix-PMSF", "Poisson+UDM64opt-PMSF", "Poisson+UDM128fix-PMSF", "Poisson+UDM128opt-PMSF", "LG+UDM8fix-PMSF", "LG+UDM8opt-PMSF", "LG+UDM64fix-PMSF", "LG+UDM64opt-PMSF", "LG+UDM128fix-PMSF", "LG+UDM128opt-PMSF", "GTR20+UDM8fix-PMSF", "GTR20+UDM8opt-PMSF", "GTR20+UDM64fix-PMSF", "GTR20+UDM64opt-PMSF", "GTR20+UDM128fix-PMSF", "GTR20+UDM128opt-PMSF") ~ "UDM-PMSF",
     
-    dataset %in% c("LG+MEOW60opt-PMSF", "LG+MEOW60fix-PMSF", "GTR20+MEOW60opt-PMSF") ~ "MEOW-PMSF",
+    dataset %in% c("LG+MEOW10opt-PMSF", "LG+MEOW60opt-PMSF", "LG+MEOW120opt-PMSF", "Poisson+MEOW10opt-PMSF", "Poisson+MEOW60opt-PMSF", "Poisson+MEOW120opt-PMSF") ~ "MEOW-PMSF",
     
     dataset %in% c("Poisson+C60fix", "Poisson+C60opt", "LG+C60fix") ~ "C60",
     TRUE ~ NA_character_
@@ -171,8 +186,8 @@ combined_data$dataset <- factor(combined_data$dataset, levels = ordered_dataset_
 
 group_lines <- data.frame(
   group = c("CXX-PMSF", "UDM-PMSF", "MEOW-PMSF", "C60"),
-  x_start = c(1.6, 12.6, 28.6, 32.6),
-  x_end   = c(12.4, 28.4, 32.4, 35.4),
+  x_start = c(1.6, 13.6, 31.6, 37.6),
+  x_end   = c(13.4, 31.4, 37.4, 40.4),
   y       = max(as.numeric(combined_data$diversity), na.rm = TRUE) + 0.05
 )
 
@@ -182,7 +197,7 @@ ggplot(combined_data, aes(x = dataset, y = as.numeric(diversity), fill = dataset
   geom_violin(alpha = 0.6, linewidth = 0.4, color = "black") +
   geom_boxplot(width = 0.2, outlier.shape = NA, linewidth = 0.4, fill = NA, color = "black") +
   geom_hline(yintercept = marked_x, linetype = "dashed", color = "red", linewidth = 0.8) +
-  geom_vline(xintercept = c(1.5, 12.5, 28.5, 32.5), linetype = "dotted", color = "grey70", linewidth = 0.5) +
+  geom_vline(xintercept = c(1.5, 13.5, 31.5, 37.5), linetype = "dotted", color = "grey70", linewidth = 0.5) +
   geom_segment(data = group_lines,
                aes(x = x_start, xend = x_end, y = y, yend = y),
                inherit.aes = FALSE,
@@ -202,31 +217,26 @@ ggplot(combined_data, aes(x = dataset, y = as.numeric(diversity), fill = dataset
     axis.text.y = element_text(color = "black", size = 10),
     axis.line = element_line(color = "black"),
     legend.position = "none",
-    plot.margin = margin(40, 5, 5, 5)
+    plot.margin = margin(5, 2, 2, 5)
   )
 ```
 
 
 ```{r}
+# Type Two
 combined_data <- combined_data %>%
-  mutate(
-    # Step 1: 添加 model 大组信息
-    model = case_when(
-      dataset == "Poisson-CAT-PMSF" ~ "CAT-PMSF",
-      dataset %in% c(
-        "GTR20+C10fix-PMSF", "GTR20+C10opt-PMSF", "GTR20+C60fix-PMSF", "GTR20+C60opt-PMSF",
-        "LG+C10fix-PMSF", "LG+C10opt-PMSF", "LG+C60fix-PMSF", "LG+C60opt-PMSF",
-        "Poisson+C10fix-PMSF", "Poisson+C10opt-PMSF", "Poisson+C60fix-PMSF", "Poisson+C60opt-PMSF"
-      ) ~ "CXX-PMSF",
-      dataset %in% c(
-        "Poisson+UDM8fix-PMSF", "Poisson+UDM8opt-PMSF", "Poisson+UDM64fix-PMSF", "Poisson+UDM64opt-PMSF", "Poisson+UDM128fix-PMSF",
-        "LG+UDM8fix-PMSF", "LG+UDM8opt-PMSF", "LG+UDM64fix-PMSF", "LG+UDM64opt-PMSF", "LG+UDM128fix-PMSF",
-        "GTR20+UDM8fix-PMSF", "GTR20+UDM8opt-PMSF", "GTR20+UDM64fix-PMSF", "GTR20+UDM64opt-PMSF", "GTR20+UDM128fix-PMSF", "GTR20+UDM128opt-PMSF"
-      ) ~ "UDM-PMSF",
-      dataset %in% c("LG+MEOW60opt-PMSF", "LG+MEOW60fix-PMSF", "GTR20+MEOW60opt-PMSF") ~ "MEOW-PMSF",
-      dataset %in% c("Poisson+C60fix", "Poisson+C60opt", "LG+C60fix") ~ "C60",
-      TRUE ~ NA_character_
-    ),
+  mutate(group = case_when(
+    dataset == "Poisson-CAT-PMSF" ~ "CAT-PMSF",
+    
+    dataset %in% c("GTR20+C10fix-PMSF", "GTR20+C10opt-PMSF", "GTR20+C60fix-PMSF", "GTR20+C60opt-PMSF", "LG+C10fix-PMSF", "LG+C10opt-PMSF","LG+C60fix-PMSF", "LG+C60opt-PMSF", "Poisson+C10fix-PMSF", "Poisson+C10opt-PMSF","Poisson+C60fix-PMSF", "Poisson+C60opt-PMSF") ~ "CXX-PMSF",
+    
+    dataset %in% c("Poisson+UDM8fix-PMSF", "Poisson+UDM8opt-PMSF", "Poisson+UDM64fix-PMSF", "Poisson+UDM64opt-PMSF", "Poisson+UDM128fix-PMSF", "Poisson+UDM128opt-PMSF", "LG+UDM8fix-PMSF", "LG+UDM8opt-PMSF", "LG+UDM64fix-PMSF", "LG+UDM64opt-PMSF", "LG+UDM128fix-PMSF", "LG+UDM128opt-PMSF", "GTR20+UDM8fix-PMSF", "GTR20+UDM8opt-PMSF", "GTR20+UDM64fix-PMSF", "GTR20+UDM64opt-PMSF", "GTR20+UDM128fix-PMSF", "GTR20+UDM128opt-PMSF") ~ "UDM-PMSF",
+    
+    dataset %in% c("LG+MEOW10opt-PMSF", "LG+MEOW60opt-PMSF", "LG+MEOW120opt-PMSF", "Poisson+MEOW10opt-PMSF", "Poisson+MEOW60opt-PMSF", "Poisson+MEOW120opt-PMSF") ~ "MEOW-PMSF",
+    
+    dataset %in% c("Poisson+C60fix", "Poisson+C60opt", "LG+C60fix") ~ "C60",
+    TRUE ~ NA_character_
+  ),
 
     # Step 2: 添加 exchangeability 分组
     exchangeability = case_when(
@@ -250,33 +260,32 @@ combined_data <- combined_data %>%
       grepl("UDM8", dataset) ~ "UDM8",
       grepl("UDM64", dataset) ~ "UDM64",
       grepl("UDM128", dataset) ~ "UDM128",
+      grepl("MEOW10", dataset) ~ "MEOW10",
       grepl("MEOW60", dataset) ~ "MEOW60",
-      TRUE ~ "default"
+      grepl("MEOW120", dataset) ~ "MEOW120",
+      TRUE ~ "CAT"
     )
   )
-```
 
-
-```{r}
 # 手动设置每个 model 的 profile 可视范围
 filtered_data <- combined_data %>%
   mutate(
     profile = case_when(
-      model == "CXX-PMSF" & profile %in% c("C10", "C60") ~ profile,
-      model == "UDM-PMSF" & profile %in% c("UDM8", "UDM64", "UDM128") ~ profile,
-      model == "MEOW-PMSF" & profile == "MEOW60" ~ profile,
-      model == "C60" & profile == "C60" ~ profile,
-      model == "CAT-PMSF" & profile == "default" ~ profile,
+      group == "CXX-PMSF" & profile %in% c("C10", "C60") ~ profile,
+      group == "UDM-PMSF" & profile %in% c("UDM8", "UDM64", "UDM128") ~ profile,
+      group == "MEOW-PMSF" & profile %in% c("MEOW10", "MEOW60", "MEOW120") ~ profile,
+      group == "C60" & profile == "C60" ~ profile,
+      group == "CAT-PMSF" & profile == "CAT" ~ profile,
       TRUE ~ NA_character_
     )
   ) %>%
   filter(!is.na(profile)) %>%
   mutate(
-    model = factor(model, levels = c("CAT-PMSF", "CXX-PMSF", "UDM-PMSF", "MEOW-PMSF", "C60")),
+    group = factor(group, levels = c("CAT-PMSF", "CXX-PMSF", "UDM-PMSF", "MEOW-PMSF", "C60")),
     exchangeability = factor(exchangeability, levels = c("Poisson", "LG", "GTR20")),
     weights = factor(weights, levels = c("default", "fix", "opt"))
   ) %>%
-  group_by(model) %>%
+  group_by(group) %>%
   mutate(profile = factor(profile, levels = unique(profile))) %>%
   ungroup()
 
@@ -332,7 +341,7 @@ ggplot(filtered_data, aes(x = profile_weight, y = diversity, fill = weights)) +
   ) +
   facet_grid(
     rows = vars(exchangeability),
-    cols = vars(model),
+    cols = vars(group),
     switch = "y",
     scales = "free_x",
     space = "free_x"
@@ -356,7 +365,9 @@ ggplot(filtered_data, aes(x = profile_weight, y = diversity, fill = weights)) +
     panel.grid.minor = element_blank(),
     axis.ticks.x = element_line(color = "black", linewidth = 0.4),
     axis.ticks.length = unit(0.15, "cm"),
-    legend.position = "right"
+    legend.position = "right",
+    legend.key.size = unit(0.4, "cm"),
+    legend.title = element_blank()
   )
 ```
 

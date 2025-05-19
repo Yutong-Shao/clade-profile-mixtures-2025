@@ -1,0 +1,161 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: ./iqtree2 -s 1kp/1kp.fasta -fs 1kp/1_513/Poi-MEOW10opt-PMSF.sitefreq -m POIESmodel -mdef 1kp/1_513/meow0307.nex -safe -pre 1kp/1_513/Poi_MEOW10opt_PMSF -wsr -bb 1000 --wbtl -nt 40
+Seed:    750421 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue May 13 20:57:05 2025
+Kernel:  Safe AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading alignment file 1kp/1kp.fasta ... Fasta format detected
+Reading fasta file: done in 0.0864648 secs using 69.11% CPU
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 103658 columns, 97826 distinct patterns
+74754 parsimony-informative, 13250 singleton sites, 15653 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0211568 secs using 3831% CPU
+   1  BFIK         27.41%    failed      0.00%
+   2  BNCU         13.55%    failed      0.00%
+   3  CIEA         19.10%    failed      0.00%
+   4  CMEQ         13.47%    failed      0.00%
+   5  CSUV         27.21%    failed      0.00%
+   6  Chlre_v5.5   16.92%    failed      0.00%
+   7  GTHK         18.40%    failed      0.00%
+   8  HKZW         24.20%    failed      0.00%
+   9  ILBQ         16.53%    failed      0.00%
+  10  IYDF         17.50%    failed      0.00%
+  11  JEXA         19.01%    failed      0.00%
+  12  JOJQ         16.68%    failed      0.00%
+  13  JVSZ         25.96%    failed      0.00%
+  14  KNMB         16.28%    failed      0.00%
+  15  KWGC         29.11%    failed      0.00%
+  16  Klefl_v1.0    7.15%    failed      0.00%
+  17  MMKU         27.49%    failed      0.00%
+  18  Micpu_v3.0   25.86%    failed      0.00%
+  19  OAGK          6.76%    failed      0.00%
+  20  OLES         13.66%    failed      0.00%
+  21  POZS         25.34%    failed      0.00%
+  22  PQTO         21.02%    failed      0.00%
+  23  PYHZ         19.30%    failed      0.00%
+  24  QKMG         23.72%    failed      0.00%
+  25  QPDY         15.05%    failed      0.00%
+  26  SKYV         29.84%    failed      0.00%
+  27  Selmo_v1.0   13.65%    failed      0.00%
+  28  Spipo_v2      8.49%    failed      0.00%
+  29  VYLQ          4.05%    failed      0.00%
+  30  WDCW         24.70%    failed      0.00%
+  31  WKCY          7.98%    failed      0.00%
+  32  WQRD         23.20%    failed      0.00%
+  33  WTDE         26.95%    failed      0.00%
+  34  WWQZ         16.02%    failed      0.00%
+  35  XSZI         18.21%    failed      0.00%
+  36  XZME         11.12%    failed      0.00%
+  37  YOXI         25.48%    failed      0.00%
+  38  YPIC         24.57%    failed      0.00%
+  39  ZFGK         22.51%    failed      0.00%
+  40  ZUHO         17.59%    failed      0.00%
+****  TOTAL        19.03%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Reading site-specific state frequency file 1kp/1_513/Poi-MEOW10opt-PMSF.sitefreq ...
+97826 distinct per-site state frequency vectors detected
+NOTE: minimal branch length is reduced to 0.000000964711 for long alignment
+Reading model definition file 1kp/1_513/meow0307.nex ... 89 models and 224 frequency vectors loaded
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 4.729 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 750421)...
+Model POIESmodel is alias for Poisson+G4{0.6599566322}+FMIX{EShighclass1:1.0:0.2247562666,EShighclass2:1.0:0.1617885325,EShighclass3:1.0:0.1487474782,ESlowclass1:1.0:0.1510420692,ESlowclass2:1.0:0.0907181094,ESlowclass3:1.0:0.0354716260,ESlowclass4:1.0:0.0518094319,ESlowclass5:1.0:0.0753885478,ESlowclass6:1.0:0.0283854401,ESlowclass7:1.0:0.0318924983}
+
+NOTE: 3702 MB RAM (3 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -3783175.634
+2. Current log-likelihood: -3710616.520
+3. Current log-likelihood: -3708412.847
+4. Current log-likelihood: -3708364.172
+5. Current log-likelihood: -3708362.316
+Optimal log-likelihood: -3708362.245
+Gamma shape alpha: 0.660
+Parameters optimization took 5 rounds (59.262 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 34.0523 secs using 1952% CPU
+Computing ML distances took 34.105665 sec (of wall-clock time) 666.041553 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.085412 secs using 1158% CPU
+Computing RapidNJ tree took 3.059050 sec (of wall-clock time) 54.757013 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -3714462.934
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 272.659 second
+Computing log-likelihood of 98 initial trees ... 465.737 seconds
+Current best score: -3708362.245
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3708061.159
+Iteration 10 / LogL: -3708170.946 / Time: 0h:26m:15s
+Iteration 20 / LogL: -3708066.663 / Time: 0h:38m:24s
+Finish initializing candidate tree set (3)
+Current best tree score: -3708061.159 / CPU time: 2130.343
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -3708164.404 / Time: 0h:48m:20s (1h:58m:8s left)
+Iteration 40 / LogL: -3708168.059 / Time: 0h:58m:40s (1h:31m:39s left)
+Iteration 50 / LogL: -3708065.245 / Time: 1h:8m:57s (1h:11m:41s left)
+Log-likelihood cutoff on original alignment: -3708191.998
+UFBoot trees printed to 1kp/1_513/Poi_MEOW10opt_PMSF.ufboot
+Iteration 60 / LogL: -3708421.886 / Time: 1h:20m:2s (0h:55m:34s left)
+Iteration 70 / LogL: -3708074.651 / Time: 1h:29m:30s (0h:40m:10s left)
+Iteration 80 / LogL: -3708193.202 / Time: 1h:40m:7s (0h:26m:35s left)
+Iteration 90 / LogL: -3708193.041 / Time: 1h:50m:30s (0h:13m:38s left)
+Iteration 100 / LogL: -3708078.687 / Time: 2h:1m:27s (0h:1m:13s left)
+Log-likelihood cutoff on original alignment: -3708192.918
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+UFBoot trees printed to 1kp/1_513/Poi_MEOW10opt_PMSF.ufboot
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 2h:3m:37s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3708061.159
+Optimal log-likelihood: -3708061.159
+Gamma shape alpha: 0.660
+Parameters optimization took 1 rounds (5.434 sec)
+BEST SCORE FOUND : -3708061.159
+Empirical proportions for each category: 0.261 0.215 0.285 0.239
+Site rates printed to 1kp/1_513/Poi_MEOW10opt_PMSF.rate
+Creating bootstrap support values...
+Split supports printed to NEXUS file 1kp/1_513/Poi_MEOW10opt_PMSF.splits.nex
+Total tree length: 16.086
+
+Total number of iterations: 102
+CPU time used for tree search: 263474.436 sec (73h:11m:14s)
+Wall-clock time used for tree search: 7243.161 sec (2h:0m:43s)
+Total CPU time used: 268282.833 sec (74h:31m:22s)
+Total wall-clock time used: 7424.079 sec (2h:3m:44s)
+UFBoot trees printed to 1kp/1_513/Poi_MEOW10opt_PMSF.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file 1kp/1_513/Poi_MEOW10opt_PMSF.splits.nex...
+40 taxa and 89 splits.
+Consensus tree written to 1kp/1_513/Poi_MEOW10opt_PMSF.contree
+Reading input trees file 1kp/1_513/Poi_MEOW10opt_PMSF.contree
+Log-likelihood of consensus tree: -3708061.159
+
+Analysis results written to: 
+  IQ-TREE report:                1kp/1_513/Poi_MEOW10opt_PMSF.iqtree
+  Maximum-likelihood tree:       1kp/1_513/Poi_MEOW10opt_PMSF.treefile
+  Likelihood distances:          1kp/1_513/Poi_MEOW10opt_PMSF.mldist
+  Site-specific rates:           1kp/1_513/Poi_MEOW10opt_PMSF.rate
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          1kp/1_513/Poi_MEOW10opt_PMSF.splits.nex
+  Consensus tree:                1kp/1_513/Poi_MEOW10opt_PMSF.contree
+  UFBoot trees:                  1kp/1_513/Poi_MEOW10opt_PMSF.ufboot
+  Screen log file:               1kp/1_513/Poi_MEOW10opt_PMSF.log
+
+Date and Time: Tue May 13 23:01:27 2025

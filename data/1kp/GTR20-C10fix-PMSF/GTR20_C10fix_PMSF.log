@@ -1,0 +1,161 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: ./iqtree2 -s 1kp/1kp.fasta -fs 1kp/1_513/GTR20-C10fix-PMSF.sitefreq -m GTRC10 -mdef 1kp/1_513/GTRC10.nex -safe -pre 1kp/1_513/GTR20_C10fix_PMSF -wsr -bb 1000 --wbtl -nt 40
+Seed:    310874 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue May 13 14:48:37 2025
+Kernel:  Safe AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading alignment file 1kp/1kp.fasta ... Fasta format detected
+Reading fasta file: done in 0.0601066 secs using 83.52% CPU
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 103658 columns, 97826 distinct patterns
+74754 parsimony-informative, 13250 singleton sites, 15653 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0161128 secs using 3748% CPU
+   1  BFIK         27.41%    failed      0.00%
+   2  BNCU         13.55%    failed      0.00%
+   3  CIEA         19.10%    failed      0.00%
+   4  CMEQ         13.47%    failed      0.00%
+   5  CSUV         27.21%    failed      0.00%
+   6  Chlre_v5.5   16.92%    failed      0.00%
+   7  GTHK         18.40%    failed      0.00%
+   8  HKZW         24.20%    failed      0.00%
+   9  ILBQ         16.53%    failed      0.00%
+  10  IYDF         17.50%    failed      0.00%
+  11  JEXA         19.01%    failed      0.00%
+  12  JOJQ         16.68%    failed      0.00%
+  13  JVSZ         25.96%    failed      0.00%
+  14  KNMB         16.28%    failed      0.00%
+  15  KWGC         29.11%    failed      0.00%
+  16  Klefl_v1.0    7.15%    failed      0.00%
+  17  MMKU         27.49%    failed      0.00%
+  18  Micpu_v3.0   25.86%    failed      0.00%
+  19  OAGK          6.76%    failed      0.00%
+  20  OLES         13.66%    failed      0.00%
+  21  POZS         25.34%    failed      0.00%
+  22  PQTO         21.02%    failed      0.00%
+  23  PYHZ         19.30%    failed      0.00%
+  24  QKMG         23.72%    failed      0.00%
+  25  QPDY         15.05%    failed      0.00%
+  26  SKYV         29.84%    failed      0.00%
+  27  Selmo_v1.0   13.65%    failed      0.00%
+  28  Spipo_v2      8.49%    failed      0.00%
+  29  VYLQ          4.05%    failed      0.00%
+  30  WDCW         24.70%    failed      0.00%
+  31  WKCY          7.98%    failed      0.00%
+  32  WQRD         23.20%    failed      0.00%
+  33  WTDE         26.95%    failed      0.00%
+  34  WWQZ         16.02%    failed      0.00%
+  35  XSZI         18.21%    failed      0.00%
+  36  XZME         11.12%    failed      0.00%
+  37  YOXI         25.48%    failed      0.00%
+  38  YPIC         24.57%    failed      0.00%
+  39  ZFGK         22.51%    failed      0.00%
+  40  ZUHO         17.59%    failed      0.00%
+****  TOTAL        19.03%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Reading site-specific state frequency file 1kp/1_513/GTR20-C10fix-PMSF.sitefreq ...
+97826 distinct per-site state frequency vectors detected
+NOTE: minimal branch length is reduced to 0.000000964711 for long alignment
+Reading model definition file 1kp/1_513/GTRC10.nex ... 88 models and 224 frequency vectors loaded
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 3.303 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 310874)...
+Model GTRC10 is alias for GTRPMIX+G{0.5929}+FMIX{C10_pi1:1.0:0.1191344176,C10_pi2:1.0:0.0874372455,C10_pi3:1.0:0.1037105069,C10_pi4:1.0:0.0922584808,C10_pi5:1.0:0.1070492800,C10_pi6:1.0:0.1329945164,C10_pi7:1.0:0.0538028457,C10_pi8:1.0:0.0691986211,C10_pi9:1.0:0.1319937432,C10_pi10:1.0:0.1024203428}
+
+NOTE: 3702 MB RAM (3 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -3682294.910
+2. Current log-likelihood: -3588019.882
+3. Current log-likelihood: -3583940.121
+4. Current log-likelihood: -3583875.907
+5. Current log-likelihood: -3583874.581
+Optimal log-likelihood: -3583874.554
+Gamma shape alpha: 0.593
+Parameters optimization took 5 rounds (55.621 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 21.3776 secs using 2468% CPU
+Computing ML distances took 21.395353 sec (of wall-clock time) 528.132304 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0605051 secs using 1881% CPU
+Computing RapidNJ tree took 2.417892 sec (of wall-clock time) 53.915329 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -3587835.376
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 262.166 second
+Computing log-likelihood of 98 initial trees ... 428.863 seconds
+Current best score: -3583874.554
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3583354.137
+Iteration 10 / LogL: -3583419.680 / Time: 0h:23m:57s
+Iteration 20 / LogL: -3583407.167 / Time: 0h:38m:26s
+Finish initializing candidate tree set (2)
+Current best tree score: -3583354.137 / CPU time: 2138.880
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -3583388.072 / Time: 0h:51m:28s (2h:5m:53s left)
+Iteration 40 / LogL: -3583381.950 / Time: 1h:4m:50s (1h:41m:18s left)
+Iteration 50 / LogL: -3583379.537 / Time: 1h:17m:55s (1h:21m:2s left)
+Log-likelihood cutoff on original alignment: -3583437.714
+UFBoot trees printed to 1kp/1_513/GTR20_C10fix_PMSF.ufboot
+Iteration 60 / LogL: -3583360.486 / Time: 1h:31m:17s (1h:3m:23s left)
+Iteration 70 / LogL: -3583356.779 / Time: 1h:42m:4s (0h:45m:50s left)
+Iteration 80 / LogL: -3583357.828 / Time: 1h:52m:58s (0h:30m:0s left)
+Iteration 90 / LogL: -3583376.212 / Time: 2h:2m:26s (0h:15m:7s left)
+Iteration 100 / LogL: -3583405.021 / Time: 2h:10m:38s (0h:1m:19s left)
+Log-likelihood cutoff on original alignment: -3583437.714
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+UFBoot trees printed to 1kp/1_513/GTR20_C10fix_PMSF.ufboot
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 2h:12m:37s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3583354.137
+Optimal log-likelihood: -3583354.137
+Gamma shape alpha: 0.593
+Parameters optimization took 1 rounds (4.769 sec)
+BEST SCORE FOUND : -3583354.137
+Empirical proportions for each category: 0.267 0.234 0.277 0.222
+Site rates printed to 1kp/1_513/GTR20_C10fix_PMSF.rate
+Creating bootstrap support values...
+Split supports printed to NEXUS file 1kp/1_513/GTR20_C10fix_PMSF.splits.nex
+Total tree length: 19.759
+
+Total number of iterations: 102
+CPU time used for tree search: 285981.955 sec (79h:26m:21s)
+Wall-clock time used for tree search: 7789.203 sec (2h:9m:49s)
+Total CPU time used: 290694.091 sec (80h:44m:54s)
+Total wall-clock time used: 7963.135 sec (2h:12m:43s)
+UFBoot trees printed to 1kp/1_513/GTR20_C10fix_PMSF.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file 1kp/1_513/GTR20_C10fix_PMSF.splits.nex...
+40 taxa and 85 splits.
+Consensus tree written to 1kp/1_513/GTR20_C10fix_PMSF.contree
+Reading input trees file 1kp/1_513/GTR20_C10fix_PMSF.contree
+Log-likelihood of consensus tree: -3583354.137
+
+Analysis results written to: 
+  IQ-TREE report:                1kp/1_513/GTR20_C10fix_PMSF.iqtree
+  Maximum-likelihood tree:       1kp/1_513/GTR20_C10fix_PMSF.treefile
+  Likelihood distances:          1kp/1_513/GTR20_C10fix_PMSF.mldist
+  Site-specific rates:           1kp/1_513/GTR20_C10fix_PMSF.rate
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          1kp/1_513/GTR20_C10fix_PMSF.splits.nex
+  Consensus tree:                1kp/1_513/GTR20_C10fix_PMSF.contree
+  UFBoot trees:                  1kp/1_513/GTR20_C10fix_PMSF.ufboot
+  Screen log file:               1kp/1_513/GTR20_C10fix_PMSF.log
+
+Date and Time: Tue May 13 17:01:50 2025

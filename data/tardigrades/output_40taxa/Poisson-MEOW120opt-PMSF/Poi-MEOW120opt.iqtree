@@ -1,0 +1,278 @@
+IQ-TREE 3.0.0 built Apr  4 2025
+
+Input file name: tardigrada/matrix_40sp.fasta
+User tree file name: tardigrada/1_infer/guide-LG.treefile
+Type of analysis: tree reconstruction
+Random seed number: 157465
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 40 sequences with 70888 amino-acid sites
+Number of constant sites: 14433 (= 20.3603% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 14433 (= 20.3603% of all sites)
+Number of parsimony informative sites: 48785
+Number of distinct site patterns: 63149
+
+SUBSTITUTION PROCESS
+--------------------
+
+Mixture model of substitution: MIX{Poisson+FEShighclass1,Poisson+FEShighclass2,Poisson+FEShighclass3,Poisson+FEShighclass4,Poisson+FEShighclass5,Poisson+FEShighclass6,Poisson+FEShighclass7,Poisson+FEShighclass8,Poisson+FEShighclass9,Poisson+FEShighclass10,Poisson+FEShighclass11,Poisson+FEShighclass12,Poisson+FEShighclass13,Poisson+FEShighclass14,Poisson+FEShighclass15,Poisson+FEShighclass16,Poisson+FEShighclass17,Poisson+FEShighclass18,Poisson+FEShighclass19,Poisson+FEShighclass20,Poisson+FEShighclass21,Poisson+FEShighclass22,Poisson+FEShighclass23,Poisson+FEShighclass24,Poisson+FEShighclass25,Poisson+FEShighclass26,Poisson+FEShighclass27,Poisson+FEShighclass28,Poisson+FEShighclass29,Poisson+FEShighclass30,Poisson+FEShighclass31,Poisson+FEShighclass32,Poisson+FEShighclass33,Poisson+FEShighclass34,Poisson+FEShighclass35,Poisson+FEShighclass36,Poisson+FEShighclass37,Poisson+FEShighclass38,Poisson+FEShighclass39,Poisson+FEShighclass40,Poisson+FEShighclass41,Poisson+FEShighclass42,Poisson+FEShighclass43,Poisson+FEShighclass44,Poisson+FEShighclass45,Poisson+FEShighclass46,Poisson+FEShighclass47,Poisson+FEShighclass48,Poisson+FEShighclass49,Poisson+FEShighclass50,Poisson+FEShighclass51,Poisson+FEShighclass52,Poisson+FEShighclass53,Poisson+FEShighclass54,Poisson+FEShighclass55,Poisson+FEShighclass56,Poisson+FEShighclass57,Poisson+FEShighclass58,Poisson+FEShighclass59,Poisson+FEShighclass60,Poisson+FEShighclass61,Poisson+FEShighclass62,Poisson+FEShighclass63,Poisson+FEShighclass64,Poisson+FEShighclass65,Poisson+FEShighclass66,Poisson+FEShighclass67,Poisson+FEShighclass68,Poisson+FEShighclass69,Poisson+FEShighclass70,Poisson+FEShighclass71,Poisson+FEShighclass72,Poisson+FEShighclass73,Poisson+FEShighclass74,Poisson+FEShighclass75,Poisson+FEShighclass76,Poisson+FEShighclass77,Poisson+FEShighclass78,Poisson+FEShighclass79,Poisson+FEShighclass80,Poisson+FEShighclass81,Poisson+FEShighclass82,Poisson+FEShighclass83,Poisson+FEShighclass84,Poisson+FEShighclass85,Poisson+FEShighclass86,Poisson+FEShighclass87,Poisson+FEShighclass88,Poisson+FEShighclass89,Poisson+FEShighclass90,Poisson+FESlowclass1,Poisson+FESlowclass2,Poisson+FESlowclass3,Poisson+FESlowclass4,Poisson+FESlowclass5,Poisson+FESlowclass6,Poisson+FESlowclass7,Poisson+FESlowclass8,Poisson+FESlowclass9,Poisson+FESlowclass10,Poisson+FESlowclass11,Poisson+FESlowclass12,Poisson+FESlowclass13,Poisson+FESlowclass14,Poisson+FESlowclass15,Poisson+FESlowclass16,Poisson+FESlowclass17,Poisson+FESlowclass18,Poisson+FESlowclass19,Poisson+FESlowclass20,Poisson+FESlowclass21,Poisson+FESlowclass22,Poisson+FESlowclass23,Poisson+FESlowclass24,Poisson+FESlowclass25,Poisson+FESlowclass26,Poisson+FESlowclass27,Poisson+FESlowclass28,Poisson+FESlowclass29,Poisson+FESlowclass30}+G4
+
+  No  Component      Rate    Weight   Parameters
+   1  Poisson+FEShighclass1  1.0000000000  0.0114183863  Poisson+FEShighclass1
+   2  Poisson+FEShighclass2  1.0000000000  0.0107963890  Poisson+FEShighclass2
+   3  Poisson+FEShighclass3  1.0000000000  0.0052537413  Poisson+FEShighclass3
+   4  Poisson+FEShighclass4  1.0000000000  0.0021738266  Poisson+FEShighclass4
+   5  Poisson+FEShighclass5  1.0000000000  0.0099521164  Poisson+FEShighclass5
+   6  Poisson+FEShighclass6  1.0000000000  0.0081649550  Poisson+FEShighclass6
+   7  Poisson+FEShighclass7  1.0000000000  0.0082679397  Poisson+FEShighclass7
+   8  Poisson+FEShighclass8  1.0000000000  0.0083229537  Poisson+FEShighclass8
+   9  Poisson+FEShighclass9  1.0000000000  0.0095029644  Poisson+FEShighclass9
+  10  Poisson+FEShighclass10  1.0000000000  0.0044527839  Poisson+FEShighclass10
+  11  Poisson+FEShighclass11  1.0000000000  0.0095844890  Poisson+FEShighclass11
+  12  Poisson+FEShighclass12  1.0000000000  0.0053965739  Poisson+FEShighclass12
+  13  Poisson+FEShighclass13  1.0000000000  0.0040481711  Poisson+FEShighclass13
+  14  Poisson+FEShighclass14  1.0000000000  0.0020222606  Poisson+FEShighclass14
+  15  Poisson+FEShighclass15  1.0000000000  0.0035041878  Poisson+FEShighclass15
+  16  Poisson+FEShighclass16  1.0000000000  0.0073828191  Poisson+FEShighclass16
+  17  Poisson+FEShighclass17  1.0000000000  0.0109377077  Poisson+FEShighclass17
+  18  Poisson+FEShighclass18  1.0000000000  0.0068348021  Poisson+FEShighclass18
+  19  Poisson+FEShighclass19  1.0000000000  0.0066785524  Poisson+FEShighclass19
+  20  Poisson+FEShighclass20  1.0000000000  0.0040704366  Poisson+FEShighclass20
+  21  Poisson+FEShighclass21  1.0000000000  0.0060372780  Poisson+FEShighclass21
+  22  Poisson+FEShighclass22  1.0000000000  0.0042813786  Poisson+FEShighclass22
+  23  Poisson+FEShighclass23  1.0000000000  0.0070607908  Poisson+FEShighclass23
+  24  Poisson+FEShighclass24  1.0000000000  0.0033971466  Poisson+FEShighclass24
+  25  Poisson+FEShighclass25  1.0000000000  0.0024105921  Poisson+FEShighclass25
+  26  Poisson+FEShighclass26  1.0000000000  0.0056763440  Poisson+FEShighclass26
+  27  Poisson+FEShighclass27  1.0000000000  0.0040241004  Poisson+FEShighclass27
+  28  Poisson+FEShighclass28  1.0000000000  0.0051417605  Poisson+FEShighclass28
+  29  Poisson+FEShighclass29  1.0000000000  0.0034270465  Poisson+FEShighclass29
+  30  Poisson+FEShighclass30  1.0000000000  0.0087105204  Poisson+FEShighclass30
+  31  Poisson+FEShighclass31  1.0000000000  0.0042350124  Poisson+FEShighclass31
+  32  Poisson+FEShighclass32  1.0000000000  0.0067312967  Poisson+FEShighclass32
+  33  Poisson+FEShighclass33  1.0000000000  0.0051599944  Poisson+FEShighclass33
+  34  Poisson+FEShighclass34  1.0000000000  0.0035347317  Poisson+FEShighclass34
+  35  Poisson+FEShighclass35  1.0000000000  0.0021826515  Poisson+FEShighclass35
+  36  Poisson+FEShighclass36  1.0000000000  0.0038836864  Poisson+FEShighclass36
+  37  Poisson+FEShighclass37  1.0000000000  0.0054697540  Poisson+FEShighclass37
+  38  Poisson+FEShighclass38  1.0000000000  0.0015874500  Poisson+FEShighclass38
+  39  Poisson+FEShighclass39  1.0000000000  0.0041062959  Poisson+FEShighclass39
+  40  Poisson+FEShighclass40  1.0000000000  0.0040823060  Poisson+FEShighclass40
+  41  Poisson+FEShighclass41  1.0000000000  0.0077345201  Poisson+FEShighclass41
+  42  Poisson+FEShighclass42  1.0000000000  0.0057275955  Poisson+FEShighclass42
+  43  Poisson+FEShighclass43  1.0000000000  0.0058414681  Poisson+FEShighclass43
+  44  Poisson+FEShighclass44  1.0000000000  0.0046642883  Poisson+FEShighclass44
+  45  Poisson+FEShighclass45  1.0000000000  0.0033754554  Poisson+FEShighclass45
+  46  Poisson+FEShighclass46  1.0000000000  0.0043831021  Poisson+FEShighclass46
+  47  Poisson+FEShighclass47  1.0000000000  0.0049689589  Poisson+FEShighclass47
+  48  Poisson+FEShighclass48  1.0000000000  0.0017520374  Poisson+FEShighclass48
+  49  Poisson+FEShighclass49  1.0000000000  0.0135912395  Poisson+FEShighclass49
+  50  Poisson+FEShighclass50  1.0000000000  0.0029609401  Poisson+FEShighclass50
+  51  Poisson+FEShighclass51  1.0000000000  0.0023917012  Poisson+FEShighclass51
+  52  Poisson+FEShighclass52  1.0000000000  0.0051757099  Poisson+FEShighclass52
+  53  Poisson+FEShighclass53  1.0000000000  0.0012875031  Poisson+FEShighclass53
+  54  Poisson+FEShighclass54  1.0000000000  0.0037724331  Poisson+FEShighclass54
+  55  Poisson+FEShighclass55  1.0000000000  0.0062023080  Poisson+FEShighclass55
+  56  Poisson+FEShighclass56  1.0000000000  0.0041501588  Poisson+FEShighclass56
+  57  Poisson+FEShighclass57  1.0000000000  0.0035993676  Poisson+FEShighclass57
+  58  Poisson+FEShighclass58  1.0000000000  0.0058505219  Poisson+FEShighclass58
+  59  Poisson+FEShighclass59  1.0000000000  0.0038312146  Poisson+FEShighclass59
+  60  Poisson+FEShighclass60  1.0000000000  0.0027745112  Poisson+FEShighclass60
+  61  Poisson+FEShighclass61  1.0000000000  0.0022722015  Poisson+FEShighclass61
+  62  Poisson+FEShighclass62  1.0000000000  0.0058618805  Poisson+FEShighclass62
+  63  Poisson+FEShighclass63  1.0000000000  0.0012329242  Poisson+FEShighclass63
+  64  Poisson+FEShighclass64  1.0000000000  0.0060326892  Poisson+FEShighclass64
+  65  Poisson+FEShighclass65  1.0000000000  0.0029935199  Poisson+FEShighclass65
+  66  Poisson+FEShighclass66  1.0000000000  0.0090953481  Poisson+FEShighclass66
+  67  Poisson+FEShighclass67  1.0000000000  0.0057118654  Poisson+FEShighclass67
+  68  Poisson+FEShighclass68  1.0000000000  0.0017237631  Poisson+FEShighclass68
+  69  Poisson+FEShighclass69  1.0000000000  0.0408183660  Poisson+FEShighclass69
+  70  Poisson+FEShighclass70  1.0000000000  0.0022201284  Poisson+FEShighclass70
+  71  Poisson+FEShighclass71  1.0000000000  0.0036409144  Poisson+FEShighclass71
+  72  Poisson+FEShighclass72  1.0000000000  0.0021362786  Poisson+FEShighclass72
+  73  Poisson+FEShighclass73  1.0000000000  0.0011970444  Poisson+FEShighclass73
+  74  Poisson+FEShighclass74  1.0000000000  0.0029980372  Poisson+FEShighclass74
+  75  Poisson+FEShighclass75  1.0000000000  0.0025798068  Poisson+FEShighclass75
+  76  Poisson+FEShighclass76  1.0000000000  0.0027881761  Poisson+FEShighclass76
+  77  Poisson+FEShighclass77  1.0000000000  0.0019025764  Poisson+FEShighclass77
+  78  Poisson+FEShighclass78  1.0000000000  0.0014758237  Poisson+FEShighclass78
+  79  Poisson+FEShighclass79  1.0000000000  0.0048215653  Poisson+FEShighclass79
+  80  Poisson+FEShighclass80  1.0000000000  0.0072597422  Poisson+FEShighclass80
+  81  Poisson+FEShighclass81  1.0000000000  0.1073535871  Poisson+FEShighclass81
+  82  Poisson+FEShighclass82  1.0000000000  0.0014645360  Poisson+FEShighclass82
+  83  Poisson+FEShighclass83  1.0000000000  0.0062250781  Poisson+FEShighclass83
+  84  Poisson+FEShighclass84  1.0000000000  0.0035909064  Poisson+FEShighclass84
+  85  Poisson+FEShighclass85  1.0000000000  0.0033804007  Poisson+FEShighclass85
+  86  Poisson+FEShighclass86  1.0000000000  0.0008890616  Poisson+FEShighclass86
+  87  Poisson+FEShighclass87  1.0000000000  0.0020802625  Poisson+FEShighclass87
+  88  Poisson+FEShighclass88  1.0000000000  0.0072325754  Poisson+FEShighclass88
+  89  Poisson+FEShighclass89  1.0000000000  0.0610382699  Poisson+FEShighclass89
+  90  Poisson+FEShighclass90  1.0000000000  0.0078822177  Poisson+FEShighclass90
+  91  Poisson+FESlowclass1  1.0000000000  0.0154133425  Poisson+FESlowclass1
+  92  Poisson+FESlowclass2  1.0000000000  0.0081131315  Poisson+FESlowclass2
+  93  Poisson+FESlowclass3  1.0000000000  0.0051968829  Poisson+FESlowclass3
+  94  Poisson+FESlowclass4  1.0000000000  0.0079548340  Poisson+FESlowclass4
+  95  Poisson+FESlowclass5  1.0000000000  0.0084887242  Poisson+FESlowclass5
+  96  Poisson+FESlowclass6  1.0000000000  0.0095796353  Poisson+FESlowclass6
+  97  Poisson+FESlowclass7  1.0000000000  0.0074419592  Poisson+FESlowclass7
+  98  Poisson+FESlowclass8  1.0000000000  0.0036327927  Poisson+FESlowclass8
+  99  Poisson+FESlowclass9  1.0000000000  0.0068882073  Poisson+FESlowclass9
+ 100  Poisson+FESlowclass10  1.0000000000  0.0031409031  Poisson+FESlowclass10
+ 101  Poisson+FESlowclass11  1.0000000000  0.0050030009  Poisson+FESlowclass11
+ 102  Poisson+FESlowclass12  1.0000000000  0.0136972869  Poisson+FESlowclass12
+ 103  Poisson+FESlowclass13  1.0000000000  0.0047888078  Poisson+FESlowclass13
+ 104  Poisson+FESlowclass14  1.0000000000  0.0050499658  Poisson+FESlowclass14
+ 105  Poisson+FESlowclass15  1.0000000000  0.0101636532  Poisson+FESlowclass15
+ 106  Poisson+FESlowclass16  1.0000000000  0.0106054051  Poisson+FESlowclass16
+ 107  Poisson+FESlowclass17  1.0000000000  0.0012759243  Poisson+FESlowclass17
+ 108  Poisson+FESlowclass18  1.0000000000  0.0069387826  Poisson+FESlowclass18
+ 109  Poisson+FESlowclass19  1.0000000000  0.0017971930  Poisson+FESlowclass19
+ 110  Poisson+FESlowclass20  1.0000000000  0.0176332748  Poisson+FESlowclass20
+ 111  Poisson+FESlowclass21  1.0000000000  0.0033154522  Poisson+FESlowclass21
+ 112  Poisson+FESlowclass22  1.0000000000  0.0115460248  Poisson+FESlowclass22
+ 113  Poisson+FESlowclass23  1.0000000000  0.0111956584  Poisson+FESlowclass23
+ 114  Poisson+FESlowclass24  1.0000000000  0.0225674910  Poisson+FESlowclass24
+ 115  Poisson+FESlowclass25  1.0000000000  0.0067408147  Poisson+FESlowclass25
+ 116  Poisson+FESlowclass26  1.0000000000  0.0362550095  Poisson+FESlowclass26
+ 117  Poisson+FESlowclass27  1.0000000000  0.0103989047  Poisson+FESlowclass27
+ 118  Poisson+FESlowclass28  1.0000000000  0.0394848855  Poisson+FESlowclass28
+ 119  Poisson+FESlowclass29  1.0000000000  0.0250262813  Poisson+FESlowclass29
+ 120  Poisson+FESlowclass30  1.0000000000  0.0468249956  Poisson+FESlowclass30
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.3290530274
+
+ Category  Relative_rate  Proportion
+  1         0.1976664610   0.2500000000
+  2         0.5573868289   0.2500000000
+  3         1.0385786085   0.2500000000
+  4         2.2063681016   0.2500000000
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -2179386.6546318973 (s.e. 6052.5132179582)
+Unconstrained log-likelihood (without tree): -776568.6022801597
+Number of free parameters (#branches + #model parameters): 197
+Akaike information criterion (AIC) score: 4359167.3092637947
+Corrected Akaike information criterion (AICc) score: 4359168.4128428018
+Bayesian information criterion (BIC) score: 4360973.5739836032
+
+Total tree length (sum of branch lengths): 20.8997636945
+Sum of internal branch lengths: 7.4238198900 (35.5210709487% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Capitella_telata' is drawn at root
+
++----------------Capitella_telata
+|
+|                     +-----------------Daphnia_magna
+|                  +--|
+|                  |  +------------------Paeneus_vanammei
+|               +--|
+|               |  |        +------------Frakliniella_occidentalis
+|               |  |  +-----|
+|               |  |  |     |  +---------------Manduca_sexta
+|               |  |  |     +--|
+|               |  |  |        +----------Neodiprion_lecontei
+|               |  +--|
+|               |     +----------Pleomothra
+|            +--|
+|            |  +----------------Strigamia_maritima
+|         +--|
+|         |  |           +--Limulus_polyphemus
+|         |  |   +-------|
+|         |  |   |       +--Tachypleu
+|         |  +---|
+|         |      |         +------Parasteatoda_tepidariorum
+|         |      +---------|
+|         |                +---Stegodyphus_mimosarum
+|      +--|
+|      |  |        +-----Epiperipatus
+|      |  +--------|
+|      |           |     +--Ooperipatellus
+|      |           |  +--|
+|      |           |  |  |  +--Peripatoides
+|      |           |  |  +--|
+|      |           |  |     +--Peripatoides_novaezelandiae
+|      |           +--|
+|      |              |  +--Opisthopatus_kwazululandi
+|      |              +--|
+|      |                 +--Peripatopsis_capensis
+|   +--|
+|   |  |                                     +-----------------Echiniscoides_sigismundi
+|   |  |                  +------------------|
+|   |  |                  |                  |          +--Echiniscus_bisetosus
+|   |  |                  |                  +----------|
+|   |  |                  |                             +--Echiniscus_testudo
+|   |  |     +------------|
+|   |  |     |            |                  +------Hypsibius_dujardini
+|   |  |     |            |               +--|
+|   |  |     |            |               |  +--------Ramazzottius_varieornatus
+|   |  |     |            |           +---|
+|   |  |     |            |           |   |  +--------Mesobiotus_philippinicus
+|   |  |     |            |           |   +--|
+|   |  |     |            |           |      +-----Richtersius_coronifer
+|   |  |     |            +-----------|
+|   |  |     |                        +------------Milnesium_tardigradum
+|   |  |  +--|
+|   |  |  |  |                      +--------------Enoplus_brevis
+|   |  |  |  |                 +----|
+|   |  |  |  |                 |    +------------------Pontonema_vulgare
+|   |  |  |  |              +--|
+|   |  |  |  |              |  +----------------Tobrilus
+|   |  |  |  +--------------|
+|   |  |  |                 |         +--------Prionchulus_punctatus
+|   |  |  |                 |    +----|
+|   |  |  |                 |    |    +---------------Romanomermis_culicivorax
+|   |  |  |                 +----|
+|   |  |  |                      +-------------Xiphinema_index
+|   |  +--|
+|   |     |                                      +--Gordius
+|   |     +--------------------------------------|
+|   |                                            +--Paragordius_varius
++---|
+|   |       +------------------Echinoderes_kohni
+|   |  +----|
+|   |  |    +---------Pycnophyes
+|   +--|
+|      |        +------Halicryptus_spinolosus
+|      |  +-----|
+|      |  |     +-------Priapulus_caudatus
+|      +--|
+|         +------------------Meiopriapulus
+|
++--------------Pamacea_canaliculata
+
+Tree in newick format:
+
+(Capitella_telata:0.5961625816,(((((((Daphnia_magna:0.6129614397,Paeneus_vanammei:0.6518957859):0.0355224557,((Frakliniella_occidentalis:0.4430906270,(Manduca_sexta:0.5666746329,Neodiprion_lecontei:0.3848750986):0.0550461803):0.2109780329,Pleomothra:0.3996950842):0.0265061242):0.1340091271,Strigamia_maritima:0.5838849396):0.0242338520,((Limulus_polyphemus:0.0464468742,Tachypleu:0.0443976560):0.2893725280,(Parasteatoda_tepidariorum:0.2377852249,Stegodyphus_mimosarum:0.1639023660):0.3649496640):0.1462901911):0.0799935891,(Epiperipatus:0.2361303807,((Ooperipatellus:0.0881979216,(Peripatoides:0.0314955251,Peripatoides_novaezelandiae:0.0217847039):0.0350614512):0.0431597231,(Opisthopatus_kwazululandi:0.0873994196,Peripatopsis_capensis:0.0775424749):0.0460230927):0.0780717952):0.3375459064):0.0455429813,((((Echiniscoides_sigismundi:0.6092598971,(Echiniscus_bisetosus:0.0624494993,Echiniscus_testudo:0.0790597938):0.3853824788):0.6689248426,(((Hypsibius_dujardini:0.2648773057,Ramazzottius_varieornatus:0.3073440175):0.0704910833,(Mesobiotus_philippinicus:0.3191908587,Richtersius_coronifer:0.2269596335):0.0813533960):0.1588335204,Milnesium_tardigradum:0.4492017027):0.4070420665):0.4503247299,(((Enoplus_brevis:0.5139093894,Pontonema_vulgare:0.6440251376):0.1785908073,Tobrilus:0.5745037910):0.0366029364,((Prionchulus_punctatus:0.3238364260,Romanomermis_culicivorax:0.5644409439):0.1744569245,Xiphinema_index:0.4775087275):0.1795464663):0.5070991832):0.0520982883,(Gordius:0.0210153908,Paragordius_varius:0.0308253689):1.3317485702):0.0507770756):0.0434388916,((Echinoderes_kohni:0.6462383703,Pycnophyes:0.3597191192):0.1938276927,((Halicryptus_spinolosus:0.2516707905,Priapulus_caudatus:0.3010496508):0.2062586407,Meiopriapulus:0.6593294805):0.0876059633):0.0552317029):0.1518779350,Pamacea_canaliculata:0.5152057735);
+
+ALISIM COMMAND
+--------------
+Currently, we only support exporting AliSim commands automatically from the analysis for common models of DNA, Protein, Binary, and Morphological data. To simulate data from other models (mixture, lie-markov, etc), please refer to the User Manual of AliSim. Thanks!
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Apr 25 15:07:04 2025
+Total CPU time used: 110403 seconds (30h:40m:3s)
+Total wall-clock time used: 3065.84 seconds (0h:51m:5s)
+

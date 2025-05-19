@@ -1,0 +1,103 @@
+IQ-TREE version 3.0.0 for Linux x86 64-bit built Apr  4 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: /data/yutong/iqtree3 -s 1kp/1kp.fasta -m Poisson+UDM0008CLR+G4 -mdef 1kp/udm_hogenom_0008_clr_iqtree.nex -te 1kp/lgc60pmsf.contree -me 0.99 -safe -mwopt -pre 1kp/1_infer/Poi-UDM8opt -prec 10 -nt 40
+Seed:    977753 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed May  7 14:56:59 2025
+Kernel:  Safe AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading alignment file 1kp/1kp.fasta ... Fasta format detected
+Reading fasta file: done in 0.0450683 secs using 81.02% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.181766 secs using 351% CPU
+Alignment has 40 sequences with 103658 columns, 97826 distinct patterns
+74754 parsimony-informative, 13250 singleton sites, 15653 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0130218 secs using 3638% CPU
+   1  BFIK         27.41%    failed      0.00%
+   2  BNCU         13.55%    failed      0.00%
+   3  CIEA         19.10%    failed      0.00%
+   4  CMEQ         13.47%    failed      0.00%
+   5  CSUV         27.21%    failed      0.00%
+   6  Chlre_v5.5   16.92%    failed      0.00%
+   7  GTHK         18.40%    failed      0.00%
+   8  HKZW         24.20%    failed      0.00%
+   9  ILBQ         16.53%    failed      0.00%
+  10  IYDF         17.50%    failed      0.00%
+  11  JEXA         19.01%    failed      0.00%
+  12  JOJQ         16.68%    failed      0.00%
+  13  JVSZ         25.96%    failed      0.00%
+  14  KNMB         16.28%    failed      0.00%
+  15  KWGC         29.11%    failed      0.00%
+  16  Klefl_v1.0    7.15%    failed      0.00%
+  17  MMKU         27.49%    failed      0.00%
+  18  Micpu_v3.0   25.86%    failed      0.00%
+  19  OAGK          6.76%    failed      0.00%
+  20  OLES         13.66%    failed      0.00%
+  21  POZS         25.34%    failed      0.00%
+  22  PQTO         21.02%    failed      0.00%
+  23  PYHZ         19.30%    failed      0.00%
+  24  QKMG         23.72%    failed      0.00%
+  25  QPDY         15.05%    failed      0.00%
+  26  SKYV         29.84%    failed      0.00%
+  27  Selmo_v1.0   13.65%    failed      0.00%
+  28  Spipo_v2      8.49%    failed      0.00%
+  29  VYLQ          4.05%    failed      0.00%
+  30  WDCW         24.70%    failed      0.00%
+  31  WKCY          7.98%    failed      0.00%
+  32  WQRD         23.20%    failed      0.00%
+  33  WTDE         26.95%    failed      0.00%
+  34  WWQZ         16.02%    failed      0.00%
+  35  XSZI         18.21%    failed      0.00%
+  36  XZME         11.12%    failed      0.00%
+  37  YOXI         25.48%    failed      0.00%
+  38  YPIC         24.57%    failed      0.00%
+  39  ZFGK         22.51%    failed      0.00%
+  40  ZUHO         17.59%    failed      0.00%
+****  TOTAL        19.03%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: minimal branch length is reduced to 0.000000964711 for long alignment
+Checking for duplicate sequences: done in 0.0639337 secs using 1027% CPU
+Reading model definition file 1kp/udm_hogenom_0008_clr_iqtree.nex ... 88 models and 222 frequency vectors loaded
+Reading input tree file 1kp/lgc60pmsf.contree ...
+Model Poisson+UDM0008CLR+G4 is alias for Poisson+FMIX{UDM0008CLR_C0000:1.0:0.2128158330006274,UDM0008CLR_C0001:1.0:0.15697256601836537,UDM0008CLR_C0002:1.0:0.14838304910739747,UDM0008CLR_C0003:1.0:0.1153624593623453,UDM0008CLR_C0004:1.0:0.10621684822905378,UDM0008CLR_C0005:1.0:0.10614840586322934,UDM0008CLR_C0006:1.0:0.09187817258883249,UDM0008CLR_C0007:1.0:0.06222266583014886}+G4
+
+NOTE: 19349 MB RAM (18 GB) is required!
+Estimate model parameters (epsilon = 0.990)
+1. Initial log-likelihood: -4013423.710
+2. Current log-likelihood: -3925147.951
+3. Current log-likelihood: -3917130.825
+4. Current log-likelihood: -3916620.790
+5. Current log-likelihood: -3916566.441
+6. Current log-likelihood: -3916559.458
+7. Current log-likelihood: -3916557.386
+8. Current log-likelihood: -3916555.222
+9. Current log-likelihood: -3916553.403
+10. Current log-likelihood: -3916551.525
+11. Current log-likelihood: -3916549.940
+12. Current log-likelihood: -3916548.375
+13. Current log-likelihood: -3916547.054
+14. Current log-likelihood: -3916545.800
+15. Current log-likelihood: -3916544.739
+Optimal log-likelihood: -3916543.763
+Mixture weights: 0.161 0.192 0.167 0.190 0.082 0.086 0.073 0.049
+Gamma shape alpha: 0.665
+Parameters optimization took 15 rounds (237.175 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -3916543.763
+Total tree length: 15.434
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 8658.875 sec (2h:24m:18s)
+Total wall-clock time used: 237.305 sec (0h:3m:57s)
+
+Analysis results written to: 
+  IQ-TREE report:                1kp/1_infer/Poi-UDM8opt.iqtree
+  Maximum-likelihood tree:       1kp/1_infer/Poi-UDM8opt.treefile
+  Screen log file:               1kp/1_infer/Poi-UDM8opt.log
+
+Date and Time: Wed May  7 15:00:59 2025

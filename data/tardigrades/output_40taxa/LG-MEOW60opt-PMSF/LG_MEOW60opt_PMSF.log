@@ -1,0 +1,263 @@
+IQ-TREE version 3.0.0 for Linux x86 64-bit built Apr  4 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: /data/yutong/iqtree3 -s tardigrada/matrix_40sp.fasta -fs tardigrada/1_infer/LG-MEOW60opt-PMSF.sitefreq -m LGESmodel -mdef tardigrada/1_infer/meow4515.nex -safe -pre tardigrada/1_infer/LG_MEOW60opt_PMSF -wsr -bb 1000 -nt 40
+Seed:    415966 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Apr 25 17:06:30 2025
+Kernel:  Safe AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading alignment file tardigrada/matrix_40sp.fasta ... Fasta format detected
+Reading fasta file: done in 0.0641311 secs using 99.08% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.146625 secs using 386.6% CPU
+Alignment has 40 sequences with 70888 columns, 63149 distinct patterns
+48785 parsimony-informative, 7670 singleton sites, 14433 constant sites
+                             Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0128797 secs using 3783% CPU
+   1  Capitella_telata               5.00%    failed      0.00%
+   2  Daphnia_magna                  9.79%    failed      0.06%
+   3  Echiniscoides_sigismundi      49.39%    failed      0.00%
+   4  Echiniscus_bisetosus          82.96%    failed      0.00%
+   5  Echiniscus_testudo            50.24%    failed      0.00%
+   6  Echinoderes_kohni             88.58%    failed      0.00%
+   7  Enoplus_brevis                22.43%    failed      0.00%
+   8  Epiperipatus                  56.34%    failed      0.00%
+   9  Frakliniella_occidentalis      7.36%    failed      0.08%
+  10  Gordius                       70.84%    failed      0.00%
+  11  Halicryptus_spinolosus        13.41%    failed      0.00%
+  12  Hypsibius_dujardini            3.51%    failed      0.00%
+  13  Limulus_polyphemus            16.13%    failed      0.00%
+  14  Manduca_sexta                  9.59%    failed      0.00%
+  15  Meiopriapulus                 26.75%    failed      0.00%
+  16  Mesobiotus_philippinicus      19.72%    failed      0.00%
+  17  Milnesium_tardigradum         59.56%    failed      0.00%
+  18  Neodiprion_lecontei            4.62%    failed      0.01%
+  19  Ooperipatellus                72.91%    failed      0.00%
+  20  Opisthopatus_kwazululandi     26.52%    failed      0.00%
+  21  Paeneus_vanammei              12.28%    failed      0.00%
+  22  Pamacea_canaliculata           5.42%    failed      0.02%
+  23  Paragordius_varius            71.38%    failed      0.00%
+  24  Parasteatoda_tepidariorum      3.65%    failed      0.00%
+  25  Peripatoides                  73.44%    failed      0.00%
+  26  Peripatoides_novaezelandiae   16.34%    failed      0.00%
+  27  Peripatopsis_capensis         37.07%    failed      0.00%
+  28  Pleomothra                    21.78%    failed      0.00%
+  29  Pontonema_vulgare             24.88%    failed      0.00%
+  30  Priapulus_caudatus            13.43%    failed      0.00%
+  31  Prionchulus_punctatus         13.90%    failed      0.00%
+  32  Pycnophyes                    76.53%    failed      0.00%
+  33  Ramazzottius_varieornatus      3.20%    failed      0.00%
+  34  Richtersius_coronifer          6.00%    failed      0.00%
+  35  Romanomermis_culicivorax      36.04%    failed      0.00%
+  36  Stegodyphus_mimosarum         15.16%    failed      0.00%
+  37  Strigamia_maritima            13.05%    failed      0.00%
+  38  Tachypleu                      8.55%    failed      0.00%
+  39  Tobrilus                      23.43%    failed      0.00%
+  40  Xiphinema_index               27.20%    failed      0.00%
+WARNING: 10 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                         29.96%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Reading site-specific state frequency file tardigrada/1_infer/LG-MEOW60opt-PMSF.sitefreq ...
+63149 distinct per-site state frequency vectors detected
+Checking for duplicate sequences: done in 0.0177707 secs using 2415% CPU
+Reading model definition file tardigrada/1_infer/meow4515.nex ... 87 models and 274 frequency vectors loaded
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.714 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 415966)...
+Model LGESmodel is alias for LG+G4{0.7478025235}+FMIX{EShighclass1:1.0:0.0074813495,EShighclass2:1.0:0.0190315477,EShighclass3:1.0:0.0087070654,EShighclass4:1.0:0.0170338374,EShighclass5:1.0:0.0067427785,EShighclass6:1.0:0.0052053933,EShighclass7:1.0:0.0218572461,EShighclass8:1.0:0.0281109935,EShighclass9:1.0:0.0071866076,EShighclass10:1.0:0.0032125607,EShighclass11:1.0:0.0142628760,EShighclass12:1.0:0.0329540174,EShighclass13:1.0:0.0312997797,EShighclass14:1.0:0.0082210593,EShighclass15:1.0:0.0082362272,EShighclass16:1.0:0.0226740682,EShighclass17:1.0:0.0078456203,EShighclass18:1.0:0.0542990034,EShighclass19:1.0:0.0070814331,EShighclass20:1.0:0.0232955206,EShighclass21:1.0:0.0050445891,EShighclass22:1.0:0.0077590234,EShighclass23:1.0:0.0113015000,EShighclass24:1.0:0.0247409325,EShighclass25:1.0:0.0208979828,EShighclass26:1.0:0.0226250147,EShighclass27:1.0:0.0045554605,EShighclass28:1.0:0.0044030255,EShighclass29:1.0:0.0117017773,EShighclass30:1.0:0.0110792235,EShighclass31:1.0:0.0031405012,EShighclass32:1.0:0.0229293855,EShighclass33:1.0:0.0034363837,EShighclass34:1.0:0.0254294115,EShighclass35:1.0:0.0056906204,EShighclass36:1.0:0.0102013170,EShighclass37:1.0:0.0059924356,EShighclass38:1.0:0.0214669981,EShighclass39:1.0:0.0101023199,EShighclass40:1.0:0.0160920186,EShighclass41:1.0:0.1100748449,EShighclass42:1.0:0.1508763400,EShighclass43:1.0:0.0095557518,EShighclass44:1.0:0.0183146301,EShighclass45:1.0:0.0160192580,ESlowclass1:1.0:0.0166177058,ESlowclass2:1.0:0.0086851556,ESlowclass3:1.0:0.0069954725,ESlowclass4:1.0:0.0124825545,ESlowclass5:1.0:0.0118846602,ESlowclass6:1.0:0.0188527723,ESlowclass7:1.0:0.0008656906,ESlowclass8:1.0:0.0030393683,ESlowclass9:1.0:0.0009243451,ESlowclass10:1.0:0.0061371809,ESlowclass11:1.0:0.0171033368,ESlowclass12:1.0:0.0059950709,ESlowclass13:1.0:0.0019241548,ESlowclass14:1.0:0.0001719252,ESlowclass15:1.0:0.0001508763}
+
+NOTE: 2390 MB RAM (2 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -2101927.841
+2. Current log-likelihood: -2034439.198
+3. Current log-likelihood: -2033187.786
+4. Current log-likelihood: -2033175.905
+5. Current log-likelihood: -2033174.724
+Optimal log-likelihood: -2033174.601
+Gamma shape alpha: 0.748
+Parameters optimization took 5 rounds (27.442 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 11.8643 secs using 2288% CPU
+Computing ML distances took 11.871342 sec (of wall-clock time) 271.607080 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000182502 secs using 3168% CPU
+Constructing RapidNJ tree: done in 0.00033758 secs using 269.9% CPU
+Computing RapidNJ tree took 0.000675 sec (of wall-clock time) 0.007727 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -2034307.409
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 78.896 second
+Computing log-likelihood of 98 initial trees ... 229.817 seconds
+Current best score: -2033174.601
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 16.4494 secs using 3951% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -2032873.430
+Optimizing NNI: done in 37.1648 secs using 3923% CPU
+Optimizing NNI: done in 42.6414 secs using 3871% CPU
+Optimizing NNI: done in 40.9395 secs using 3922% CPU
+Optimizing NNI: done in 41.9236 secs using 3931% CPU
+Optimizing NNI: done in 38.836 secs using 3955% CPU
+Optimizing NNI: done in 35.9987 secs using 3950% CPU
+Optimizing NNI: done in 46.4099 secs using 3943% CPU
+Optimizing NNI: done in 38.9161 secs using 3948% CPU
+Optimizing NNI: done in 49.7142 secs using 3877% CPU
+Iteration 10 / LogL: -2032887.820 / Time: 0h:13m:18s
+Optimizing NNI: done in 46.287 secs using 3910% CPU
+Optimizing NNI: done in 53.4943 secs using 3915% CPU
+Optimizing NNI: done in 43.864 secs using 3919% CPU
+Optimizing NNI: done in 46.4668 secs using 3950% CPU
+Optimizing NNI: done in 47.3784 secs using 3942% CPU
+Optimizing NNI: done in 37.8736 secs using 3901% CPU
+Optimizing NNI: done in 42.256 secs using 3896% CPU
+Optimizing NNI: done in 48.4278 secs using 3903% CPU
+Optimizing NNI: done in 43.4602 secs using 3950% CPU
+Optimizing NNI: done in 35.8839 secs using 3954% CPU
+Iteration 20 / LogL: -2032879.892 / Time: 0h:20m:47s
+Finish initializing candidate tree set (3)
+Current best tree score: -2032873.430 / CPU time: 1163.103
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 48.1636 secs using 3931% CPU
+Optimizing NNI: done in 34.5997 secs using 3927% CPU
+Optimizing NNI: done in 39.9886 secs using 3938% CPU
+Optimizing NNI: done in 45.4969 secs using 3957% CPU
+Optimizing NNI: done in 51.8404 secs using 3960% CPU
+Optimizing NNI: done in 41.1245 secs using 3956% CPU
+Optimizing NNI: done in 60.2666 secs using 3900% CPU
+Optimizing NNI: done in 42.9678 secs using 3955% CPU
+Optimizing NNI: done in 32.5996 secs using 3965% CPU
+Optimizing NNI: done in 40.6042 secs using 3960% CPU
+Iteration 30 / LogL: -2032881.887 / Time: 0h:28m:9s (1h:8m:55s left)
+Optimizing NNI: done in 46.5036 secs using 3955% CPU
+Optimizing NNI: done in 41.0173 secs using 3961% CPU
+Optimizing NNI: done in 33.6784 secs using 3953% CPU
+Optimizing NNI: done in 44.875 secs using 3951% CPU
+Optimizing NNI: done in 50.1426 secs using 3953% CPU
+Optimizing NNI: done in 41.4167 secs using 3932% CPU
+Optimizing NNI: done in 38.315 secs using 3939% CPU
+Optimizing NNI: done in 46.2594 secs using 3958% CPU
+Optimizing NNI: done in 33.5296 secs using 3942% CPU
+Optimizing NNI: done in 56.2893 secs using 3959% CPU
+Iteration 40 / LogL: -2032875.602 / Time: 0h:35m:26s (0h:55m:24s left)
+Optimizing NNI: done in 53.4953 secs using 3950% CPU
+Optimizing NNI: done in 39.2594 secs using 3939% CPU
+Optimizing NNI: done in 47.4352 secs using 3939% CPU
+Optimizing NNI: done in 46.4885 secs using 3945% CPU
+Optimizing NNI: done in 58.9474 secs using 3885% CPU
+Optimizing NNI: done in 59.3404 secs using 3945% CPU
+Optimizing NNI: done in 27.3169 secs using 3948% CPU
+Optimizing NNI: done in 43.8248 secs using 3940% CPU
+Optimizing NNI: done in 39.7829 secs using 3961% CPU
+Optimizing NNI: done in 45.6065 secs using 3950% CPU
+Iteration 50 / LogL: -2032893.483 / Time: 0h:43m:11s (0h:44m:56s left)
+Log-likelihood cutoff on original alignment: -2032910.358
+Optimizing NNI: done in 37.1408 secs using 3921% CPU
+Optimizing NNI: done in 40.1167 secs using 3954% CPU
+Optimizing NNI: done in 42.9805 secs using 3964% CPU
+Optimizing NNI: done in 47.4385 secs using 3911% CPU
+Optimizing NNI: done in 41.3568 secs using 3919% CPU
+Optimizing NNI: done in 37.6947 secs using 3972% CPU
+Optimizing NNI: done in 26.1283 secs using 3965% CPU
+Optimizing NNI: done in 38.0136 secs using 3946% CPU
+Optimizing NNI: done in 23.7777 secs using 3969% CPU
+Optimizing NNI: done in 40.642 secs using 3931% CPU
+Iteration 60 / LogL: -2032884.755 / Time: 0h:49m:31s (0h:34m:24s left)
+Optimizing NNI: done in 35.06 secs using 3954% CPU
+Optimizing NNI: done in 51.1645 secs using 3920% CPU
+Optimizing NNI: done in 35.3106 secs using 3966% CPU
+Optimizing NNI: done in 50.7985 secs using 3905% CPU
+Optimizing NNI: done in 45.8617 secs using 3934% CPU
+Optimizing NNI: done in 38.704 secs using 3911% CPU
+Optimizing NNI: done in 40.9077 secs using 3926% CPU
+Optimizing NNI: done in 47.6915 secs using 3963% CPU
+Optimizing NNI: done in 61.0496 secs using 3942% CPU
+Optimizing NNI: done in 49.1653 secs using 3940% CPU
+Iteration 70 / LogL: -2032884.267 / Time: 0h:57m:11s (0h:25m:41s left)
+Optimizing NNI: done in 43.6574 secs using 3892% CPU
+Optimizing NNI: done in 43.8765 secs using 3946% CPU
+Optimizing NNI: done in 34.6157 secs using 3948% CPU
+Optimizing NNI: done in 41.0226 secs using 3934% CPU
+Optimizing NNI: done in 41.761 secs using 3937% CPU
+Optimizing NNI: done in 37.4287 secs using 3888% CPU
+Optimizing NNI: done in 52.6371 secs using 3920% CPU
+Optimizing NNI: done in 39.5396 secs using 3911% CPU
+Optimizing NNI: done in 48.6557 secs using 3918% CPU
+Optimizing NNI: done in 36.0312 secs using 3954% CPU
+Iteration 80 / LogL: -2032908.729 / Time: 1h:4m:15s (0h:17m:4s left)
+Optimizing NNI: done in 38.3656 secs using 3933% CPU
+Optimizing NNI: done in 26.3158 secs using 3951% CPU
+Optimizing NNI: done in 36.8002 secs using 3896% CPU
+Optimizing NNI: done in 55.9953 secs using 3911% CPU
+Optimizing NNI: done in 49.9099 secs using 3952% CPU
+Optimizing NNI: done in 36.4857 secs using 3953% CPU
+Optimizing NNI: done in 49.7797 secs using 3944% CPU
+Optimizing NNI: done in 27.0024 secs using 3915% CPU
+Optimizing NNI: done in 41.2835 secs using 3938% CPU
+Optimizing NNI: done in 55.6643 secs using 3909% CPU
+Iteration 90 / LogL: -2032876.094 / Time: 1h:11m:17s (0h:8m:48s left)
+Optimizing NNI: done in 38.1022 secs using 3910% CPU
+Optimizing NNI: done in 32.7296 secs using 3949% CPU
+Optimizing NNI: done in 35.1598 secs using 3936% CPU
+Optimizing NNI: done in 60.1697 secs using 3883% CPU
+Optimizing NNI: done in 54.5787 secs using 3945% CPU
+Optimizing NNI: done in 45.5266 secs using 3936% CPU
+Optimizing NNI: done in 56.5992 secs using 3951% CPU
+Optimizing NNI: done in 42.7465 secs using 3948% CPU
+Optimizing NNI: done in 45.8567 secs using 3913% CPU
+Optimizing NNI: done in 49.2629 secs using 3917% CPU
+Iteration 100 / LogL: -2032875.723 / Time: 1h:19m:2s (0h:0m:47s left)
+Log-likelihood cutoff on original alignment: -2032910.358
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+Optimizing NNI: done in 33.9003 secs using 3958% CPU
+Optimizing NNI: done in 44.6638 secs using 3956% CPU
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 1h:20m:22s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2032873.430
+Optimal log-likelihood: -2032873.427
+Gamma shape alpha: 0.748
+Parameters optimization took 1 rounds (3.622 sec)
+BEST SCORE FOUND : -2032873.427
+Empirical proportions for each category: 0.359 0.197 0.218 0.226
+Site rates printed to tardigrada/1_infer/LG_MEOW60opt_PMSF.rate
+Creating bootstrap support values...
+Split supports printed to NEXUS file tardigrada/1_infer/LG_MEOW60opt_PMSF.splits.nex
+Total tree length: 18.716
+
+Total number of iterations: 102
+CPU time used for tree search: 182829.592 sec (50h:47m:9s)
+Wall-clock time used for tree search: 4737.517 sec (1h:18m:57s)
+Total CPU time used: 185266.866 sec (51h:27m:46s)
+Total wall-clock time used: 4826.526 sec (1h:20m:26s)
+
+Computing bootstrap consensus tree...
+Reading input file tardigrada/1_infer/LG_MEOW60opt_PMSF.splits.nex...
+40 taxa and 81 splits.
+Consensus tree written to tardigrada/1_infer/LG_MEOW60opt_PMSF.contree
+Reading input trees file tardigrada/1_infer/LG_MEOW60opt_PMSF.contree
+Log-likelihood of consensus tree: -2032873.428
+
+Analysis results written to: 
+  IQ-TREE report:                tardigrada/1_infer/LG_MEOW60opt_PMSF.iqtree
+  Maximum-likelihood tree:       tardigrada/1_infer/LG_MEOW60opt_PMSF.treefile
+  Likelihood distances:          tardigrada/1_infer/LG_MEOW60opt_PMSF.mldist
+  Site-specific rates:           tardigrada/1_infer/LG_MEOW60opt_PMSF.rate
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          tardigrada/1_infer/LG_MEOW60opt_PMSF.splits.nex
+  Consensus tree:                tardigrada/1_infer/LG_MEOW60opt_PMSF.contree
+  Screen log file:               tardigrada/1_infer/LG_MEOW60opt_PMSF.log
+
+Date and Time: Fri Apr 25 18:27:29 2025

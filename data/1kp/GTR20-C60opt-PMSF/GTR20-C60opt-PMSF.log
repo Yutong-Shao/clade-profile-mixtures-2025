@@ -1,0 +1,109 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    rona.rsb.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: ./iqtree2 -s 1kp/1kp.fasta -ft 1kp/1_infer/GTR20-C60opt.treefile -m GTRC60OPT -mdef 1kp/1_infer/GTRC60OPT.nex -safe -pre 1kp/1_infer/GTR20-C60opt-PMSF -n 0 -wspmr -nt 40
+Seed:    184761 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat May 17 07:25:45 2025
+Kernel:  Safe AVX+FMA - 40 threads (256 CPU cores detected)
+
+Reading alignment file 1kp/1kp.fasta ... Fasta format detected
+Reading fasta file: done in 0.0795072 secs using 86.09% CPU
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 103658 columns, 97826 distinct patterns
+74754 parsimony-informative, 13250 singleton sites, 15653 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0124022 secs using 3634% CPU
+   1  BFIK         27.41%    failed      0.00%
+   2  BNCU         13.55%    failed      0.00%
+   3  CIEA         19.10%    failed      0.00%
+   4  CMEQ         13.47%    failed      0.00%
+   5  CSUV         27.21%    failed      0.00%
+   6  Chlre_v5.5   16.92%    failed      0.00%
+   7  GTHK         18.40%    failed      0.00%
+   8  HKZW         24.20%    failed      0.00%
+   9  ILBQ         16.53%    failed      0.00%
+  10  IYDF         17.50%    failed      0.00%
+  11  JEXA         19.01%    failed      0.00%
+  12  JOJQ         16.68%    failed      0.00%
+  13  JVSZ         25.96%    failed      0.00%
+  14  KNMB         16.28%    failed      0.00%
+  15  KWGC         29.11%    failed      0.00%
+  16  Klefl_v1.0    7.15%    failed      0.00%
+  17  MMKU         27.49%    failed      0.00%
+  18  Micpu_v3.0   25.86%    failed      0.00%
+  19  OAGK          6.76%    failed      0.00%
+  20  OLES         13.66%    failed      0.00%
+  21  POZS         25.34%    failed      0.00%
+  22  PQTO         21.02%    failed      0.00%
+  23  PYHZ         19.30%    failed      0.00%
+  24  QKMG         23.72%    failed      0.00%
+  25  QPDY         15.05%    failed      0.00%
+  26  SKYV         29.84%    failed      0.00%
+  27  Selmo_v1.0   13.65%    failed      0.00%
+  28  Spipo_v2      8.49%    failed      0.00%
+  29  VYLQ          4.05%    failed      0.00%
+  30  WDCW         24.70%    failed      0.00%
+  31  WKCY          7.98%    failed      0.00%
+  32  WQRD         23.20%    failed      0.00%
+  33  WTDE         26.95%    failed      0.00%
+  34  WWQZ         16.02%    failed      0.00%
+  35  XSZI         18.21%    failed      0.00%
+  36  XZME         11.12%    failed      0.00%
+  37  YOXI         25.48%    failed      0.00%
+  38  YPIC         24.57%    failed      0.00%
+  39  ZFGK         22.51%    failed      0.00%
+  40  ZUHO         17.59%    failed      0.00%
+****  TOTAL        19.03%  40 sequences failed composition chi2 test (p-value<5%; df=19)
+
+===> COMPUTING SITE FREQUENCY MODEL BASED ON TREE FILE 1kp/1_infer/GTR20-C60opt.treefile
+Reading model definition file 1kp/1_infer/GTRC60OPT.nex ... 88 models and 274 frequency vectors loaded
+Model GTRC60OPT is alias for GTRPMIX+G4{0.5651}+FMIX{C60_pi1:1.0:0.0362299565,C60_pi2:1.0:0.0050297670,C60_pi3:1.0:0.0078652977,C60_pi4:1.0:0.0128501468,C60_pi5:1.0:0.0225952102,C60_pi6:1.0:0.0087010612,C60_pi7:1.0:0.0058702194,C60_pi8:1.0:0.0034895159,C60_pi9:1.0:0.0090981472,C60_pi10:1.0:0.0389436991,C60_pi11:1.0:0.0154125241,C60_pi12:1.0:0.0068553679,C60_pi13:1.0:0.0068809533,C60_pi14:1.0:0.0178627769,C60_pi15:1.0:0.0202738762,C60_pi16:1.0:0.0080566070,C60_pi17:1.0:0.0237833909,C60_pi18:1.0:0.0386460401,C60_pi19:1.0:0.0206753043,C60_pi20:1.0:0.0044454594,C60_pi21:1.0:0.0034042902,C60_pi22:1.0:0.0124735923,C60_pi23:1.0:0.0062574896,C60_pi24:1.0:0.0003243194,C60_pi25:1.0:0.0093583420,C60_pi26:1.0:0.0198086663,C60_pi27:1.0:0.0251576595,C60_pi28:1.0:0.0450153691,C60_pi29:1.0:0.0302787720,C60_pi30:1.0:0.0233112482,C60_pi31:1.0:0.0038343726,C60_pi32:1.0:0.0129395033,C60_pi33:1.0:0.0141010540,C60_pi34:1.0:0.0206257337,C60_pi35:1.0:0.0340089837,C60_pi36:1.0:0.0163738343,C60_pi37:1.0:0.0129562544,C60_pi38:1.0:0.0107623718,C60_pi39:1.0:0.0028181569,C60_pi40:1.0:0.0183286934,C60_pi41:1.0:0.0047519143,C60_pi42:1.0:0.0045624248,C60_pi43:1.0:0.0169391246,C60_pi44:1.0:0.0232829807,C60_pi45:1.0:0.0172150013,C60_pi46:1.0:0.0007894952,C60_pi47:1.0:0.0290082106,C60_pi48:1.0:0.0058844441,C60_pi49:1.0:0.0040316430,C60_pi50:1.0:0.0986396436,C60_pi51:1.0:0.0098958617,C60_pi52:1.0:0.0203597226,C60_pi53:1.0:0.0030717210,C60_pi54:1.0:0.0033858938,C60_pi55:1.0:0.0637052107,C60_pi56:1.0:0.0069033960,C60_pi57:1.0:0.0041898646,C60_pi58:1.0:0.0348278979,C60_pi59:1.0:0.0103220779,C60_pi60:1.0:0.0025294436}
+WARNING: Your input class weight 0.000324319 is very small and may cause numerical issues
+WARNING: Your input class weight 0.000789495 is very small and may cause numerical issues
+NOTE: 145124 MB RAM is required!
+1. Initial log-likelihood: -3767625.111
+Optimal log-likelihood: -3767624.983
+Mixture weights: 0.036 0.005 0.008 0.013 0.023 0.009 0.006 0.003 0.009 0.039 0.015 0.007 0.007 0.018 0.020 0.008 0.024 0.039 0.021 0.004 0.003 0.012 0.006 0.000 0.009 0.020 0.025 0.045 0.030 0.023 0.004 0.013 0.014 0.021 0.034 0.016 0.013 0.011 0.003 0.018 0.005 0.005 0.017 0.023 0.017 0.001 0.029 0.006 0.004 0.099 0.010 0.020 0.003 0.003 0.064 0.007 0.004 0.035 0.010 0.003
+Gamma shape alpha: 0.565
+Parameters optimization took 1 rounds (117.641 sec)
+Computing posterior mean site frequencies....
+Site state frequency vectors printed to 1kp/1_infer/GTR20-C60opt-PMSF.sitefreq
+
+===> CONTINUE ANALYSIS USING THE INFERRED SITE FREQUENCY MODEL
+NOTE: minimal branch length is reduced to 0.000000964711 for long alignment
+Reading model definition file 1kp/1_infer/GTRC60OPT.nex ... 88 models and 274 frequency vectors loaded
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 1.193 seconds
+Model GTRC60OPT is alias for GTRPMIX+G4{0.5651}+FMIX{C60_pi1:1.0:0.0362299565,C60_pi2:1.0:0.0050297670,C60_pi3:1.0:0.0078652977,C60_pi4:1.0:0.0128501468,C60_pi5:1.0:0.0225952102,C60_pi6:1.0:0.0087010612,C60_pi7:1.0:0.0058702194,C60_pi8:1.0:0.0034895159,C60_pi9:1.0:0.0090981472,C60_pi10:1.0:0.0389436991,C60_pi11:1.0:0.0154125241,C60_pi12:1.0:0.0068553679,C60_pi13:1.0:0.0068809533,C60_pi14:1.0:0.0178627769,C60_pi15:1.0:0.0202738762,C60_pi16:1.0:0.0080566070,C60_pi17:1.0:0.0237833909,C60_pi18:1.0:0.0386460401,C60_pi19:1.0:0.0206753043,C60_pi20:1.0:0.0044454594,C60_pi21:1.0:0.0034042902,C60_pi22:1.0:0.0124735923,C60_pi23:1.0:0.0062574896,C60_pi24:1.0:0.0003243194,C60_pi25:1.0:0.0093583420,C60_pi26:1.0:0.0198086663,C60_pi27:1.0:0.0251576595,C60_pi28:1.0:0.0450153691,C60_pi29:1.0:0.0302787720,C60_pi30:1.0:0.0233112482,C60_pi31:1.0:0.0038343726,C60_pi32:1.0:0.0129395033,C60_pi33:1.0:0.0141010540,C60_pi34:1.0:0.0206257337,C60_pi35:1.0:0.0340089837,C60_pi36:1.0:0.0163738343,C60_pi37:1.0:0.0129562544,C60_pi38:1.0:0.0107623718,C60_pi39:1.0:0.0028181569,C60_pi40:1.0:0.0183286934,C60_pi41:1.0:0.0047519143,C60_pi42:1.0:0.0045624248,C60_pi43:1.0:0.0169391246,C60_pi44:1.0:0.0232829807,C60_pi45:1.0:0.0172150013,C60_pi46:1.0:0.0007894952,C60_pi47:1.0:0.0290082106,C60_pi48:1.0:0.0058844441,C60_pi49:1.0:0.0040316430,C60_pi50:1.0:0.0986396436,C60_pi51:1.0:0.0098958617,C60_pi52:1.0:0.0203597226,C60_pi53:1.0:0.0030717210,C60_pi54:1.0:0.0033858938,C60_pi55:1.0:0.0637052107,C60_pi56:1.0:0.0069033960,C60_pi57:1.0:0.0041898646,C60_pi58:1.0:0.0348278979,C60_pi59:1.0:0.0103220779,C60_pi60:1.0:0.0025294436}
+
+NOTE: 3329 MB RAM (3 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3575810.454
+2. Current log-likelihood: -3471859.074
+3. Current log-likelihood: -3467207.165
+4. Current log-likelihood: -3467165.544
+5. Current log-likelihood: -3467165.169
+Optimal log-likelihood: -3467165.166
+Gamma shape alpha: 0.565
+Parameters optimization took 5 rounds (36.465 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -3467165.166
+WARNING: Switch now to '-wspr' as it is the only option for non-mixture model
+Site probabilities per category printed to 1kp/1_infer/GTR20-C60opt-PMSF.siteprob
+Total tree length: 21.689
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 1323.560 sec (0h:22m:3s)
+Total wall-clock time used: 59.767 sec (0h:0m:59s)
+
+Analysis results written to: 
+  IQ-TREE report:                1kp/1_infer/GTR20-C60opt-PMSF.iqtree
+  Maximum-likelihood tree:       1kp/1_infer/GTR20-C60opt-PMSF.treefile
+  Site probability per rate/mix: 1kp/1_infer/GTR20-C60opt-PMSF.siteprob
+  Screen log file:               1kp/1_infer/GTR20-C60opt-PMSF.log
+
+Date and Time: Sat May 17 07:28:55 2025

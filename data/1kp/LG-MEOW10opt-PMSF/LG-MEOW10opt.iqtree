@@ -1,0 +1,166 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Input file name: 1kp/1kp.fasta
+User tree file name: 1kp/lgc60pmsf.contree
+Type of analysis: tree reconstruction
+Random seed number: 915534
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 40 sequences with 103658 amino-acid sites
+Number of constant sites: 15654 (= 15.1016% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 15654 (= 15.1016% of all sites)
+Number of parsimony informative sites: 74754
+Number of distinct site patterns: 97826
+
+SUBSTITUTION PROCESS
+--------------------
+
+Mixture model of substitution: MIX{LG+FEShighclass1,LG+FEShighclass2,LG+FEShighclass3,LG+FESlowclass1,LG+FESlowclass2,LG+FESlowclass3,LG+FESlowclass4,LG+FESlowclass5,LG+FESlowclass6,LG+FESlowclass7}+G4
+
+  No  Component      Rate    Weight   Parameters
+   1  LG+FEShighclass1  1.0000000000  0.3253010387  LG+FEShighclass1
+   2  LG+FEShighclass2  1.0000000000  0.3722056257  LG+FEShighclass2
+   3  LG+FEShighclass3  1.0000000000  0.1716301660  LG+FEShighclass3
+   4  LG+FESlowclass1  1.0000000000  0.0463758516  LG+FESlowclass1
+   5  LG+FESlowclass2  1.0000000000  0.0282375123  LG+FESlowclass2
+   6  LG+FESlowclass3  1.0000000000  0.0120539556  LG+FESlowclass3
+   7  LG+FESlowclass4  1.0000000000  0.0099659171  LG+FESlowclass4
+   8  LG+FESlowclass5  1.0000000000  0.0209273079  LG+FESlowclass5
+   9  LG+FESlowclass6  1.0000000000  0.0129124350  LG+FESlowclass6
+  10  LG+FESlowclass7  1.0000000000  0.0003901901  LG+FESlowclass7
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.5362361279
+
+ Category  Relative_rate  Proportion
+  1         0.0402847695   0.2500000000
+  2         0.2749149697   0.2500000000
+  3         0.8449435174   0.2500000000
+  4         2.8398567435   0.2500000000
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -3848165.3077482809 (s.e. 8074.8808355548)
+Unconstrained log-likelihood (without tree): -1185070.0575585822
+Number of free parameters (#branches + #model parameters): 87
+Akaike information criterion (AIC) score: 7696504.6154965619
+Corrected Akaike information criterion (AICc) score: 7696504.7633386012
+Bayesian information criterion (BIC) score: 7697335.3656464629
+
+Total tree length (sum of branch lengths): 27.3132687934
+Sum of internal branch lengths: 4.1892788600 (15.3378890375% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'BFIK' is drawn at root
+
++---------------BFIK
+|
+|                   +--------BNCU
+|                +--| (100)
+|                |  +-----ILBQ
+|             +--| (100)
+|             |  +----------CMEQ
+|        +----| (100)
+|        |    |                           +------CIEA
+|        |    |                        +--| (100)
+|        |    |                        |  +-----YPIC
+|        |    |                     +--| (100)
+|        |    |                     |  |  +----WTDE
+|        |    |                     |  +--| (100)
+|        |    |                     |     +------XZME
+|        |    |                  +--| (100)
+|        |    |                  |  +------Spipo_v2
+|        |    |               +--| (100)
+|        |    |               |  |  +-----VYLQ
+|        |    |               |  +--| (100)
+|        |    |               |     +-------XSZI
+|        |    |         +-----| (100)
+|        |    |         |     |                    +------CSUV
+|        |    |         |     |                 +--| (100)
+|        |    |         |     |                 |  +-----POZS
+|        |    |         |     |              +--| (57)
+|        |    |         |     |              |  |  +-----KNMB
+|        |    |         |     |              |  +--| (100)
+|        |    |         |     |              |     +-----WKCY
+|        |    |         |     |           +--| (100)
+|        |    |         |     |           |  +------WWQZ
+|        |    |         |     |        +--| (99)
+|        |    |         |     |        |  |  +------KWGC
+|        |    |         |     |        |  +--| (83)
+|        |    |         |     |        |     +------OLES
+|        |    |         |     |     +--| (100)
+|        |    |         |     |     |  |        +----IYDF
+|        |    |         |     |     |  |     +--| (100)
+|        |    |         |     |     |  |     |  +-----WQRD
+|        |    |         |     |     |  |  +--| (100)
+|        |    |         |     |     |  |  |  +-----OAGK
+|        |    |         |     |     |  +--| (100)
+|        |    |         |     |     |     +-----JEXA
+|        |    |         |     |  +--| (100)
+|        |    |         |     |  |  +------QKMG
+|        |    |         |     +--| (100)
+|        |    |         |        +-----ZUHO
+|        |    |     +---| (100)
+|        |    |     |   +-----------GTHK
+|        |    |  +--| (100)
+|        |    |  |  |  +--------JVSZ
+|        |    |  |  +--| (100)
+|        |    |  |     +----------SKYV
+|        |    +--| (100)
+|        |       |  +--------PQTO
+|        |       +--| (100)
+|        |          |  +---------PYHZ
+|        |          +--| (100)
+|        |             |    +-------Selmo_v1.0
+|        |             +----| (100)
+|        |                  +--------ZFGK
+|     +--| (100)
+|     |  |        +-----------HKZW
+|     |  |     +--| (100)
+|     |  |     |  +------JOJQ
+|     |  |  +--| (100)
+|     |  |  |  +------------YOXI
+|     |  +--| (100)
+|     |     +-----------WDCW
+|  +--| (100)
+|  |  +-----------------QPDY
++--| (100)
+|  |             +------------------------------------Chlre_v5.5
+|  |          +--| (86)
+|  |          |  +---------------------------------------Micpu_v3.0
+|  +----------| (100)
+|             +------------------------MMKU
+|
++--------------Klefl_v1.0
+
+Tree in newick format:
+
+(BFIK:0.8641061790,((((((BNCU:0.4801102469,ILBQ:0.3660447581)100:0.2073707286,CMEQ:0.5905774629)100:0.0641579339,((((((((CIEA:0.4014279697,YPIC:0.3669683702)100:0.1099323899,(WTDE:0.2958596607,XZME:0.3727134857)100:0.0311305274)100:0.0476498084,Spipo_v2:0.4109281504)100:0.0583997440,(VYLQ:0.3405633404,XSZI:0.4523031870)100:0.0375434809)100:0.0216940833,(((((((CSUV:0.4135722482,POZS:0.3167459745)100:0.0385195863,(KNMB:0.3174065233,WKCY:0.3521351292)100:0.0302266357)57:0.0151391508,WWQZ:0.4032584275)100:0.0217729701,(KWGC:0.3807858975,OLES:0.4172351804)83:0.0296564220)99:0.0149052561,(((IYDF:0.3018760184,WQRD:0.3281282563)100:0.0440497221,OAGK:0.3325489747)100:0.0270560828,JEXA:0.3537317562)100:0.0334926531)100:0.0189238000,QKMG:0.4115550968)100:0.0494960240,ZUHO:0.3210355843)100:0.0486335803)100:0.3496628164,GTHK:0.6391478361)100:0.2398748967,(JVSZ:0.5116329762,SKYV:0.6284685469)100:0.1180526340)100:0.0912231355,(PQTO:0.5217062181,(PYHZ:0.5523884794,(Selmo_v1.0:0.4473991058,ZFGK:0.5124976843)100:0.2683938214)100:0.0713225974)100:0.0841774092)100:0.0684627787)100:0.2803159306,(((HKZW:0.6517067600,JOJQ:0.4155519737)100:0.1020071610,YOXI:0.7297423581)100:0.1722298796,WDCW:0.6822949454)100:0.1702471602)100:0.0729107138,QPDY:0.9869568977)100:0.1367339163,((Chlre_v5.5:1.9696746578,Micpu_v3.0:2.1379991772)86:0.2049937194,MMKU:1.3408174947)100:0.6241020008)100:0.1848177095,Klefl_v1.0:0.8043869438);
+
+ALISIM COMMAND
+--------------
+Currently, we only support exporting AliSim commands automatically from the analysis for common models of DNA, Protein, Binary, and Morphological data. To simulate data from other models (mixture, lie-markov, etc), please refer to the User Manual of AliSim. Thanks!
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue May 13 13:57:49 2025
+Total CPU time used: 9756.247 seconds (2h:42m:36s)
+Total wall-clock time used: 353.38619 seconds (0h:5m:53s)
+

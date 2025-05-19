@@ -1,0 +1,216 @@
+IQ-TREE 2.4.0 built Feb  7 2025
+
+Input file name: 1kp/1kp.fasta
+User tree file name: 1kp/lgc60pmsf.contree
+Type of analysis: tree reconstruction
+Random seed number: 182379
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 40 sequences with 103658 amino-acid sites
+Number of constant sites: 15654 (= 15.1016% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 15654 (= 15.1016% of all sites)
+Number of parsimony informative sites: 74754
+Number of distinct site patterns: 97826
+
+SUBSTITUTION PROCESS
+--------------------
+
+Mixture model of substitution: MIX{Poisson+FEShighclass1,Poisson+FEShighclass2,Poisson+FEShighclass3,Poisson+FEShighclass4,Poisson+FEShighclass5,Poisson+FEShighclass6,Poisson+FEShighclass7,Poisson+FEShighclass8,Poisson+FEShighclass9,Poisson+FEShighclass10,Poisson+FEShighclass11,Poisson+FEShighclass12,Poisson+FEShighclass13,Poisson+FEShighclass14,Poisson+FEShighclass15,Poisson+FESlowclass1,Poisson+FESlowclass2,Poisson+FESlowclass3,Poisson+FESlowclass4,Poisson+FESlowclass5,Poisson+FESlowclass6,Poisson+FESlowclass7,Poisson+FESlowclass8,Poisson+FESlowclass9,Poisson+FESlowclass10,Poisson+FESlowclass11,Poisson+FESlowclass12,Poisson+FESlowclass13,Poisson+FESlowclass14,Poisson+FESlowclass15,Poisson+FESlowclass16,Poisson+FESlowclass17,Poisson+FESlowclass18,Poisson+FESlowclass19,Poisson+FESlowclass20,Poisson+FESlowclass21,Poisson+FESlowclass22,Poisson+FESlowclass23,Poisson+FESlowclass24,Poisson+FESlowclass25,Poisson+FESlowclass26,Poisson+FESlowclass27,Poisson+FESlowclass28,Poisson+FESlowclass29,Poisson+FESlowclass30,Poisson+FESlowclass31,Poisson+FESlowclass32,Poisson+FESlowclass33,Poisson+FESlowclass34,Poisson+FESlowclass35,Poisson+FESlowclass36,Poisson+FESlowclass37,Poisson+FESlowclass38,Poisson+FESlowclass39,Poisson+FESlowclass40,Poisson+FESlowclass41,Poisson+FESlowclass42,Poisson+FESlowclass43,Poisson+FESlowclass44,Poisson+FESlowclass45}+G4
+
+  No  Component      Rate    Weight   Parameters
+   1  Poisson+FEShighclass1  1.0000000000  0.0513064584  Poisson+FEShighclass1
+   2  Poisson+FEShighclass2  1.0000000000  0.0383260817  Poisson+FEShighclass2
+   3  Poisson+FEShighclass3  1.0000000000  0.0302021570  Poisson+FEShighclass3
+   4  Poisson+FEShighclass4  1.0000000000  0.0335478580  Poisson+FEShighclass4
+   5  Poisson+FEShighclass5  1.0000000000  0.0421558143  Poisson+FEShighclass5
+   6  Poisson+FEShighclass6  1.0000000000  0.0397954638  Poisson+FEShighclass6
+   7  Poisson+FEShighclass7  1.0000000000  0.0562559004  Poisson+FEShighclass7
+   8  Poisson+FEShighclass8  1.0000000000  0.0181561876  Poisson+FEShighclass8
+   9  Poisson+FEShighclass9  1.0000000000  0.0453139516  Poisson+FEShighclass9
+  10  Poisson+FEShighclass10  1.0000000000  0.0249805718  Poisson+FEShighclass10
+  11  Poisson+FEShighclass11  1.0000000000  0.0293032549  Poisson+FEShighclass11
+  12  Poisson+FEShighclass12  1.0000000000  0.0189705535  Poisson+FEShighclass12
+  13  Poisson+FEShighclass13  1.0000000000  0.0577024090  Poisson+FEShighclass13
+  14  Poisson+FEShighclass14  1.0000000000  0.0298383131  Poisson+FEShighclass14
+  15  Poisson+FEShighclass15  1.0000000000  0.0418954895  Poisson+FEShighclass15
+  16  Poisson+FESlowclass1  1.0000000000  0.0293179436  Poisson+FESlowclass1
+  17  Poisson+FESlowclass2  1.0000000000  0.0026250135  Poisson+FESlowclass2
+  18  Poisson+FESlowclass3  1.0000000000  0.0272495066  Poisson+FESlowclass3
+  19  Poisson+FESlowclass4  1.0000000000  0.0035004831  Poisson+FESlowclass4
+  20  Poisson+FESlowclass5  1.0000000000  0.0102657386  Poisson+FESlowclass5
+  21  Poisson+FESlowclass6  1.0000000000  0.0034017095  Poisson+FESlowclass6
+  22  Poisson+FESlowclass7  1.0000000000  0.0113281397  Poisson+FESlowclass7
+  23  Poisson+FESlowclass8  1.0000000000  0.0137248841  Poisson+FESlowclass8
+  24  Poisson+FESlowclass9  1.0000000000  0.0096928985  Poisson+FESlowclass9
+  25  Poisson+FESlowclass10  1.0000000000  0.0102742518  Poisson+FESlowclass10
+  26  Poisson+FESlowclass11  1.0000000000  0.0037869665  Poisson+FESlowclass11
+  27  Poisson+FESlowclass12  1.0000000000  0.0210462943  Poisson+FESlowclass12
+  28  Poisson+FESlowclass13  1.0000000000  0.0064647216  Poisson+FESlowclass13
+  29  Poisson+FESlowclass14  1.0000000000  0.0049548996  Poisson+FESlowclass14
+  30  Poisson+FESlowclass15  1.0000000000  0.0074741294  Poisson+FESlowclass15
+  31  Poisson+FESlowclass16  1.0000000000  0.0065309068  Poisson+FESlowclass16
+  32  Poisson+FESlowclass17  1.0000000000  0.0455152209  Poisson+FESlowclass17
+  33  Poisson+FESlowclass18  1.0000000000  0.0021799215  Poisson+FESlowclass18
+  34  Poisson+FESlowclass19  1.0000000000  0.0030297323  Poisson+FESlowclass19
+  35  Poisson+FESlowclass20  1.0000000000  0.0065913857  Poisson+FESlowclass20
+  36  Poisson+FESlowclass21  1.0000000000  0.0028010327  Poisson+FESlowclass21
+  37  Poisson+FESlowclass22  1.0000000000  0.0115520393  Poisson+FESlowclass22
+  38  Poisson+FESlowclass23  1.0000000000  0.0010711697  Poisson+FESlowclass23
+  39  Poisson+FESlowclass24  1.0000000000  0.0029071220  Poisson+FESlowclass24
+  40  Poisson+FESlowclass25  1.0000000000  0.0156319328  Poisson+FESlowclass25
+  41  Poisson+FESlowclass26  1.0000000000  0.0227775698  Poisson+FESlowclass26
+  42  Poisson+FESlowclass27  1.0000000000  0.0065932114  Poisson+FESlowclass27
+  43  Poisson+FESlowclass28  1.0000000000  0.0040224094  Poisson+FESlowclass28
+  44  Poisson+FESlowclass29  1.0000000000  0.0021484148  Poisson+FESlowclass29
+  45  Poisson+FESlowclass30  1.0000000000  0.0015425849  Poisson+FESlowclass30
+  46  Poisson+FESlowclass31  1.0000000000  0.0165452289  Poisson+FESlowclass31
+  47  Poisson+FESlowclass32  1.0000000000  0.0009614519  Poisson+FESlowclass32
+  48  Poisson+FESlowclass33  1.0000000000  0.0099585802  Poisson+FESlowclass33
+  49  Poisson+FESlowclass34  1.0000000000  0.0095591210  Poisson+FESlowclass34
+  50  Poisson+FESlowclass35  1.0000000000  0.0200904339  Poisson+FESlowclass35
+  51  Poisson+FESlowclass36  1.0000000000  0.0187066212  Poisson+FESlowclass36
+  52  Poisson+FESlowclass37  1.0000000000  0.0012776901  Poisson+FESlowclass37
+  53  Poisson+FESlowclass38  1.0000000000  0.0014880455  Poisson+FESlowclass38
+  54  Poisson+FESlowclass39  1.0000000000  0.0179964829  Poisson+FESlowclass39
+  55  Poisson+FESlowclass40  1.0000000000  0.0054958154  Poisson+FESlowclass40
+  56  Poisson+FESlowclass41  1.0000000000  0.0034471248  Poisson+FESlowclass41
+  57  Poisson+FESlowclass42  1.0000000000  0.0271360708  Poisson+FESlowclass42
+  58  Poisson+FESlowclass43  1.0000000000  0.0025053265  Poisson+FESlowclass43
+  59  Poisson+FESlowclass44  1.0000000000  0.0060256252  Poisson+FESlowclass44
+  60  Poisson+FESlowclass45  1.0000000000  0.0010536826  Poisson+FESlowclass45
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.7742569336
+
+ Category  Relative_rate  Proportion
+  1         0.0900702913   0.2500000000
+  2         0.3965593936   0.2500000000
+  3         0.9495583824   0.2500000000
+  4         2.5638119326   0.2500000000
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -3832125.0380630591 (s.e. 8121.8328511128)
+Unconstrained log-likelihood (without tree): -1185070.0575585822
+Number of free parameters (#branches + #model parameters): 137
+Akaike information criterion (AIC) score: 7664524.0761261182
+Corrected Akaike information criterion (AICc) score: 7664524.4413888697
+Bayesian information criterion (BIC) score: 7665832.2688909052
+
+Total tree length (sum of branch lengths): 20.3147951248
+Sum of internal branch lengths: 3.6811195464 (18.1203872539% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'BFIK' is drawn at root
+
++-------------BFIK
+|
+|                    +------BNCU
+|                 +--| (100)
+|                 |  +----ILBQ
+|              +--| (100)
+|              |  +--------CMEQ
+|        +-----| (100)
+|        |     |                             +-----CIEA
+|        |     |                          +--| (100)
+|        |     |                          |  +-----YPIC
+|        |     |                       +--| (100)
+|        |     |                       |  |  +----WTDE
+|        |     |                       |  +--| (100)
+|        |     |                       |     +-----XZME
+|        |     |                    +--| (100)
+|        |     |                    |  +-----Spipo_v2
+|        |     |                 +--| (100)
+|        |     |                 |  |  +----VYLQ
+|        |     |                 |  +--| (100)
+|        |     |                 |     +------XSZI
+|        |     |          +------| (100)
+|        |     |          |      |                    +------CSUV
+|        |     |          |      |                 +--| (100)
+|        |     |          |      |                 |  +----POZS
+|        |     |          |      |              +--| (57)
+|        |     |          |      |              |  |  +----KNMB
+|        |     |          |      |              |  +--| (100)
+|        |     |          |      |              |     +-----WKCY
+|        |     |          |      |           +--| (100)
+|        |     |          |      |           |  +-----WWQZ
+|        |     |          |      |        +--| (99)
+|        |     |          |      |        |  |  +-----KWGC
+|        |     |          |      |        |  +--| (83)
+|        |     |          |      |        |     +------OLES
+|        |     |          |      |     +--| (100)
+|        |     |          |      |     |  |        +----IYDF
+|        |     |          |      |     |  |     +--| (100)
+|        |     |          |      |     |  |     |  +----WQRD
+|        |     |          |      |     |  |  +--| (100)
+|        |     |          |      |     |  |  |  +----OAGK
+|        |     |          |      |     |  +--| (100)
+|        |     |          |      |     |     +-----JEXA
+|        |     |          |      |  +--| (100)
+|        |     |          |      |  |  +-----QKMG
+|        |     |          |      +--| (100)
+|        |     |          |         +----ZUHO
+|        |     |     +----| (100)
+|        |     |     |    +---------GTHK
+|        |     |  +--| (100)
+|        |     |  |  |  +-------JVSZ
+|        |     |  |  +--| (100)
+|        |     |  |     +---------SKYV
+|        |     +--| (100)
+|        |        |  +-------PQTO
+|        |        +--| (100)
+|        |           |  +-------PYHZ
+|        |           +--| (100)
+|        |              |   +------Selmo_v1.0
+|        |              +---| (100)
+|        |                  +-------ZFGK
+|     +--| (100)
+|     |  |        +---------HKZW
+|     |  |     +--| (100)
+|     |  |     |  +-----JOJQ
+|     |  |  +--| (100)
+|     |  |  |  +----------YOXI
+|     |  +--| (100)
+|     |     +---------WDCW
+|  +--| (100)
+|  |  +--------------QPDY
++--| (100)
+|  |                   +--------------------------------Chlre_v5.5
+|  |               +---| (86)
+|  |               |   +-----------------------------------Micpu_v3.0
+|  +---------------| (100)
+|                  +------------------MMKU
+|
++-----------Klefl_v1.0
+
+Tree in newick format:
+
+(BFIK:0.6128196321,((((((BNCU:0.3434041367,ILBQ:0.2575040325)100:0.1513359651,CMEQ:0.4253033247)100:0.0358271790,((((((((CIEA:0.2983158491,YPIC:0.2727938574)100:0.0858590177,(WTDE:0.2189757657,XZME:0.2772137145)100:0.0209592944)100:0.0371147934,Spipo_v2:0.3031269757)100:0.0495550721,(VYLQ:0.2529383525,XSZI:0.3381756069)100:0.0255256231)100:0.0121999533,(((((((CSUV:0.3089180157,POZS:0.2407101947)100:0.0287160313,(KNMB:0.2422696330,WKCY:0.2641368587)100:0.0209468371)57:0.0128132395,WWQZ:0.3030152932)100:0.0177856664,(KWGC:0.2872846602,OLES:0.3129424521)83:0.0198597350)99:0.0118146086,(((IYDF:0.2297260261,WQRD:0.2493682455)100:0.0352792401,OAGK:0.2500925724)100:0.0213782588,JEXA:0.2648285756)100:0.0279308284)100:0.0159999905,QKMG:0.3043495607)100:0.0430566110,ZUHO:0.2441938832)100:0.0399632773)100:0.3222756263,GTHK:0.4477680600)100:0.2328272587,(JVSZ:0.3645138281,SKYV:0.4544030920)100:0.0793451547)100:0.0877268541,(PQTO:0.3627973098,(PYHZ:0.3898035425,(Selmo_v1.0:0.3110220659,ZFGK:0.3721266115)100:0.2137697072)100:0.0550203375)100:0.0609290051)100:0.0673182626)100:0.2825953709,(((HKZW:0.4581192941,JOJQ:0.2722386025)100:0.0689965274,YOXI:0.4949537238)100:0.1305318158,WDCW:0.4632103061)100:0.1269794865)100:0.0651880208,QPDY:0.6916182110)100:0.1540603323,((Chlre_v5.5:1.4451999395,Micpu_v3.0:1.5902605424)86:0.1911452852,MMKU:0.8646857781)100:0.7236435288)100:0.1048457505,Klefl_v1.0:0.5485474521);
+
+ALISIM COMMAND
+--------------
+Currently, we only support exporting AliSim commands automatically from the analysis for common models of DNA, Protein, Binary, and Morphological data. To simulate data from other models (mixture, lie-markov, etc), please refer to the User Manual of AliSim. Thanks!
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue May 13 16:06:21 2025
+Total CPU time used: 112162.7 seconds (31h:9m:22s)
+Total wall-clock time used: 3153.0748 seconds (0h:52m:33s)
+
