@@ -1,0 +1,372 @@
+---
+title: "PBT_Avian"
+author: "u7627793 Yutong Shao"
+date: "2025-07-11"
+output: html_document
+---
+
+
+```{r}
+library(ggplot2)
+library(ggridges)
+library(dplyr)
+library(tidyr)
+library(ggtext)
+library(patchwork)
+```
+
+
+## 1. Parametric bootstrap test of full-crossing models
+
+
+```{r}
+# Poisson exchangeability
+
+Poisson_C10fixPMSF <- read.table("D:/8701/data_tidy/avian/Poisson-C10fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_C10optPMSF <- read.table("D:/8701/data_tidy/avian/Poisson-C10opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_C60fixPMSF <- read.table("D:/8701/data_tidy/avian/Poisson-C60fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_C60optPMSF <- read.table("D:/8701/data_tidy/avian/Poisson-C60opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_UDM8fixPMSF <- read.table("D:/8701/data_tidy/avian/Poisson-UDM8fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_UDM8optPMSF <- read.table("D:/8701/data_tidy/avian/Poisson-UDM8opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_UDM64fixPMSF <- read.table("D:/8701/data_tidy/avian/Poisson-UDM64fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_UDM64optPMSF <- read.table("D:/8701/data_tidy/avian/Poisson-UDM64opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_UDM128fixPMSF <- read.table("D:/8701/data_tidy/avian/Poisson-UDM128fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_UDM128optPMSF <- read.table("D:/8701/data_tidy/avian/Poisson-UDM128opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_MEOW10optPMSF <- read.table("D:/8701/data_tidy/avian/Poisson-MEOW10opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_MEOW60optPMSF <- read.table("D:/8701/data_tidy/avian/Poisson-MEOW60opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+Poisson_MEOW120optPMSF <- read.table("D:/8701/data_tidy/avian/Poisson-MEOW120opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+
+# LG exchangeability
+
+LG_C10fixPMSF <- read.table("D:/8701/data_tidy/avian/LG-C10fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_C10optPMSF <- read.table("D:/8701/data_tidy/avian/LG-C10opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_C60fixPMSF <- read.table("D:/8701/data_tidy/avian/LG-C60fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_C60optPMSF <- read.table("D:/8701/data_tidy/avian/LG-C60opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_UDM8fixPMSF <- read.table("D:/8701/data_tidy/avian/LG-UDM8fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_UDM8optPMSF <- read.table("D:/8701/data_tidy/avian/LG-UDM8opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_UDM64fixPMSF <- read.table("D:/8701/data_tidy/avian/LG-UDM64fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_UDM64optPMSF <- read.table("D:/8701/data_tidy/avian/LG-UDM64opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_UDM128fixPMSF <- read.table("D:/8701/data_tidy/avian/LG-UDM128fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_UDM128optPMSF <- read.table("D:/8701/data_tidy/avian/LG-UDM128opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_MEOW10optPMSF <- read.table("D:/8701/data_tidy/avian/LG-MEOW10opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_MEOW60optPMSF <- read.table("D:/8701/data_tidy/avian/LG-MEOW60opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+LG_MEOW120optPMSF <- read.table("D:/8701/data_tidy/avian/LG-MEOW120opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+
+# GTR20
+
+GTR20_UDM8fixPMSF <- read.table("D:/8701/data_tidy/avian/GTR20-UDM8fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+GTR20_UDM8optPMSF <- read.table("D:/8701/data_tidy/avian/GTR20-UDM8opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+GTR20_UDM64fixPMSF <- read.table("D:/8701/data_tidy/avian/GTR20-UDM64fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+GTR20_UDM64optPMSF <- read.table("D:/8701/data_tidy/avian/GTR20-UDM64opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+GTR20_UDM128fixPMSF <- read.table("D:/8701/data_tidy/avian/GTR20-UDM128fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+GTR20_UDM128optPMSF <- read.table("D:/8701/data_tidy/avian/GTR20-UDM128opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+GTR20_C10fixPMSF <- read.table("D:/8701/data_tidy/avian/GTR20-C10fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+GTR20_C10optPMSF <- read.table("D:/8701/data_tidy/avian/GTR20-C10opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+GTR20_C60fixPMSF <- read.table("D:/8701/data_tidy/avian/GTR20-C60fix-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+GTR20_C60optPMSF <- read.table("D:/8701/data_tidy/avian/GTR20-C60opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+GTR20_MEOW10optPMSF <- read.table("D:/8701/data_tidy/avian/GTR20-MEOW10opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+GTR20_MEOW60optPMSF <- read.table("D:/8701/data_tidy/avian/GTR20-MEOW60opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+GTR20_MEOW120optPMSF <- read.table("D:/8701/data_tidy/avian/GTR20-MEOW120opt-PMSF/diversity_scores_bootstrapped_data.txt_gaps", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+
+# Add label
+
+marked_x <- 1.57382230364585
+
+Poisson_C10fixPMSF$dataset <- "Poisson+C10fix-PMSF"
+Poisson_C10optPMSF$dataset <- "Poisson+C10opt-PMSF"
+Poisson_C60fixPMSF$dataset <- "Poisson+C60fix-PMSF"
+Poisson_C60optPMSF$dataset <- "Poisson+C60opt-PMSF"
+Poisson_UDM8fixPMSF$dataset <- "Poisson+UDM8fix-PMSF"
+Poisson_UDM8optPMSF$dataset <- "Poisson+UDM8opt-PMSF"
+Poisson_UDM64fixPMSF$dataset <- "Poisson+UDM64fix-PMSF"
+Poisson_UDM64optPMSF$dataset <- "Poisson+UDM64opt-PMSF"
+Poisson_UDM128fixPMSF$dataset <- "Poisson+UDM128fix-PMSF"
+Poisson_UDM128optPMSF$dataset <- "Poisson+UDM128opt-PMSF"
+Poisson_MEOW10optPMSF$dataset <- "Poisson+MEOW10opt-PMSF"
+Poisson_MEOW60optPMSF$dataset <- "Poisson+MEOW60opt-PMSF"
+Poisson_MEOW120optPMSF$dataset <- "Poisson+MEOW120opt-PMSF"
+
+LG_C10fixPMSF$dataset <- "LG+C10fix-PMSF"
+LG_C10optPMSF$dataset <- "LG+C10opt-PMSF"
+LG_C60fixPMSF$dataset <- "LG+C60fix-PMSF"
+LG_C60optPMSF$dataset <- "LG+C60opt-PMSF"
+LG_UDM8fixPMSF$dataset <- "LG+UDM8fix-PMSF"
+LG_UDM8optPMSF$dataset <- "LG+UDM8opt-PMSF"
+LG_UDM64fixPMSF$dataset <- "LG+UDM64fix-PMSF"
+LG_UDM64optPMSF$dataset <- "LG+UDM64opt-PMSF"
+LG_UDM128fixPMSF$dataset <- "LG+UDM128fix-PMSF"
+LG_UDM128optPMSF$dataset <- "LG+UDM128opt-PMSF"
+LG_MEOW10optPMSF$dataset <- "LG+MEOW10opt-PMSF"
+LG_MEOW60optPMSF$dataset <- "LG+MEOW60opt-PMSF"
+LG_MEOW120optPMSF$dataset <- "LG+MEOW120opt-PMSF"
+
+GTR20_UDM8fixPMSF$dataset <- "GTR20+UDM8fix-PMSF"
+GTR20_UDM8optPMSF$dataset <- "GTR20+UDM8opt-PMSF"
+GTR20_UDM64fixPMSF$dataset <- "GTR20+UDM64fix-PMSF"
+GTR20_UDM64optPMSF$dataset <- "GTR20+UDM64opt-PMSF"
+GTR20_UDM128fixPMSF$dataset <- "GTR20+UDM128fix-PMSF"
+GTR20_UDM128optPMSF$dataset <- "GTR20+UDM128opt-PMSF"
+GTR20_C10fixPMSF$dataset <- "GTR20+C10fix-PMSF"
+GTR20_C10optPMSF$dataset <- "GTR20+C10opt-PMSF"
+GTR20_C60fixPMSF$dataset <- "GTR20+C60fix-PMSF"
+GTR20_C60optPMSF$dataset <- "GTR20+C60opt-PMSF"
+GTR20_MEOW10optPMSF$dataset <- "GTR20+MEOW10opt-PMSF"
+GTR20_MEOW60optPMSF$dataset <- "GTR20+MEOW60opt-PMSF"
+GTR20_MEOW120optPMSF$dataset <- "GTR20+MEOW120opt-PMSF"
+
+combined_data <- rbind(Poisson_C10fixPMSF, Poisson_C10optPMSF, Poisson_C60fixPMSF, Poisson_C60optPMSF, Poisson_UDM8fixPMSF, Poisson_UDM8optPMSF, Poisson_UDM64fixPMSF, Poisson_UDM64optPMSF, Poisson_UDM128fixPMSF, Poisson_UDM128optPMSF, Poisson_MEOW10optPMSF, Poisson_MEOW60optPMSF, Poisson_MEOW120optPMSF, LG_C10fixPMSF, LG_C10optPMSF, LG_C60fixPMSF, LG_C60optPMSF, LG_UDM8fixPMSF, LG_UDM8optPMSF, LG_UDM64fixPMSF, LG_UDM64optPMSF, LG_UDM128fixPMSF, LG_UDM128optPMSF, LG_MEOW10optPMSF, LG_MEOW60optPMSF, LG_MEOW120optPMSF, GTR20_C10fixPMSF, GTR20_C10optPMSF, GTR20_C60fixPMSF, GTR20_C60optPMSF, GTR20_UDM8fixPMSF, GTR20_UDM8optPMSF, GTR20_UDM64fixPMSF, GTR20_UDM64optPMSF, GTR20_UDM128fixPMSF, GTR20_UDM128optPMSF, GTR20_MEOW10optPMSF, GTR20_MEOW60optPMSF, GTR20_MEOW120optPMSF)
+```
+
+
+```{r}
+combined_data <- combined_data %>%
+  mutate(group = case_when(
+    dataset %in% c("GTR20+C10fix-PMSF", "GTR20+C10opt-PMSF", "GTR20+C60fix-PMSF", "GTR20+C60opt-PMSF", "LG+C10fix-PMSF", "LG+C10opt-PMSF","LG+C60fix-PMSF", "LG+C60opt-PMSF", "Poisson+C10fix-PMSF", "Poisson+C10opt-PMSF", "Poisson+C60fix-PMSF", "Poisson+C60opt-PMSF") ~ "CXX-PMSF",
+    
+    dataset %in% c("Poisson+UDM8fix-PMSF", "Poisson+UDM8opt-PMSF", "Poisson+UDM64fix-PMSF", "Poisson+UDM64opt-PMSF", "Poisson+UDM128fix-PMSF", "Poisson+UDM128opt-PMSF", "LG+UDM8fix-PMSF", "LG+UDM8opt-PMSF", "LG+UDM64fix-PMSF", "LG+UDM64opt-PMSF", "LG+UDM128fix-PMSF", "LG+UDM128opt-PMSF", "GTR20+UDM8fix-PMSF", "GTR20+UDM8opt-PMSF", "GTR20+UDM64fix-PMSF", "GTR20+UDM64opt-PMSF", "GTR20+UDM128fix-PMSF", "GTR20+UDM128opt-PMSF") ~ "UDM-PMSF",
+    
+    dataset %in% c("LG+MEOW10opt-PMSF", "LG+MEOW60opt-PMSF", "LG+MEOW120opt-PMSF", "Poisson+MEOW10opt-PMSF", "Poisson+MEOW60opt-PMSF", "Poisson+MEOW120opt-PMSF", "GTR20+MEOW10opt-PMSF", "GTR20+MEOW60opt-PMSF", "GTR20+MEOW120opt-PMSF") ~ "MEOW-PMSF",
+    
+    TRUE ~ NA_character_
+  ),
+
+    weights = case_when(
+      grepl("fix", dataset, ignore.case = TRUE) ~ "fix",
+      grepl("opt", dataset, ignore.case = TRUE) ~ "opt",
+      TRUE ~ "default"
+    ),
+    exchangeability = case_when(
+      grepl("^Poisson", dataset) ~ "Poisson",
+      grepl("^LG", dataset) ~ "LG",
+      grepl("^GTR20", dataset) ~ "GTR20",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  mutate(
+    label = dataset %>%
+      gsub("fix", "", .) %>%
+      gsub("opt", "", .)
+  )
+```
+
+
+
+```{r}
+marked_x <- 1.57382230364585
+
+combined_data <- combined_data %>%
+  mutate(group = factor(group, levels = c("CXX-PMSF", "UDM-PMSF", "MEOW-PMSF")))
+
+label_priority <- c("UDM8", "UDM64", "UDM128", "MEOW10", "MEOW60", "MEOW120")
+
+combined_data <- combined_data %>%
+  mutate(
+    sort_key = case_when(
+      grepl("C10", dataset) ~ 1,
+      grepl("C60", dataset) ~ 2,
+      grepl("UDM8", dataset) ~ 3,
+      grepl("UDM64", dataset) ~ 4,
+      grepl("UDM128", dataset) ~ 5,
+      grepl("MEOW10", dataset) ~ 6,
+      grepl("MEOW60", dataset) ~ 7,
+      grepl("MEOW120", dataset) ~ 8,
+      TRUE ~ 99  # for CXX models or others
+    )
+  ) %>%
+  arrange(group, exchangeability, sort_key, label) %>%
+  mutate(label = factor(label, levels = rev(unique(label))))
+
+
+labels <- levels(factor(combined_data$label))
+label_positions <- data.frame(
+  label = labels,
+  ypos = seq_along(labels)
+)
+
+# 1. Main ridge plot
+p_ridges <- ggplot(combined_data, aes(x = diversity, y = label, fill = weights)) +
+  geom_density_ridges(
+    scale = 1.3,
+    rel_min_height = 0,
+    alpha = 0.7,
+    color = "black",
+    linewidth = 0.37,
+    panel_scaling = FALSE,
+    position = "identity"
+  ) +
+  geom_segment(
+    data = label_positions,
+    aes(x = 1.5, xend = 1.9, y = ypos, yend = ypos),
+    inherit.aes = FALSE,
+    color = "black",
+    linewidth = 0.4
+  ) +
+  geom_vline(xintercept = marked_x, color = "darkred", linetype = "dashed", linewidth = 0.8) +
+  scale_x_continuous(
+    limits = c(1.5, 1.9),
+    breaks = c(1.50, 1.60, 1.70, 1.80, 1.90),
+    expand = c(0, 0)
+  ) +
+  scale_y_discrete(
+    expand = expansion(add = c(0, 0))
+  ) +
+  theme_void() +
+  theme(
+    axis.title.x = element_text(size = 9),
+    axis.text.x = element_text(size = 8),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    axis.line.y = element_line(color = "black", size = 0.5),
+    axis.line.x = element_line(color = "black", size = 0.5),
+    axis.ticks.x = element_line(color = "black", size = 0.5),
+    axis.ticks.y.left = element_line(color = "black", size = 0.5),
+    axis.ticks.length = unit(0.1, "cm"),
+    panel.grid.major.x = element_blank(),
+    legend.position = "top",
+    legend.margin = margin(b = 5),
+    legend.title = element_blank(),
+    legend.text = element_text(size = 7)
+  ) +
+  labs(x = "div") +
+  scale_fill_manual(values = c(
+    "fix" = "#9AC4DB",
+    "opt" = "#CB8D8B",
+    "default" = "grey70"
+  ))
+
+
+# 2. Labels plot
+label_background <- combined_data %>%
+  select(label, group) %>%
+  distinct() %>%
+  mutate(ypos = seq(from = 1, by = 2, length.out = n()))
+
+
+p_labels <- ggplot(label_background, aes(x = 2, y = ypos, fill = group)) +
+  geom_tile(width = 3.7, height = 2.0) +
+  scale_fill_manual(values = c(
+    "CXX-PMSF" = "#E9CDDF",
+    "UDM-PMSF" = "#C8BFD9",
+    "MEOW-PMSF" = "#D0E0EF",
+    "non-PMSF" = "#B6C9C0"
+  )) +
+  geom_text(aes(label = label, y = ypos),
+            hjust = 1,
+            size = 2.5, 
+            nudge_x = 1.8
+  ) +
+  scale_y_reverse(expand = expansion(add = c(-1, 1))) +
+  theme_void() +
+  theme(
+    legend.position = "none"
+  ) +
+  coord_cartesian(clip = "off", xlim = c(0.3, 3.58))
+
+p_labels <- p_labels + theme(plot.margin = margin(0.5, 0.14, 0, -0))
+p_ridges <- p_ridges + theme(plot.margin = margin(0, 0, 0, 0))
+
+
+# 3. Bar plot
+
+bar_data <- combined_data %>%
+  group_by(label, weights) %>%
+  summarise(
+    div_mean = mean(diversity), 
+    div_mean_adj = abs(mean(diversity) - marked_x),
+    .groups = "drop"
+  )
+
+diff_data <- bar_data %>%
+  group_by(label) %>%
+  summarise(
+    fix_value = ifelse(any(weights == "fix"), div_mean_adj[weights == "fix"], NA),
+    opt_value = ifelse(any(weights == "opt"), div_mean_adj[weights == "opt"], NA),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    diff = ifelse(!is.na(fix_value) & !is.na(opt_value), fix_value - opt_value, 0),
+    direction = ifelse(diff >= 0, "positive", "negative")
+  ) %>%
+  select(label, diff, direction)
+
+diff_data$label <- factor(diff_data$label, levels = levels(combined_data$label))
+
+
+p_bars <- ggplot(diff_data, aes(x = diff, y = label, fill = direction)) +
+  geom_col(width = 0.9) +
+  geom_vline(xintercept = 0, color = "black", linewidth = 0.5) +
+  scale_fill_manual(values = c(
+    "positive" = "#C16E71",
+    "negative" = "#5B9BD5"
+  )) +
+  scale_y_discrete(
+    expand = expansion(mult = c(-0.95, 0))
+  ) +
+  scale_x_continuous(
+    breaks = c(-0.15, -0.1, -0.05, 0, 0.05, 0.1),   
+    labels = function(x) abs(x),                
+    limits = c(-0.15, 0.1),                 
+    expand = c(0, 0) 
+  ) +
+  theme_void() +
+  theme(
+    axis.text.x = element_text(size = 8),  
+    axis.text.y = element_blank(),
+    axis.ticks.x = element_line(color = "black", size = 0.5), 
+    axis.ticks.length = unit(0.1, "cm"), 
+    axis.line.x = element_line(color = "black", size = 0.5), 
+    axis.line.y = element_blank(), 
+    legend.position = "none",
+    plot.margin = margin(0, 5, 0, 0)
+  )
+
+final_plot_all <- (p_labels + p_ridges + plot_spacer() + p_bars) +
+  plot_layout(widths = c(0.8, 4, 0.1, 1.3)) & 
+  theme(
+    plot.margin = margin(5, 5, 2, 0),
+    panel.spacing = unit(0, "pt")
+  )
+
+print(final_plot_all)
+
+ggsave("Avian_1_div.png", plot = final_plot_all, width = 10, height = 6, dpi = 900)
+```
+
